@@ -21,6 +21,7 @@ SITE_NAME = "Don't Learn Buffett"
 SITE_NAME_ZH = "别学巴菲特"
 SITE_TAGLINE = "回到历史现场，重新做一次决定。"
 SITE_TAGLINE_ZH = "回到历史现场，重新做一次决定。"
+PROJECT_GITHUB_URL = "https://github.com/zihaomu/dont-learn-buffett/tree/main"
 RAW_LETTERS_GITHUB_URL = (
     "https://github.com/zihaomu/dont-learn-buffett/tree/main/"
     "raw_data/primary/warren_buffett_letters"
@@ -126,9 +127,9 @@ def build_index(rows: list[dict], events: list[dict], manifest: dict) -> str:
     <nav class="nav">
       <a href="#chart">阅读主线</a>
       <a href="#events">历史章节</a>
-      <a href="{RAW_LETTERS_GITHUB_URL}" target="_blank" rel="noreferrer">原始资料</a>
       <a href="sources.html">数据来源</a>
       <a href="data/returns.csv">CSV</a>
+      {github_star_link()}
     </nav>
   </header>
 
@@ -291,6 +292,14 @@ def source_links_html(manifest: dict) -> str:
     return "\n".join(parts)
 
 
+def github_star_link() -> str:
+    return f"""<a class="github-star" href="{PROJECT_GITHUB_URL}" target="_blank" rel="noreferrer" title="在 GitHub 给项目 Star" aria-label="在 GitHub 给项目 Star">
+  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.6z"/>
+  </svg>
+</a>"""
+
+
 def build_event_page(event: dict, rows: list[dict], manifest: dict) -> str:
     by_year = {int(row["year"]): row for row in rows}
     row = by_year[int(event["year"])]
@@ -319,8 +328,8 @@ def build_event_page(event: dict, rows: list[dict], manifest: dict) -> str:
     </a>
     <nav class="nav">
       <a href="../index.html#chart">阅读主线</a>
-      <a href="{RAW_LETTERS_GITHUB_URL}" target="_blank" rel="noreferrer">原始资料</a>
       <a href="../sources.html">资料来源</a>
+      {github_star_link()}
     </nav>
   </header>
   <main class="event-main">
@@ -442,19 +451,15 @@ def build_sources_page(manifest: dict) -> str:
   <header class="topbar">
     <a class="brand" href="index.html"><span class="brand-mark"></span><span>{SITE_NAME}</span></a>
     <nav class="nav">
-      <a href="{RAW_LETTERS_GITHUB_URL}" target="_blank" rel="noreferrer">原始资料</a>
       <a href="data/returns.csv">returns.csv</a>
       <a href="data/events.csv">events.csv</a>
+      {github_star_link()}
     </nav>
   </header>
   <main class="sources-main">
     <section>
       <p class="eyebrow">Raw data</p>
       <h1>资料来源与数据口径</h1>
-      <div class="raw-entry">
-        <a href="{RAW_LETTERS_GITHUB_URL}" target="_blank" rel="noreferrer">查看 Warren Buffett Letters 原始 PDF</a>
-        <p>GitHub: raw_data/primary/warren_buffett_letters</p>
-      </div>
       <div class="note-grid">
         {''.join(f'<p>{html.escape(item)}</p>' for item in manifest['data_policy'])}
       </div>
@@ -538,6 +543,29 @@ a { color: inherit; }
   color: var(--muted);
 }
 .nav a:hover, .nav a:focus-visible { background: rgba(28,26,21,.08); color: var(--ink); outline: none; }
+.nav a.github-star {
+  display: inline-flex;
+  align-items: center;
+  width: 38px;
+  min-width: 38px;
+  height: 38px;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid rgba(28,26,21,.18);
+  background: rgba(255,255,255,.74);
+}
+.github-star svg {
+  display: block;
+  width: 19px;
+  height: 19px;
+  fill: var(--gold);
+}
+.nav a.github-star:hover,
+.nav a.github-star:focus-visible {
+  border-color: var(--gold);
+  background: #fff;
+  color: var(--ink);
+}
 main { width: min(1480px, 100%); margin: 0 auto; }
 .workbench { padding: 34px 28px 18px; }
 .chart-head {
@@ -695,31 +723,6 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
   margin-top: 16px;
-}
-.raw-entry {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  margin: 20px 0 22px;
-  padding: 14px 0;
-  border-top: 2px solid var(--ink);
-  border-bottom: 1px solid var(--line);
-}
-.raw-entry a {
-  font-size: 18px;
-  font-weight: 900;
-  text-decoration: none;
-}
-.raw-entry a:hover,
-.raw-entry a:focus-visible {
-  color: var(--green);
-  outline: none;
-}
-.raw-entry p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 13px;
 }
 .note-grid p {
   margin: 0;
@@ -916,7 +919,6 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
   .nav { justify-content: flex-start; }
   .workbench, .notes, .macro-section, .event-section, .source-strip, .sources-main, .event-main { padding-left: 18px; padding-right: 18px; }
   .chart-head { grid-template-columns: 1fr; }
-  .raw-entry { align-items: flex-start; flex-direction: column; }
   .proof-grid { grid-template-columns: 1fr; }
   .macro-grid { grid-template-columns: 1fr; }
   .macro-facts { grid-template-columns: 1fr; }
