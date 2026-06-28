@@ -1,0 +1,990 @@
+{
+  "generated_at": "2026-06-28T07:47:35Z",
+  "scope": "Buffett investor letters and return/event data through 2024.",
+  "data_policy": [
+    "1957-1964 Buffett line uses partnership gain before partner allocation.",
+    "1965-2024 Buffett line uses Berkshire per-share market value from the 2024 annual report.",
+    "S&P 500 and Dow comparison lines use price-index year-end closes from raw daily CSV files.",
+    "Berkshire's official S&P 500 total-return comparison is also preserved for 1965-2024 in processed/returns.csv."
+  ],
+  "limitations": [
+    "Shareholder-letter PDFs are consolidated under primary/warren_buffett_letters/; duplicate upstream PDF folders are not retained locally.",
+    "Dow and S&P price-index series exclude dividends. Use sp500_total_return_from_berkshire_pct for the official 1965-2024 total-return benchmark.",
+    "唐朝/唐书房 source collection is represented by public context pages and book descriptions, not full WeChat article archives."
+  ],
+  "sources": [
+    {
+      "id": "berkshire_letters_index",
+      "kind": "primary",
+      "title": "Berkshire Hathaway shareholder letters index",
+      "url": "https://www.berkshirehathaway.com/letters/letters.html",
+      "local_path": "",
+      "note": "Official index for shareholder letters. Local letter PDFs are consolidated in the public raw archive instead of duplicate source folders."
+    },
+    {
+      "id": "berkshire_2024_annual_report",
+      "kind": "primary",
+      "title": "Berkshire Hathaway 2024 Annual Report",
+      "url": "https://www.berkshirehathaway.com/2024ar/2024ar.pdf",
+      "local_path": "primary/berkshire_2024_annual_report.pdf",
+      "note": "Source for 1965-2024 Berkshire vs. S&P 500 annual percentage table."
+    },
+    {
+      "id": "warren_buffett_letters",
+      "kind": "primary",
+      "title": "Warren Buffett letters raw archive",
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "local_path": "primary/warren_buffett_letters/",
+      "note": "Canonical public raw archive. Includes one PDF per year from 1957-2024 plus early partnership H1/midyear letters."
+    },
+    {
+      "id": "buffett_partnership_letters_ivey",
+      "kind": "source_archive_reference",
+      "title": "Buffett Partnership Letters PDF",
+      "url": "https://www.ivey.uwo.ca/media/2975913/buffett-partnership-letters.pdf",
+      "local_path": "",
+      "note": "Upstream reference for early partnership letters; canonical local copies live under primary/warren_buffett_letters/."
+    },
+    {
+      "id": "fenwii_buffett_letters_1957_2018_en",
+      "kind": "source_archive_reference",
+      "title": "Warren Buffett shareholder letters 1957-2018 English PDF archive",
+      "url": "https://github.com/fenwii/WarrenBuffettLetter/tree/main/%E5%B7%B4%E8%8F%B2%E7%89%B9%E8%87%B4%E8%82%A1%E4%B8%9C%E7%9A%84%E4%BF%A1WarrenBuffettLetter/1957-2018%20en",
+      "local_path": "",
+      "note": "Upstream archive used to build the canonical local by-year archive; duplicate source PDFs are not retained locally."
+    },
+    {
+      "id": "rbcpa_letters_index",
+      "kind": "primary_index",
+      "title": "Warren Buffett letters to partners 1959-1975 index",
+      "url": "https://www.rbcpa.com/warren-e-buffett/buffett-letters-1959-present/",
+      "local_path": "",
+      "note": "Useful index for early partner/Berkshire letters not hosted as current official PDFs."
+    },
+    {
+      "id": "dow_sp500_github",
+      "kind": "market_data",
+      "title": "Historical time series of Dow Jones Industrial Average and S&P 500",
+      "url": "https://github.com/fja05680/dow-sp500-100-years",
+      "local_path": "market_indices_raw/",
+      "note": "Raw daily CSV files used to compute year-end price-index returns."
+    },
+    {
+      "id": "britannica_buffett",
+      "kind": "secondary",
+      "title": "Britannica Money: Warren Buffett biography",
+      "url": "https://www.britannica.com/money/Warren-Edward-Buffett",
+      "local_path": "",
+      "note": "Secondary chronology and biographical context."
+    },
+    {
+      "id": "britannica_berkshire",
+      "kind": "secondary",
+      "title": "Britannica Money: Berkshire Hathaway overview",
+      "url": "https://www.britannica.com/money/Berkshire-Hathaway",
+      "local_path": "",
+      "note": "Secondary context on Berkshire's business mix."
+    },
+    {
+      "id": "novel_investor_partnership_notes",
+      "kind": "secondary",
+      "title": "Novel Investor notes on Buffett Partnership Letters",
+      "url": "https://novelinvestor.com/notes/buffett-partnership-letters-by-warren-buffett/",
+      "local_path": "",
+      "note": "Secondary summary of partnership period and Dow comparison."
+    },
+    {
+      "id": "tang_tangshufang_context",
+      "kind": "secondary_chinese",
+      "title": "唐书房 / 巴芒演义 context",
+      "url": "https://10year.wordpress.com/tag/%E5%94%90%E4%B9%A6%E6%88%BF/",
+      "local_path": "",
+      "note": "Chinese context for 唐朝's Buffett/Munger writing series and 巴芒演义."
+    },
+    {
+      "id": "tang_weread_books",
+      "kind": "secondary_chinese",
+      "title": "微信读书: 唐朝作品介绍",
+      "url": "https://weread.qq.com/web/search/books?author=%E5%94%90%E6%9C%9D&ii=5383296059b5f3538f97206",
+      "local_path": "",
+      "note": "Chinese source for 唐朝's value-investing books, including 巴芒演义."
+    }
+  ],
+  "downloads": [
+    {
+      "url": "https://www.berkshirehathaway.com/2024ar/2024ar.pdf",
+      "path": "primary/berkshire_2024_annual_report.pdf",
+      "status": "downloaded",
+      "bytes": 1852116,
+      "http_status": "cached"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1957.pdf",
+      "status": "downloaded",
+      "bytes": 117392,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1957",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1958.pdf",
+      "status": "downloaded",
+      "bytes": 195045,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1958",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1959.pdf",
+      "status": "downloaded",
+      "bytes": 192173,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1959",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1960.pdf",
+      "status": "downloaded",
+      "bytes": 220849,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1960",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1961.pdf",
+      "status": "downloaded",
+      "bytes": 327982,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1961",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1961-h1.pdf",
+      "status": "downloaded",
+      "bytes": 196573,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1961-h1",
+      "period": "h1",
+      "document_kind": "first_half_report"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1962.pdf",
+      "status": "downloaded",
+      "bytes": 293739,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1962",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1962-h1.pdf",
+      "status": "downloaded",
+      "bytes": 271965,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1962-h1",
+      "period": "h1",
+      "document_kind": "first_half_report"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1963.pdf",
+      "status": "downloaded",
+      "bytes": 336077,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1963",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1963-h1.pdf",
+      "status": "downloaded",
+      "bytes": 224883,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1963-h1",
+      "period": "h1",
+      "document_kind": "first_half_report"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1964.pdf",
+      "status": "downloaded",
+      "bytes": 349929,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1964",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1964-h1.pdf",
+      "status": "downloaded",
+      "bytes": 269995,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1964-h1",
+      "period": "h1",
+      "document_kind": "first_half_report"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1965.pdf",
+      "status": "downloaded",
+      "bytes": 331869,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1965",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1965-h1.pdf",
+      "status": "downloaded",
+      "bytes": 271949,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1965-h1",
+      "period": "h1",
+      "document_kind": "first_half_report"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1966.pdf",
+      "status": "downloaded",
+      "bytes": 329732,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1966",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1966-h1.pdf",
+      "status": "downloaded",
+      "bytes": 275328,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1966-h1",
+      "period": "h1",
+      "document_kind": "first_half_report"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1967.pdf",
+      "status": "downloaded",
+      "bytes": 294239,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1967",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1967-h1.pdf",
+      "status": "downloaded",
+      "bytes": 266163,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1967-h1",
+      "period": "h1",
+      "document_kind": "first_half_report"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1968.pdf",
+      "status": "downloaded",
+      "bytes": 283782,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1968",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1968-h1.pdf",
+      "status": "downloaded",
+      "bytes": 268312,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1968-h1",
+      "period": "h1",
+      "document_kind": "first_half_report"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1969.pdf",
+      "status": "downloaded",
+      "bytes": 259509,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1969",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1969-midyear.pdf",
+      "status": "downloaded",
+      "bytes": 196422,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1969-midyear",
+      "period": "midyear",
+      "document_kind": "midyear_wind_down_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1970.pdf",
+      "status": "downloaded",
+      "bytes": 225099,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1970",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1971.pdf",
+      "status": "downloaded",
+      "bytes": 120470,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1971",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1972.pdf",
+      "status": "downloaded",
+      "bytes": 151187,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1972",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1973.pdf",
+      "status": "downloaded",
+      "bytes": 127780,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1973",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1974.pdf",
+      "status": "downloaded",
+      "bytes": 123406,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1974",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1975.pdf",
+      "status": "downloaded",
+      "bytes": 127161,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1975",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1976.pdf",
+      "status": "downloaded",
+      "bytes": 156186,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1976",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1977.pdf",
+      "status": "downloaded",
+      "bytes": 62569,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1977",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1978.pdf",
+      "status": "downloaded",
+      "bytes": 71586,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1978",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1979.pdf",
+      "status": "downloaded",
+      "bytes": 87570,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1979",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1980.pdf",
+      "status": "downloaded",
+      "bytes": 84609,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1980",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1981.pdf",
+      "status": "downloaded",
+      "bytes": 54855,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1981",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1982.pdf",
+      "status": "downloaded",
+      "bytes": 52903,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1982",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1983.pdf",
+      "status": "downloaded",
+      "bytes": 110711,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1983",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1984.pdf",
+      "status": "downloaded",
+      "bytes": 111220,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1984",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1985.pdf",
+      "status": "downloaded",
+      "bytes": 129895,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1985",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1986.pdf",
+      "status": "downloaded",
+      "bytes": 197181,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1986",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1987.pdf",
+      "status": "downloaded",
+      "bytes": 148895,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1987",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1988.pdf",
+      "status": "downloaded",
+      "bytes": 137328,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1988",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1989.pdf",
+      "status": "downloaded",
+      "bytes": 86519,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1989",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1990.pdf",
+      "status": "downloaded",
+      "bytes": 78861,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1990",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1991.pdf",
+      "status": "downloaded",
+      "bytes": 112476,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1991",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1992.pdf",
+      "status": "downloaded",
+      "bytes": 132426,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1992",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1993.pdf",
+      "status": "downloaded",
+      "bytes": 67965,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1993",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1994.pdf",
+      "status": "downloaded",
+      "bytes": 65610,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1994",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1995.pdf",
+      "status": "downloaded",
+      "bytes": 67535,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1995",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1996.pdf",
+      "status": "downloaded",
+      "bytes": 108559,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1996",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1997.pdf",
+      "status": "downloaded",
+      "bytes": 200372,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1997",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1998.pdf",
+      "status": "downloaded",
+      "bytes": 78995,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1998",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/1999.pdf",
+      "status": "downloaded",
+      "bytes": 90686,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "1999",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2000.pdf",
+      "status": "downloaded",
+      "bytes": 94218,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2000",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2001.pdf",
+      "status": "downloaded",
+      "bytes": 213216,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2001",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2002.pdf",
+      "status": "downloaded",
+      "bytes": 187071,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2002",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2003.pdf",
+      "status": "downloaded",
+      "bytes": 200698,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2003",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2004.pdf",
+      "status": "downloaded",
+      "bytes": 613994,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2004",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2005.pdf",
+      "status": "downloaded",
+      "bytes": 541491,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2005",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2006.pdf",
+      "status": "downloaded",
+      "bytes": 495007,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2006",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2007.pdf",
+      "status": "downloaded",
+      "bytes": 476332,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2007",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2008.pdf",
+      "status": "downloaded",
+      "bytes": 132043,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2008",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2009.pdf",
+      "status": "downloaded",
+      "bytes": 119109,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2009",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2010.pdf",
+      "status": "downloaded",
+      "bytes": 309592,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2010",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2011.pdf",
+      "status": "downloaded",
+      "bytes": 129396,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2011",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2012.pdf",
+      "status": "downloaded",
+      "bytes": 136334,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2012",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2013.pdf",
+      "status": "downloaded",
+      "bytes": 257211,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2013",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2014.pdf",
+      "status": "downloaded",
+      "bytes": 362079,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2014",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2015.pdf",
+      "status": "downloaded",
+      "bytes": 2443422,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2015",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2016.pdf",
+      "status": "downloaded",
+      "bytes": 154712,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2016",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2017.pdf",
+      "status": "downloaded",
+      "bytes": 87641,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2017",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2018.pdf",
+      "status": "downloaded",
+      "bytes": 77566,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2018",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2019.pdf",
+      "status": "downloaded",
+      "bytes": 76466,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2019",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2020.pdf",
+      "status": "downloaded",
+      "bytes": 78896,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2020",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2021.pdf",
+      "status": "downloaded",
+      "bytes": 64117,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2021",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2022.pdf",
+      "status": "downloaded",
+      "bytes": 55589,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2022",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2023.pdf",
+      "status": "downloaded",
+      "bytes": 122415,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2023",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters",
+      "path": "primary/warren_buffett_letters/2024.pdf",
+      "status": "downloaded",
+      "bytes": 64860,
+      "http_status": "canonical",
+      "source_id": "warren_buffett_letters",
+      "document_id": "2024",
+      "period": "year",
+      "document_kind": "shareholder_letter"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/fja05680/dow-sp500-100-years/master/SP500.csv",
+      "path": "market_indices_raw/SP500.csv",
+      "status": "downloaded",
+      "bytes": 2484947,
+      "http_status": "cached"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/fja05680/dow-sp500-100-years/master/DJA.csv",
+      "path": "market_indices_raw/DJA.csv",
+      "status": "downloaded",
+      "bytes": 1858792,
+      "http_status": "cached"
+    },
+    {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC and %5EDJI",
+      "path": "market_indices_raw/yahoo_2019_2024_year_end.json",
+      "status": "downloaded",
+      "bytes": 1537,
+      "note": "Supplemental year-end closes for 2019-2024 because the GitHub raw CSVs end in December 2019."
+    }
+  ]
+}

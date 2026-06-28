@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2008 / 金融危机中的资本提供者 / Don't Learn Buffett</title>
+  <style>
+
+:root {
+  --paper: #f6f6f3;
+  --ink: #171717;
+  --muted: #666b73;
+  --line: #d4d8dd;
+  --panel: #ffffff;
+  --green: #147a63;
+  --rust: #c1121f;
+  --blue: #2457a6;
+  --gold: #a97700;
+  --black: #111111;
+  --focus: #c1121f;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background:
+    linear-gradient(90deg, rgba(193,18,31,.07), transparent 32%),
+    var(--paper);
+  color: var(--ink);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+a { color: inherit; }
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 62px;
+  padding: 0 28px;
+  border-bottom: 1px solid rgba(28, 26, 21, .16);
+  background: rgba(246, 246, 243, .92);
+  backdrop-filter: blur(14px);
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 800;
+}
+.brand-mark {
+  width: 18px;
+  height: 18px;
+  border: 3px solid var(--black);
+  border-radius: 50%;
+  box-shadow: 8px 0 0 var(--green), 16px 0 0 var(--rust);
+}
+.nav { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+.nav a {
+  padding: 8px 10px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--muted);
+}
+.nav a:hover, .nav a:focus-visible { background: rgba(28,26,21,.08); color: var(--ink); outline: none; }
+main { width: min(1480px, 100%); margin: 0 auto; }
+.workbench { padding: 34px 28px 18px; }
+.chart-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 20px;
+  align-items: end;
+  margin-bottom: 18px;
+}
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--rust);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+h1, h2 {
+  margin: 0;
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+h1 { font-size: clamp(32px, 6vw, 82px); max-width: 1120px; }
+h2 { font-size: clamp(24px, 3vw, 42px); }
+.lede {
+  margin: 14px 0 0;
+  color: var(--ink);
+  font-size: clamp(15px, 1.7vw, 20px);
+  font-weight: 800;
+  max-width: 780px;
+}
+.hero-claim {
+  max-width: 880px;
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: clamp(17px, 2vw, 24px);
+  line-height: 1.42;
+}
+.hero-claim.strong {
+  color: var(--rust);
+  font-weight: 900;
+}
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 22px 0 18px;
+}
+.proof-card {
+  min-height: 118px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--rust);
+  border-radius: 8px;
+  background: var(--panel);
+}
+.proof-card span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--rust);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.proof-card strong {
+  display: block;
+  font-size: clamp(16px, 1.5vw, 20px);
+  line-height: 1.35;
+}
+.controls { display: flex; gap: 8px; align-items: center; }
+button {
+  appearance: none;
+  border: 1px solid rgba(28,26,21,.2);
+  border-radius: 7px;
+  background: var(--panel);
+  color: var(--ink);
+  min-height: 38px;
+  padding: 0 13px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+button:hover, button:focus-visible { border-color: var(--focus); outline: none; }
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin: 18px 0;
+}
+.metric {
+  padding: 14px 16px;
+  min-width: 0;
+  border-right: 1px solid var(--line);
+}
+.metric:last-child { border-right: 0; }
+.metric span, .metric small { display: block; color: var(--muted); }
+.metric span { font-size: 12px; font-weight: 800; text-transform: uppercase; }
+.metric strong { display: block; margin: 4px 0; font-size: clamp(24px, 3vw, 40px); line-height: 1; }
+.metric small { font-size: 13px; }
+.chart-shell {
+  position: relative;
+  min-height: 520px;
+  height: min(70vh, 720px);
+  border: 1px solid rgba(28,26,21,.18);
+  border-radius: 8px;
+  background: linear-gradient(180deg, #ffffff 0%, #eef1f4 100%);
+  overflow: hidden;
+  touch-action: none;
+}
+#returnChart { display: block; width: 100%; height: 100%; cursor: grab; }
+#returnChart.dragging { cursor: grabbing; }
+.axis text { fill: var(--muted); font-size: 12px; }
+.axis line, .axis path { stroke: rgba(28,26,21,.2); }
+.grid line { stroke: rgba(28,26,21,.08); }
+.series { fill: none; stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+.series.buffett { stroke: var(--green); stroke-width: 4; }
+.series.sp500 { stroke: var(--blue); }
+.series.dow { stroke: var(--rust); }
+.event-dot { fill: #111; stroke: #ffffff; stroke-width: 2; cursor: pointer; }
+.event-dot:hover, .event-dot:focus { stroke: var(--gold); stroke-width: 4; outline: none; }
+.tooltip {
+  position: absolute;
+  width: min(320px, calc(100vw - 42px));
+  padding: 12px 14px;
+  border: 1px solid rgba(28,26,21,.18);
+  border-radius: 8px;
+  background: #111111;
+  color: #ffffff;
+  pointer-events: none;
+  box-shadow: 0 14px 28px rgba(28,26,21,.2);
+}
+.tooltip strong { display: block; font-size: 16px; margin-bottom: 5px; }
+.tooltip span { display: inline-block; margin-bottom: 6px; color: #cbbd9c; font-size: 12px; text-transform: uppercase; }
+.tooltip p { margin: 0; color: #eee6d4; font-size: 13px; line-height: 1.45; }
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  margin-top: 13px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.legend span { display: inline-flex; align-items: center; gap: 7px; }
+.swatch { display: inline-block; width: 20px; height: 3px; border-radius: 3px; }
+.swatch.buffett { background: var(--green); }
+.swatch.sp500 { background: var(--blue); }
+.swatch.dow { background: var(--rust); }
+.dot { width: 9px; height: 9px; border-radius: 50%; background: #111; display: inline-block; }
+.notes, .macro-section, .event-section, .source-strip, .sources-main, .event-main {
+  padding: 34px 28px;
+}
+.note-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 16px;
+}
+.raw-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin: 20px 0 22px;
+  padding: 14px 0;
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+.raw-entry a {
+  font-size: 18px;
+  font-weight: 900;
+  text-decoration: none;
+}
+.raw-entry a:hover,
+.raw-entry a:focus-visible {
+  color: var(--green);
+  outline: none;
+}
+.raw-entry p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+.note-grid p {
+  margin: 0;
+  padding-top: 14px;
+  border-top: 2px solid var(--line);
+  color: var(--muted);
+  line-height: 1.6;
+}
+.macro-section {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.macro-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 18px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+.macro-grid div,
+.macro-facts div {
+  background: var(--panel);
+  padding: 16px;
+}
+.macro-grid span,
+.macro-facts span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--rust);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.macro-grid p,
+.macro-facts p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+.section-head { margin-bottom: 16px; }
+.event-list {
+  display: grid;
+  border-top: 1px solid var(--line);
+}
+.event-row {
+  display: grid;
+  grid-template-columns: 86px minmax(0, 1fr) 132px;
+  gap: 16px;
+  align-items: center;
+  min-height: 78px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+}
+.event-row:hover .event-copy strong, .event-row:focus-visible .event-copy strong { color: var(--green); }
+.event-row:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+.event-year { font-size: 28px; font-weight: 900; }
+.event-copy strong { display: block; font-size: 18px; margin-bottom: 4px; }
+.event-copy small { color: var(--muted); line-height: 1.5; }
+.event-category {
+  justify-self: end;
+  padding: 5px 8px;
+  border: 1px solid rgba(28,26,21,.2);
+  border-radius: 6px;
+  color: var(--muted);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.source-strip {
+  border-top: 1px solid var(--line);
+  margin-bottom: 40px;
+}
+.source-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.source-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 7px 10px;
+  border: 1px solid rgba(28,26,21,.16);
+  border-radius: 7px;
+  color: var(--muted);
+  text-decoration: none;
+  background: rgba(255,255,255,.72);
+}
+.source-links a:hover, .source-links a:focus-visible { color: var(--ink); border-color: var(--focus); outline: none; }
+.event-main, .sources-main { width: min(1040px, 100%); }
+.event-article {
+  padding-top: 28px;
+}
+.event-article h1 { font-size: clamp(38px, 7vw, 86px); }
+.event-impact {
+  max-width: 760px;
+  color: var(--rust);
+  font-size: 21px;
+  font-weight: 850;
+  line-height: 1.45;
+}
+.event-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  margin: 26px 0;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+.event-stats div {
+  background: var(--paper);
+  padding: 14px;
+}
+.event-stats span { display: block; color: var(--muted); font-size: 12px; font-weight: 800; text-transform: uppercase; }
+.event-stats strong { display: block; margin-top: 5px; font-size: 28px; }
+.event-article section {
+  border-top: 1px solid var(--line);
+  padding: 24px 0;
+}
+.event-article section.decision-box {
+  padding: 26px 20px;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  background: #fff;
+}
+.event-article section.decision-box h2 {
+  color: var(--ink);
+}
+.event-article section.decision-box p {
+  color: var(--ink);
+  font-size: 21px;
+  font-weight: 850;
+  line-height: 1.5;
+}
+.event-article section.judgment {
+  padding: 26px 20px;
+  border: 2px solid var(--rust);
+  border-radius: 8px;
+  background: #fff;
+}
+.event-article section.judgment h2 {
+  color: var(--rust);
+}
+.event-article section.judgment p {
+  color: var(--ink);
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1.45;
+}
+.macro-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+.event-article section h2, .sources-main h2 { font-size: 24px; margin-bottom: 12px; }
+.event-article section p, .plain-list, .source-list p {
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 17px;
+}
+.plain-list { padding-left: 20px; }
+.source-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+.source-list li {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+.source-list a { font-weight: 800; }
+.source-list span {
+  display: inline-flex;
+  margin-left: 8px;
+  color: var(--rust);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.source-list small { display: block; color: var(--muted); }
+.download-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.download-table th, .download-table td {
+  text-align: left;
+  padding: 9px 8px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.download-table th { color: var(--muted); font-size: 12px; text-transform: uppercase; }
+@media (max-width: 860px) {
+  .topbar { align-items: flex-start; gap: 10px; flex-direction: column; padding: 12px 18px; }
+  .nav { justify-content: flex-start; }
+  .workbench, .notes, .macro-section, .event-section, .source-strip, .sources-main, .event-main { padding-left: 18px; padding-right: 18px; }
+  .chart-head { grid-template-columns: 1fr; }
+  .raw-entry { align-items: flex-start; flex-direction: column; }
+  .proof-grid { grid-template-columns: 1fr; }
+  .macro-grid { grid-template-columns: 1fr; }
+  .macro-facts { grid-template-columns: 1fr; }
+  .controls { justify-content: flex-start; }
+  .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .metric:nth-child(2) { border-right: 0; }
+  .metric:nth-child(1), .metric:nth-child(2) { border-bottom: 1px solid var(--line); }
+  .chart-shell { min-height: 460px; height: 62vh; }
+  .note-grid { grid-template-columns: 1fr; }
+  .event-row { grid-template-columns: 72px minmax(0, 1fr); }
+  .event-category { grid-column: 2; justify-self: start; }
+  .event-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 520px) {
+  h1 { font-size: 38px; }
+  .metrics, .event-stats { grid-template-columns: 1fr; }
+  .metric { border-right: 0; border-bottom: 1px solid var(--line); }
+  .metric:last-child { border-bottom: 0; }
+  .event-row { grid-template-columns: 1fr; gap: 6px; }
+  .event-category { grid-column: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+  </style>
+</head>
+<body class="event-page">
+  <header class="topbar">
+    <a class="brand" href="../index.html#year-2008">
+      <span class="brand-mark"></span>
+      <span>Don't Learn Buffett</span>
+    </a>
+    <nav class="nav">
+      <a href="../index.html#chart">阅读主线</a>
+      <a href="https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters" target="_blank" rel="noreferrer">原始资料</a>
+      <a href="../sources.html">资料来源</a>
+    </nav>
+  </header>
+  <main class="event-main">
+    <article class="event-article">
+      <p class="eyebrow">crisis / 2008</p>
+      <h1>金融危机中的资本提供者</h1>
+      <p class="event-impact">你不是危机里的 Buffett，你只是危机里的价格接受者。</p>
+      <div class="event-stats">
+        <div><span>Buffett 当年</span><strong>-31.8%</strong></div>
+        <div><span>S&P 500 price</span><strong>-38.5%</strong></div>
+        <div><span>Dow price</span><strong>-33.8%</strong></div>
+        <div><span>累计倍数</span><strong>55,203x</strong></div>
+      </div>
+      <section>
+        <h2>回到现场</h2>
+        <p>全球金融体系冻结，所有人都在抢美元流动性。Berkshire 股价也跌，但它手里有现金、信用和可以被信任的名字。</p>
+      </section>
+      <section class="decision-box">
+        <h2>轮到你做决定</h2>
+        <p>如果你是 Buffett，你会先保命还是出手提供资本？如果没有永久资本和信用，你是否仍然敢说别人恐惧我贪婪？</p>
+      </section>
+      <section>
+        <h2>表面故事</h2>
+        <p>金融危机说明 Buffett 能在别人恐惧时贪婪。</p>
+      </section>
+      <section>
+        <h2>术的陷阱</h2>
+        <p>把危机买入理解成抄底口号。</p>
+        <p>把危机买入误学成个人账户盲目抄底，忽略流动性、杠杆和收入风险。</p>
+      </section>
+      <section>
+        <h2>道的部分</h2>
+        <p>道在位置：危机中重要的不是勇气，而是你到底是资本提供者还是价格接受者。</p>
+        <p>可学的是危机前保留选择权，不是危机中喊口号。</p>
+      </section>
+      <section class="judgment">
+        <h2>判决</h2>
+        <p>你不是危机里的 Buffett，你只是危机里的价格接受者。</p>
+      </section>
+      <section>
+        <h2>被隐藏的条件</h2>
+        <p>Berkshire 是危机中的资本提供者，拥有现金、信用和交易声誉，可以拿到普通投资者拿不到的条款。</p>
+      </section>
+      <section>
+        <h2>宏观底稿</h2>
+        <div class="macro-facts">
+          <div>
+            <span>宏观时代</span>
+            <p>全球金融危机暴露美元信用体系的脆弱性，也显示美联储和美国资产的中心地位。</p>
+          </div>
+          <div>
+            <span>美元背景</span>
+            <p>危机中全世界抢美元流动性，Berkshire 手里的美元现金变成稀缺交易筹码。</p>
+          </div>
+          <div>
+            <span>美国红利</span>
+            <p>Buffett 能以美国信用和 Berkshire 声誉成为资本提供者，普通投资者只是价格接受者。</p>
+          </div>
+          <div>
+            <span>国际冲击</span>
+            <p>美国次贷危机变成全球危机，说明美国金融体系的问题会外溢到所有投资者。</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>事实底稿</h2>
+        <p>2008 年 Berkshire 股价同样大幅下跌，但公司在危机中向优质金融/工业企业提供资本。对长期投资者而言，这一年同时是回撤测试和机会测试。</p>
+      </section>
+      <section>
+        <h2>信件主线</h2>
+        <p>保持流动性和信用，才能在别人被迫卖出时行动。</p>
+      </section>
+      <section>
+        <h2>当年背景</h2>
+        <p>全球金融危机冲击银行、信用市场和实体经济。</p>
+      </section>
+      <section>
+        <h2>资料</h2>
+        <div class="source-links"><a href="https://www.berkshirehathaway.com/2024ar/2024ar.pdf" target="_blank" rel="noreferrer">Berkshire Hathaway 2024 Annual Report</a></div>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

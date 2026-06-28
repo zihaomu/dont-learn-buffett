@@ -1,0 +1,111 @@
+# Source Notes
+
+Generated: 2026-06-28T07:47:35Z
+
+## Data Policy
+- 1957-1964 Buffett line uses partnership gain before partner allocation.
+- 1965-2024 Buffett line uses Berkshire per-share market value from the 2024 annual report.
+- S&P 500 and Dow comparison lines use price-index year-end closes from raw daily CSV files.
+- Berkshire's official S&P 500 total-return comparison is also preserved for 1965-2024 in processed/returns.csv.
+
+## Limitations
+- Shareholder-letter PDFs are consolidated under primary/warren_buffett_letters/; duplicate upstream PDF folders are not retained locally.
+- Dow and S&P price-index series exclude dividends. Use sp500_total_return_from_berkshire_pct for the official 1965-2024 total-return benchmark.
+- 唐朝/唐书房 source collection is represented by public context pages and book descriptions, not full WeChat article archives.
+
+## Sources
+- **berkshire_letters_index** (primary): Berkshire Hathaway shareholder letters index - https://www.berkshirehathaway.com/letters/letters.html. Official index for shareholder letters. Local letter PDFs are consolidated in the public raw archive instead of duplicate source folders.
+- **berkshire_2024_annual_report** (primary): Berkshire Hathaway 2024 Annual Report - https://www.berkshirehathaway.com/2024ar/2024ar.pdf. Local: `primary/berkshire_2024_annual_report.pdf`. Source for 1965-2024 Berkshire vs. S&P 500 annual percentage table.
+- **warren_buffett_letters** (primary): Warren Buffett letters raw archive - https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters. Local: `primary/warren_buffett_letters/`. Canonical public raw archive. Includes one PDF per year from 1957-2024 plus early partnership H1/midyear letters.
+- **buffett_partnership_letters_ivey** (source_archive_reference): Buffett Partnership Letters PDF - https://www.ivey.uwo.ca/media/2975913/buffett-partnership-letters.pdf. Upstream reference for early partnership letters; canonical local copies live under primary/warren_buffett_letters/.
+- **fenwii_buffett_letters_1957_2018_en** (source_archive_reference): Warren Buffett shareholder letters 1957-2018 English PDF archive - https://github.com/fenwii/WarrenBuffettLetter/tree/main/%E5%B7%B4%E8%8F%B2%E7%89%B9%E8%87%B4%E8%82%A1%E4%B8%9C%E7%9A%84%E4%BF%A1WarrenBuffettLetter/1957-2018%20en. Upstream archive used to build the canonical local by-year archive; duplicate source PDFs are not retained locally.
+- **rbcpa_letters_index** (primary_index): Warren Buffett letters to partners 1959-1975 index - https://www.rbcpa.com/warren-e-buffett/buffett-letters-1959-present/. Useful index for early partner/Berkshire letters not hosted as current official PDFs.
+- **dow_sp500_github** (market_data): Historical time series of Dow Jones Industrial Average and S&P 500 - https://github.com/fja05680/dow-sp500-100-years. Local: `market_indices_raw/`. Raw daily CSV files used to compute year-end price-index returns.
+- **britannica_buffett** (secondary): Britannica Money: Warren Buffett biography - https://www.britannica.com/money/Warren-Edward-Buffett. Secondary chronology and biographical context.
+- **britannica_berkshire** (secondary): Britannica Money: Berkshire Hathaway overview - https://www.britannica.com/money/Berkshire-Hathaway. Secondary context on Berkshire's business mix.
+- **novel_investor_partnership_notes** (secondary): Novel Investor notes on Buffett Partnership Letters - https://novelinvestor.com/notes/buffett-partnership-letters-by-warren-buffett/. Secondary summary of partnership period and Dow comparison.
+- **tang_tangshufang_context** (secondary_chinese): 唐书房 / 巴芒演义 context - https://10year.wordpress.com/tag/%E5%94%90%E4%B9%A6%E6%88%BF/. Chinese context for 唐朝's Buffett/Munger writing series and 巴芒演义.
+- **tang_weread_books** (secondary_chinese): 微信读书: 唐朝作品介绍 - https://weread.qq.com/web/search/books?author=%E5%94%90%E6%9C%9D&ii=5383296059b5f3538f97206. Chinese source for 唐朝's value-investing books, including 巴芒演义.
+
+## Download Results
+- downloaded `primary/berkshire_2024_annual_report.pdf` (1852116 bytes) from https://www.berkshirehathaway.com/2024ar/2024ar.pdf
+- canonical `primary/warren_buffett_letters/1957.pdf` (117392 bytes)
+- canonical `primary/warren_buffett_letters/1958.pdf` (195045 bytes)
+- canonical `primary/warren_buffett_letters/1959.pdf` (192173 bytes)
+- canonical `primary/warren_buffett_letters/1960.pdf` (220849 bytes)
+- canonical `primary/warren_buffett_letters/1961.pdf` (327982 bytes)
+- canonical `primary/warren_buffett_letters/1961-h1.pdf` (196573 bytes)
+- canonical `primary/warren_buffett_letters/1962.pdf` (293739 bytes)
+- canonical `primary/warren_buffett_letters/1962-h1.pdf` (271965 bytes)
+- canonical `primary/warren_buffett_letters/1963.pdf` (336077 bytes)
+- canonical `primary/warren_buffett_letters/1963-h1.pdf` (224883 bytes)
+- canonical `primary/warren_buffett_letters/1964.pdf` (349929 bytes)
+- canonical `primary/warren_buffett_letters/1964-h1.pdf` (269995 bytes)
+- canonical `primary/warren_buffett_letters/1965.pdf` (331869 bytes)
+- canonical `primary/warren_buffett_letters/1965-h1.pdf` (271949 bytes)
+- canonical `primary/warren_buffett_letters/1966.pdf` (329732 bytes)
+- canonical `primary/warren_buffett_letters/1966-h1.pdf` (275328 bytes)
+- canonical `primary/warren_buffett_letters/1967.pdf` (294239 bytes)
+- canonical `primary/warren_buffett_letters/1967-h1.pdf` (266163 bytes)
+- canonical `primary/warren_buffett_letters/1968.pdf` (283782 bytes)
+- canonical `primary/warren_buffett_letters/1968-h1.pdf` (268312 bytes)
+- canonical `primary/warren_buffett_letters/1969.pdf` (259509 bytes)
+- canonical `primary/warren_buffett_letters/1969-midyear.pdf` (196422 bytes)
+- canonical `primary/warren_buffett_letters/1970.pdf` (225099 bytes)
+- canonical `primary/warren_buffett_letters/1971.pdf` (120470 bytes)
+- canonical `primary/warren_buffett_letters/1972.pdf` (151187 bytes)
+- canonical `primary/warren_buffett_letters/1973.pdf` (127780 bytes)
+- canonical `primary/warren_buffett_letters/1974.pdf` (123406 bytes)
+- canonical `primary/warren_buffett_letters/1975.pdf` (127161 bytes)
+- canonical `primary/warren_buffett_letters/1976.pdf` (156186 bytes)
+- canonical `primary/warren_buffett_letters/1977.pdf` (62569 bytes)
+- canonical `primary/warren_buffett_letters/1978.pdf` (71586 bytes)
+- canonical `primary/warren_buffett_letters/1979.pdf` (87570 bytes)
+- canonical `primary/warren_buffett_letters/1980.pdf` (84609 bytes)
+- canonical `primary/warren_buffett_letters/1981.pdf` (54855 bytes)
+- canonical `primary/warren_buffett_letters/1982.pdf` (52903 bytes)
+- canonical `primary/warren_buffett_letters/1983.pdf` (110711 bytes)
+- canonical `primary/warren_buffett_letters/1984.pdf` (111220 bytes)
+- canonical `primary/warren_buffett_letters/1985.pdf` (129895 bytes)
+- canonical `primary/warren_buffett_letters/1986.pdf` (197181 bytes)
+- canonical `primary/warren_buffett_letters/1987.pdf` (148895 bytes)
+- canonical `primary/warren_buffett_letters/1988.pdf` (137328 bytes)
+- canonical `primary/warren_buffett_letters/1989.pdf` (86519 bytes)
+- canonical `primary/warren_buffett_letters/1990.pdf` (78861 bytes)
+- canonical `primary/warren_buffett_letters/1991.pdf` (112476 bytes)
+- canonical `primary/warren_buffett_letters/1992.pdf` (132426 bytes)
+- canonical `primary/warren_buffett_letters/1993.pdf` (67965 bytes)
+- canonical `primary/warren_buffett_letters/1994.pdf` (65610 bytes)
+- canonical `primary/warren_buffett_letters/1995.pdf` (67535 bytes)
+- canonical `primary/warren_buffett_letters/1996.pdf` (108559 bytes)
+- canonical `primary/warren_buffett_letters/1997.pdf` (200372 bytes)
+- canonical `primary/warren_buffett_letters/1998.pdf` (78995 bytes)
+- canonical `primary/warren_buffett_letters/1999.pdf` (90686 bytes)
+- canonical `primary/warren_buffett_letters/2000.pdf` (94218 bytes)
+- canonical `primary/warren_buffett_letters/2001.pdf` (213216 bytes)
+- canonical `primary/warren_buffett_letters/2002.pdf` (187071 bytes)
+- canonical `primary/warren_buffett_letters/2003.pdf` (200698 bytes)
+- canonical `primary/warren_buffett_letters/2004.pdf` (613994 bytes)
+- canonical `primary/warren_buffett_letters/2005.pdf` (541491 bytes)
+- canonical `primary/warren_buffett_letters/2006.pdf` (495007 bytes)
+- canonical `primary/warren_buffett_letters/2007.pdf` (476332 bytes)
+- canonical `primary/warren_buffett_letters/2008.pdf` (132043 bytes)
+- canonical `primary/warren_buffett_letters/2009.pdf` (119109 bytes)
+- canonical `primary/warren_buffett_letters/2010.pdf` (309592 bytes)
+- canonical `primary/warren_buffett_letters/2011.pdf` (129396 bytes)
+- canonical `primary/warren_buffett_letters/2012.pdf` (136334 bytes)
+- canonical `primary/warren_buffett_letters/2013.pdf` (257211 bytes)
+- canonical `primary/warren_buffett_letters/2014.pdf` (362079 bytes)
+- canonical `primary/warren_buffett_letters/2015.pdf` (2443422 bytes)
+- canonical `primary/warren_buffett_letters/2016.pdf` (154712 bytes)
+- canonical `primary/warren_buffett_letters/2017.pdf` (87641 bytes)
+- canonical `primary/warren_buffett_letters/2018.pdf` (77566 bytes)
+- canonical `primary/warren_buffett_letters/2019.pdf` (76466 bytes)
+- canonical `primary/warren_buffett_letters/2020.pdf` (78896 bytes)
+- canonical `primary/warren_buffett_letters/2021.pdf` (64117 bytes)
+- canonical `primary/warren_buffett_letters/2022.pdf` (55589 bytes)
+- canonical `primary/warren_buffett_letters/2023.pdf` (122415 bytes)
+- canonical `primary/warren_buffett_letters/2024.pdf` (64860 bytes)
+- downloaded `market_indices_raw/SP500.csv` (2484947 bytes) from https://raw.githubusercontent.com/fja05680/dow-sp500-100-years/master/SP500.csv
+- downloaded `market_indices_raw/DJA.csv` (1858792 bytes) from https://raw.githubusercontent.com/fja05680/dow-sp500-100-years/master/DJA.csv
+- downloaded `market_indices_raw/yahoo_2019_2024_year_end.json` (1537 bytes) from https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC and %5EDJI
