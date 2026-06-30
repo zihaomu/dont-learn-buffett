@@ -334,6 +334,36 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
 }
 .source-links a:hover, .source-links a:focus-visible { color: var(--ink); border-color: var(--focus); outline: none; }
 .event-main, .sources-main { width: min(1040px, 100%); }
+.raw-data-link {
+  display: block;
+  margin: 18px 0 22px;
+  padding: 14px 0;
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+}
+.raw-data-link span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--rust);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.raw-data-link strong {
+  display: block;
+  color: var(--ink);
+  font-size: clamp(15px, 2vw, 20px);
+  overflow-wrap: anywhere;
+}
+.raw-data-link:hover strong,
+.raw-data-link:focus-visible strong {
+  color: var(--green);
+}
+.raw-data-link:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 4px;
+}
 .event-article {
   padding-top: 28px;
 }

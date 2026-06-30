@@ -335,6 +335,36 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
 }
 .source-links a:hover, .source-links a:focus-visible { color: var(--ink); border-color: var(--focus); outline: none; }
 .event-main, .sources-main { width: min(1040px, 100%); }
+.raw-data-link {
+  display: block;
+  margin: 18px 0 22px;
+  padding: 14px 0;
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+}
+.raw-data-link span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--rust);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.raw-data-link strong {
+  display: block;
+  color: var(--ink);
+  font-size: clamp(15px, 2vw, 20px);
+  overflow-wrap: anywhere;
+}
+.raw-data-link:hover strong,
+.raw-data-link:focus-visible strong {
+  color: var(--green);
+}
+.raw-data-link:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 4px;
+}
 .event-article {
   padding-top: 28px;
 }
@@ -481,7 +511,6 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
       <a href="#chart">阅读主线</a>
       <a href="#events">历史章节</a>
       <a href="sources.html">数据来源</a>
-      <a href="data/returns.csv">CSV</a>
       <a class="github-link" href="https://github.com/zihaomu/dont-learn-buffett" target="_blank" rel="noreferrer" title="GitHub 项目主页" aria-label="GitHub 项目主页">
   <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
     <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.31-1.27-1.66-1.27-1.66-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.73-1.53-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18A10.9 10.9 0 0 1 12 5.55c.97 0 1.94.13 2.85.38C17.04 4.44 18 4.75 18 4.75c.62 1.58.23 2.75.11 3.04.73.8 1.18 1.83 1.18 3.08 0 4.42-2.69 5.39-5.25 5.67.41.35.78 1.05.78 2.12 0 1.53-.01 2.76-.01 3.14 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>

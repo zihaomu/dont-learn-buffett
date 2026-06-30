@@ -22,6 +22,7 @@ SITE_NAME_ZH = "别学巴菲特"
 SITE_TAGLINE = "回到历史现场，重新做一次决定。"
 SITE_TAGLINE_ZH = "回到历史现场，重新做一次决定。"
 PROJECT_GITHUB_URL = "https://github.com/zihaomu/dont-learn-buffett"
+RAW_DATA_GITHUB_URL = "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data"
 RAW_LETTERS_GITHUB_URL = (
     "https://github.com/zihaomu/dont-learn-buffett/tree/main/"
     "raw_data/primary/warren_buffett_letters"
@@ -128,7 +129,6 @@ def build_index(rows: list[dict], events: list[dict], manifest: dict) -> str:
       <a href="#chart">阅读主线</a>
       <a href="#events">历史章节</a>
       <a href="sources.html">数据来源</a>
-      <a href="data/returns.csv">CSV</a>
       {github_link()}
     </nav>
   </header>
@@ -451,8 +451,7 @@ def build_sources_page(manifest: dict) -> str:
   <header class="topbar">
     <a class="brand" href="index.html"><span class="brand-mark"></span><span>{SITE_NAME}</span></a>
     <nav class="nav">
-      <a href="data/returns.csv">returns.csv</a>
-      <a href="data/events.csv">events.csv</a>
+      <a href="index.html">阅读主线</a>
       {github_link()}
     </nav>
   </header>
@@ -460,6 +459,10 @@ def build_sources_page(manifest: dict) -> str:
     <section>
       <p class="eyebrow">Raw data</p>
       <h1>资料来源与数据口径</h1>
+      <a class="raw-data-link" href="{RAW_DATA_GITHUB_URL}" target="_blank" rel="noreferrer">
+        <span>完整原始资料库</span>
+        <strong>github.com/zihaomu/dont-learn-buffett/tree/main/raw_data</strong>
+      </a>
       <div class="note-grid">
         {''.join(f'<p>{html.escape(item)}</p>' for item in manifest['data_policy'])}
       </div>
@@ -811,6 +814,36 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
 }
 .source-links a:hover, .source-links a:focus-visible { color: var(--ink); border-color: var(--focus); outline: none; }
 .event-main, .sources-main { width: min(1040px, 100%); }
+.raw-data-link {
+  display: block;
+  margin: 18px 0 22px;
+  padding: 14px 0;
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+}
+.raw-data-link span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--rust);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.raw-data-link strong {
+  display: block;
+  color: var(--ink);
+  font-size: clamp(15px, 2vw, 20px);
+  overflow-wrap: anywhere;
+}
+.raw-data-link:hover strong,
+.raw-data-link:focus-visible strong {
+  color: var(--green);
+}
+.raw-data-link:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 4px;
+}
 .event-article {
   padding-top: 28px;
 }
