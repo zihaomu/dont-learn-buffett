@@ -29,6 +29,7 @@ body {
     var(--paper);
   color: var(--ink);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  overflow-x: hidden;
 }
 a { color: inherit; }
 .topbar {
@@ -112,6 +113,7 @@ h1, h2 {
   margin: 0;
   line-height: 1.05;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 h1 { font-size: clamp(32px, 6vw, 82px); max-width: 1120px; }
 h2 { font-size: clamp(24px, 3vw, 42px); }
@@ -128,6 +130,7 @@ h2 { font-size: clamp(24px, 3vw, 42px); }
   color: var(--muted);
   font-size: clamp(17px, 2vw, 24px);
   line-height: 1.42;
+  overflow-wrap: anywhere;
 }
 .hero-claim.strong {
   color: var(--rust);
@@ -210,8 +213,9 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
 .series.buffett { stroke: var(--green); stroke-width: 4; }
 .series.sp500 { stroke: var(--blue); }
 .series.dow { stroke: var(--rust); }
-.event-dot { fill: #111; stroke: #ffffff; stroke-width: 2; cursor: pointer; }
-.event-dot:hover, .event-dot:focus { stroke: var(--gold); stroke-width: 4; outline: none; }
+.event-dot { fill: #111; stroke: #ffffff; stroke-width: 2; cursor: pointer; opacity: .78; }
+.event-dot.key { fill: var(--rust); opacity: 1; }
+.event-dot:hover, .event-dot:focus { stroke: var(--gold); stroke-width: 4; opacity: 1; outline: none; }
 .tooltip {
   position: absolute;
   width: min(320px, calc(100vw - 42px));
@@ -240,7 +244,7 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
 .swatch.sp500 { background: var(--blue); }
 .swatch.dow { background: var(--rust); }
 .dot { width: 9px; height: 9px; border-radius: 50%; background: #111; display: inline-block; }
-.notes, .macro-section, .event-section, .source-strip, .sources-main, .event-main {
+.notes, .macro-section, .event-section, .source-strip, .sources-main, .event-main, .decision-main {
   padding: 34px 28px;
 }
 .note-grid {
@@ -295,7 +299,7 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
 }
 .event-row {
   display: grid;
-  grid-template-columns: 86px minmax(0, 1fr) 132px;
+  grid-template-columns: 86px minmax(0, 1fr) 172px;
   gap: 16px;
   align-items: center;
   min-height: 78px;
@@ -335,6 +339,15 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
 }
 .source-links a:hover, .source-links a:focus-visible { color: var(--ink); border-color: var(--focus); outline: none; }
 .event-main, .sources-main { width: min(1040px, 100%); }
+.decision-main { width: min(1400px, 100%); }
+.decision-main,
+.decision-hero,
+.decision-workspace,
+.factor-panel,
+.choice-panel {
+  min-width: 0;
+  max-width: 100%;
+}
 .raw-data-link {
   display: block;
   margin: 18px 0 22px;
@@ -369,12 +382,161 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
   padding-top: 28px;
 }
 .event-article h1 { font-size: clamp(38px, 7vw, 86px); }
+.decision-hero h1 { font-size: clamp(36px, 6vw, 78px); }
 .event-impact {
+  width: 100%;
   max-width: 760px;
   color: var(--rust);
   font-size: 21px;
   font-weight: 850;
   line-height: 1.45;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.event-impact span { display: inline; }
+.decision-workspace {
+  display: grid;
+  grid-template-columns: minmax(280px, .92fr) minmax(0, 1.35fr);
+  gap: 18px;
+  align-items: start;
+  margin-top: 22px;
+}
+.factor-panel,
+.choice-panel {
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+}
+.factor-panel {
+  position: sticky;
+  top: 86px;
+}
+.factor-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+.factor-list div {
+  padding: 14px;
+  border: 1px solid rgba(28,26,21,.14);
+  border-radius: 8px;
+  background: rgba(255,255,255,.64);
+}
+.factor-list span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--rust);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.factor-list p,
+.choice-prompt,
+.choice-status {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.decision-sources { margin-top: 14px; }
+.choice-panel h2 { font-size: clamp(24px, 3vw, 42px); }
+.choice-prompt { margin-top: 10px; max-width: 780px; }
+.choice-status {
+  margin-top: 12px;
+  color: var(--ink);
+  font-weight: 800;
+}
+.choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+.choice-card {
+  display: block;
+  width: 100%;
+  min-height: 210px;
+  padding: 15px;
+  text-align: left;
+  border: 1px solid rgba(28,26,21,.18);
+  border-radius: 8px;
+  background: var(--panel);
+}
+.choice-card:hover,
+.choice-card:focus-visible {
+  border-color: var(--focus);
+  outline: none;
+}
+.choice-card.selected {
+  border-color: var(--ink);
+  box-shadow: inset 0 0 0 1px var(--ink);
+}
+.choice-card[data-actual="true"].selected,
+body.choice-revealed .choice-card[data-actual="true"] {
+  border-color: var(--green);
+}
+.choice-label,
+.choice-badge,
+.choice-result em {
+  display: block;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.choice-label { color: var(--rust); margin-bottom: 8px; }
+.choice-card strong {
+  display: block;
+  font-size: 18px;
+  line-height: 1.32;
+}
+.choice-card p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+.choice-badge {
+  display: none;
+  margin-top: 12px;
+  color: var(--green);
+}
+.choice-badge.muted { color: var(--muted); }
+.choice-result {
+  display: none;
+  margin-top: 12px;
+  color: var(--ink);
+  line-height: 1.55;
+}
+.choice-result em {
+  margin: 10px 0 4px;
+  color: var(--rust);
+  font-style: normal;
+}
+body.choice-revealed .choice-badge,
+body.choice-revealed .choice-result {
+  display: block;
+}
+.reveal-panel {
+  margin-top: 18px;
+  padding: 18px;
+  border: 1px solid rgba(20,122,99,.34);
+  border-top: 4px solid var(--green);
+  border-radius: 8px;
+  background: rgba(255,255,255,.72);
+}
+.reveal-panel strong {
+  display: block;
+  margin-top: 8px;
+  font-size: clamp(20px, 2.4vw, 32px);
+  line-height: 1.2;
+}
+.reveal-panel h3 {
+  margin: 18px 0 6px;
+  font-size: 16px;
+}
+.reveal-panel p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.65;
 }
 .event-stats {
   display: grid;
@@ -472,7 +634,7 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
 @media (max-width: 860px) {
   .topbar { align-items: flex-start; gap: 10px; flex-direction: column; padding: 12px 18px; }
   .nav { justify-content: flex-start; }
-  .workbench, .notes, .macro-section, .event-section, .source-strip, .sources-main, .event-main { padding-left: 18px; padding-right: 18px; }
+  .workbench, .notes, .macro-section, .event-section, .source-strip, .sources-main, .event-main, .decision-main { padding-left: 18px; padding-right: 18px; }
   .chart-head { grid-template-columns: 1fr; }
   .proof-grid { grid-template-columns: 1fr; }
   .macro-grid { grid-template-columns: 1fr; }
@@ -486,9 +648,13 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
   .event-row { grid-template-columns: 72px minmax(0, 1fr); }
   .event-category { grid-column: 2; justify-self: start; }
   .event-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .decision-workspace, .choice-grid { grid-template-columns: 1fr; }
+  .factor-panel { position: static; }
 }
 @media (max-width: 520px) {
   h1 { font-size: 38px; }
+  .event-impact { max-width: 100%; font-size: 18px; word-break: break-all; }
+  .event-impact span { display: block; }
   .metrics, .event-stats { grid-template-columns: 1fr; }
   .metric { border-right: 0; border-bottom: 1px solid var(--line); }
   .metric:last-child { border-bottom: 0; }
@@ -523,10 +689,10 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
     <section class="workbench" id="chart" aria-labelledby="chart-title">
       <div class="chart-head">
         <div>
-          <p class="eyebrow">1957-2024 / Data, code, letters</p>
+        <p class="eyebrow">1957-2024 / Data, code, letters</p>
           <h1 id="chart-title">Don't Learn Buffett</h1>
           <p class="lede">回到历史现场，重新做一次决定。</p>
-          <p class="hero-claim">这不是一份研究报表，而是一本活的书。每一章把你带回当时的市场，让你先做判断，再看 Buffett 为什么能做出那个决断。</p>
+        <p class="hero-claim">这不是一份研究报表，而是一本活的书。每一年都把你带回当时的市场，让你先做选择，再看 Buffett 当时实际怎么做。</p>
         </div>
         <div class="controls" aria-label="图表控制">
           <button type="button" id="resetZoom">重置</button>
@@ -621,137 +787,553 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
 
     <section class="event-section" id="events" aria-labelledby="events-title">
       <div class="section-head">
-        <p class="eyebrow">Living chapters</p>
-        <h2 id="events-title">历史章节</h2>
+        <p class="eyebrow">Decision rooms</p>
+        <h2 id="events-title">年度决策现场</h2>
       </div>
       <div class="event-list">
-        <a class="event-row" href="events/1957-partnership-first-scorecard.html" id="year-1957">
+        <a class="event-row" href="decisions/1957.html" id="year-1957">
   <span class="event-year">1957</span>
   <span class="event-copy">
     <strong>合伙企业第一份成绩单</strong>
     <small>你能学他的衡量方式，学不了他的早期市场环境。</small>
   </span>
-  <span class="event-category">partnership</span>
+  <span class="event-category">重点年份 / partnership</span>
 </a>
-<a class="event-row" href="events/1962-partnership-consolidation.html" id="year-1962">
+<a class="event-row" href="decisions/1958.html" id="year-1958">
+  <span class="event-year">1958</span>
+  <span class="event-copy">
+    <strong>1958：合伙企业年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「合伙企业年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / partnership</span>
+</a>
+<a class="event-row" href="decisions/1959.html" id="year-1959">
+  <span class="event-year">1959</span>
+  <span class="event-copy">
+    <strong>1959：合伙企业年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「合伙企业年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / partnership</span>
+</a>
+<a class="event-row" href="decisions/1960.html" id="year-1960">
+  <span class="event-year">1960</span>
+  <span class="event-copy">
+    <strong>1960：合伙企业年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「合伙企业年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / partnership</span>
+</a>
+<a class="event-row" href="decisions/1961.html" id="year-1961">
+  <span class="event-year">1961</span>
+  <span class="event-copy">
+    <strong>1961：合伙企业年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「合伙企业年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / partnership</span>
+</a>
+<a class="event-row" href="decisions/1962.html" id="year-1962">
   <span class="event-year">1962</span>
   <span class="event-copy">
     <strong>合伙企业合并成 Buffett Partnership Ltd.</strong>
     <small>Buffett 不是只会选股，他先拥有了能承载策略的资本结构。</small>
   </span>
-  <span class="event-category">structure</span>
+  <span class="event-category">重点年份 / structure</span>
 </a>
-<a class="event-row" href="events/1965-berkshire-control.html" id="year-1965">
+<a class="event-row" href="decisions/1963.html" id="year-1963">
+  <span class="event-year">1963</span>
+  <span class="event-copy">
+    <strong>1963：合伙企业年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「合伙企业年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / partnership</span>
+</a>
+<a class="event-row" href="decisions/1964.html" id="year-1964">
+  <span class="event-year">1964</span>
+  <span class="event-copy">
+    <strong>1964：合伙企业年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「合伙企业年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / partnership</span>
+</a>
+<a class="event-row" href="decisions/1965.html" id="year-1965">
   <span class="event-year">1965</span>
   <span class="event-copy">
     <strong>控制 Berkshire Hathaway</strong>
     <small>你买的是股票代码，Buffett 买到的是资本配置平台。</small>
   </span>
-  <span class="event-category">control</span>
+  <span class="event-category">重点年份 / control</span>
 </a>
-<a class="event-row" href="events/1967-insurance-float.html" id="year-1967">
+<a class="event-row" href="decisions/1966.html" id="year-1966">
+  <span class="event-year">1966</span>
+  <span class="event-copy">
+    <strong>1966：载体与退出年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「载体与退出年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / structure</span>
+</a>
+<a class="event-row" href="decisions/1967.html" id="year-1967">
   <span class="event-year">1967</span>
   <span class="event-copy">
     <strong>进入保险，建立浮存金引擎</strong>
     <small>你能学他的耐心，但你学不了他的资金结构。</small>
   </span>
-  <span class="event-category">insurance</span>
+  <span class="event-category">重点年份 / insurance</span>
 </a>
-<a class="event-row" href="events/1973-washington-post-bear-market.html" id="year-1973">
+<a class="event-row" href="decisions/1968.html" id="year-1968">
+  <span class="event-year">1968</span>
+  <span class="event-copy">
+    <strong>1968：载体与退出年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「载体与退出年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / structure</span>
+</a>
+<a class="event-row" href="decisions/1969.html" id="year-1969">
+  <span class="event-year">1969</span>
+  <span class="event-copy">
+    <strong>1969：载体与退出年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「载体与退出年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / structure</span>
+</a>
+<a class="event-row" href="decisions/1970.html" id="year-1970">
+  <span class="event-year">1970</span>
+  <span class="event-copy">
+    <strong>1970：通胀与浮存金年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / float</span>
+</a>
+<a class="event-row" href="decisions/1971.html" id="year-1971">
+  <span class="event-year">1971</span>
+  <span class="event-copy">
+    <strong>1971：通胀与浮存金年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / float</span>
+</a>
+<a class="event-row" href="decisions/1972.html" id="year-1972">
+  <span class="event-year">1972</span>
+  <span class="event-copy">
+    <strong>1972：通胀与浮存金年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / float</span>
+</a>
+<a class="event-row" href="decisions/1973.html" id="year-1973">
   <span class="event-year">1973</span>
   <span class="event-copy">
     <strong>买入 Washington Post，遭遇熊市</strong>
     <small>下跌不是机会，理解价值以后下跌才可能是机会。</small>
   </span>
-  <span class="event-category">bear_market</span>
+  <span class="event-category">重点年份 / bear_market</span>
 </a>
-<a class="event-row" href="events/1976-geico-turning-point.html" id="year-1976">
+<a class="event-row" href="decisions/1974.html" id="year-1974">
+  <span class="event-year">1974</span>
+  <span class="event-copy">
+    <strong>1974：通胀与浮存金年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / float</span>
+</a>
+<a class="event-row" href="decisions/1975.html" id="year-1975">
+  <span class="event-year">1975</span>
+  <span class="event-copy">
+    <strong>1975：通胀与浮存金年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / float</span>
+</a>
+<a class="event-row" href="decisions/1976.html" id="year-1976">
   <span class="event-year">1976</span>
   <span class="event-copy">
     <strong>GEICO 转折点</strong>
     <small>逆向投资不是站到多数人反面，而是知道多数人错在哪里。</small>
   </span>
-  <span class="event-category">insurance</span>
+  <span class="event-category">重点年份 / insurance</span>
 </a>
-<a class="event-row" href="events/1985-textile-shutdown.html" id="year-1985">
+<a class="event-row" href="decisions/1977.html" id="year-1977">
+  <span class="event-year">1977</span>
+  <span class="event-copy">
+    <strong>1977：通胀与浮存金年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / float</span>
+</a>
+<a class="event-row" href="decisions/1978.html" id="year-1978">
+  <span class="event-year">1978</span>
+  <span class="event-copy">
+    <strong>1978：通胀与浮存金年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / float</span>
+</a>
+<a class="event-row" href="decisions/1979.html" id="year-1979">
+  <span class="event-year">1979</span>
+  <span class="event-copy">
+    <strong>1979：通胀与浮存金年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / float</span>
+</a>
+<a class="event-row" href="decisions/1980.html" id="year-1980">
+  <span class="event-year">1980</span>
+  <span class="event-copy">
+    <strong>1980：品牌与特许经营年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / franchise</span>
+</a>
+<a class="event-row" href="decisions/1981.html" id="year-1981">
+  <span class="event-year">1981</span>
+  <span class="event-copy">
+    <strong>1981：品牌与特许经营年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / franchise</span>
+</a>
+<a class="event-row" href="decisions/1982.html" id="year-1982">
+  <span class="event-year">1982</span>
+  <span class="event-copy">
+    <strong>1982：品牌与特许经营年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / franchise</span>
+</a>
+<a class="event-row" href="decisions/1983.html" id="year-1983">
+  <span class="event-year">1983</span>
+  <span class="event-copy">
+    <strong>1983：品牌与特许经营年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / franchise</span>
+</a>
+<a class="event-row" href="decisions/1984.html" id="year-1984">
+  <span class="event-year">1984</span>
+  <span class="event-copy">
+    <strong>1984：品牌与特许经营年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / franchise</span>
+</a>
+<a class="event-row" href="decisions/1985.html" id="year-1985">
   <span class="event-year">1985</span>
   <span class="event-copy">
     <strong>纺织业务关停</strong>
     <small>长期主义不是死扛，死扛只是慢速亏损。</small>
   </span>
-  <span class="event-category">mistake</span>
+  <span class="event-category">重点年份 / mistake</span>
 </a>
-<a class="event-row" href="events/1988-coca-cola.html" id="year-1988">
+<a class="event-row" href="decisions/1986.html" id="year-1986">
+  <span class="event-year">1986</span>
+  <span class="event-copy">
+    <strong>1986：品牌与特许经营年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / franchise</span>
+</a>
+<a class="event-row" href="decisions/1987.html" id="year-1987">
+  <span class="event-year">1987</span>
+  <span class="event-copy">
+    <strong>1987：品牌与特许经营年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / franchise</span>
+</a>
+<a class="event-row" href="decisions/1988.html" id="year-1988">
   <span class="event-year">1988</span>
   <span class="event-copy">
     <strong>开始买入 Coca-Cola</strong>
     <small>你学到的是买可乐，没学到的是判断好生意的能力。</small>
   </span>
-  <span class="event-category">quality</span>
+  <span class="event-category">重点年份 / quality</span>
 </a>
-<a class="event-row" href="events/1996-geico-acquisition.html" id="year-1996">
+<a class="event-row" href="decisions/1989.html" id="year-1989">
+  <span class="event-year">1989</span>
+  <span class="event-copy">
+    <strong>1989：品牌与特许经营年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / franchise</span>
+</a>
+<a class="event-row" href="decisions/1990.html" id="year-1990">
+  <span class="event-year">1990</span>
+  <span class="event-copy">
+    <strong>1990：全球化与泡沫年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / discipline</span>
+</a>
+<a class="event-row" href="decisions/1991.html" id="year-1991">
+  <span class="event-year">1991</span>
+  <span class="event-copy">
+    <strong>1991：全球化与泡沫年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / discipline</span>
+</a>
+<a class="event-row" href="decisions/1992.html" id="year-1992">
+  <span class="event-year">1992</span>
+  <span class="event-copy">
+    <strong>1992：全球化与泡沫年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / discipline</span>
+</a>
+<a class="event-row" href="decisions/1993.html" id="year-1993">
+  <span class="event-year">1993</span>
+  <span class="event-copy">
+    <strong>1993：全球化与泡沫年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / discipline</span>
+</a>
+<a class="event-row" href="decisions/1994.html" id="year-1994">
+  <span class="event-year">1994</span>
+  <span class="event-copy">
+    <strong>1994：全球化与泡沫年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / discipline</span>
+</a>
+<a class="event-row" href="decisions/1995.html" id="year-1995">
+  <span class="event-year">1995</span>
+  <span class="event-copy">
+    <strong>1995：全球化与泡沫年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / discipline</span>
+</a>
+<a class="event-row" href="decisions/1996.html" id="year-1996">
   <span class="event-year">1996</span>
   <span class="event-copy">
     <strong>全资收购 GEICO</strong>
     <small>Buffett 的加仓有时买到控制权，你的加仓只是更高仓位。</small>
   </span>
-  <span class="event-category">acquisition</span>
+  <span class="event-category">重点年份 / acquisition</span>
 </a>
-<a class="event-row" href="events/1999-dotcom-discipline.html" id="year-1999">
+<a class="event-row" href="decisions/1997.html" id="year-1997">
+  <span class="event-year">1997</span>
+  <span class="event-copy">
+    <strong>1997：全球化与泡沫年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / discipline</span>
+</a>
+<a class="event-row" href="decisions/1998.html" id="year-1998">
+  <span class="event-year">1998</span>
+  <span class="event-copy">
+    <strong>1998：全球化与泡沫年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / discipline</span>
+</a>
+<a class="event-row" href="decisions/1999.html" id="year-1999">
   <span class="event-year">1999</span>
   <span class="event-copy">
     <strong>科技泡沫中跑输</strong>
     <small>能力圈不是护城河，懒惰才需要借口。</small>
   </span>
-  <span class="event-category">discipline</span>
+  <span class="event-category">重点年份 / discipline</span>
 </a>
-<a class="event-row" href="events/2008-financial-crisis-capital.html" id="year-2008">
+<a class="event-row" href="decisions/2000.html" id="year-2000">
+  <span class="event-year">2000</span>
+  <span class="event-copy">
+    <strong>2000：危机资本年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / crisis</span>
+</a>
+<a class="event-row" href="decisions/2001.html" id="year-2001">
+  <span class="event-year">2001</span>
+  <span class="event-copy">
+    <strong>2001：危机资本年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / crisis</span>
+</a>
+<a class="event-row" href="decisions/2002.html" id="year-2002">
+  <span class="event-year">2002</span>
+  <span class="event-copy">
+    <strong>2002：危机资本年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / crisis</span>
+</a>
+<a class="event-row" href="decisions/2003.html" id="year-2003">
+  <span class="event-year">2003</span>
+  <span class="event-copy">
+    <strong>2003：危机资本年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / crisis</span>
+</a>
+<a class="event-row" href="decisions/2004.html" id="year-2004">
+  <span class="event-year">2004</span>
+  <span class="event-copy">
+    <strong>2004：危机资本年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / crisis</span>
+</a>
+<a class="event-row" href="decisions/2005.html" id="year-2005">
+  <span class="event-year">2005</span>
+  <span class="event-copy">
+    <strong>2005：危机资本年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / crisis</span>
+</a>
+<a class="event-row" href="decisions/2006.html" id="year-2006">
+  <span class="event-year">2006</span>
+  <span class="event-copy">
+    <strong>2006：危机资本年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / crisis</span>
+</a>
+<a class="event-row" href="decisions/2007.html" id="year-2007">
+  <span class="event-year">2007</span>
+  <span class="event-copy">
+    <strong>2007：危机资本年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / crisis</span>
+</a>
+<a class="event-row" href="decisions/2008.html" id="year-2008">
   <span class="event-year">2008</span>
   <span class="event-copy">
     <strong>金融危机中的资本提供者</strong>
     <small>你不是危机里的 Buffett，你只是危机里的价格接受者。</small>
   </span>
-  <span class="event-category">crisis</span>
+  <span class="event-category">重点年份 / crisis</span>
 </a>
-<a class="event-row" href="events/2009-bnsf.html" id="year-2009">
+<a class="event-row" href="decisions/2009.html" id="year-2009">
   <span class="event-year">2009</span>
   <span class="event-copy">
     <strong>宣布收购 BNSF</strong>
     <small>Buffett 押注美国时买下基础设施，你押注美国时只是买入波动。</small>
   </span>
-  <span class="event-category">acquisition</span>
+  <span class="event-category">重点年份 / acquisition</span>
 </a>
-<a class="event-row" href="events/2016-apple.html" id="year-2016">
+<a class="event-row" href="decisions/2010.html" id="year-2010">
+  <span class="event-year">2010</span>
+  <span class="event-copy">
+    <strong>2010：规模约束年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / scale</span>
+</a>
+<a class="event-row" href="decisions/2011.html" id="year-2011">
+  <span class="event-year">2011</span>
+  <span class="event-copy">
+    <strong>2011：规模约束年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / scale</span>
+</a>
+<a class="event-row" href="decisions/2012.html" id="year-2012">
+  <span class="event-year">2012</span>
+  <span class="event-copy">
+    <strong>2012：规模约束年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / scale</span>
+</a>
+<a class="event-row" href="decisions/2013.html" id="year-2013">
+  <span class="event-year">2013</span>
+  <span class="event-copy">
+    <strong>2013：规模约束年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / scale</span>
+</a>
+<a class="event-row" href="decisions/2014.html" id="year-2014">
+  <span class="event-year">2014</span>
+  <span class="event-copy">
+    <strong>2014：规模约束年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / scale</span>
+</a>
+<a class="event-row" href="decisions/2015.html" id="year-2015">
+  <span class="event-year">2015</span>
+  <span class="event-copy">
+    <strong>2015：规模约束年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / scale</span>
+</a>
+<a class="event-row" href="decisions/2016.html" id="year-2016">
   <span class="event-year">2016</span>
   <span class="event-copy">
     <strong>Apple 成为公开股权核心仓位</strong>
     <small>Buffett 买 Apple 不是追科技，是买消费垄断和现金流。</small>
   </span>
-  <span class="event-category">public_equity</span>
+  <span class="event-category">重点年份 / public_equity</span>
 </a>
-<a class="event-row" href="events/2020-covid-balance-sheet.html" id="year-2020">
+<a class="event-row" href="decisions/2017.html" id="year-2017">
+  <span class="event-year">2017</span>
+  <span class="event-copy">
+    <strong>2017：规模约束年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / scale</span>
+</a>
+<a class="event-row" href="decisions/2018.html" id="year-2018">
+  <span class="event-year">2018</span>
+  <span class="event-copy">
+    <strong>2018：规模约束年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / scale</span>
+</a>
+<a class="event-row" href="decisions/2019.html" id="year-2019">
+  <span class="event-year">2019</span>
+  <span class="event-copy">
+    <strong>2019：规模约束年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / scale</span>
+</a>
+<a class="event-row" href="decisions/2020.html" id="year-2020">
   <span class="event-year">2020</span>
   <span class="event-copy">
     <strong>疫情冲击与保守资产负债表</strong>
     <small>现金不是仓位，是身份。Berkshire 的现金和你的现金不是同一种资产。</small>
   </span>
-  <span class="event-category">risk</span>
+  <span class="event-category">重点年份 / risk</span>
 </a>
-<a class="event-row" href="events/2023-munger.html" id="year-2023">
+<a class="event-row" href="decisions/2021.html" id="year-2021">
+  <span class="event-year">2021</span>
+  <span class="event-copy">
+    <strong>2021：韧性与传承年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「韧性与传承年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / resilience</span>
+</a>
+<a class="event-row" href="decisions/2022.html" id="year-2022">
+  <span class="event-year">2022</span>
+  <span class="event-copy">
+    <strong>2022：韧性与传承年度选择</strong>
+    <small>这一年的核心不是照抄动作，而是在「韧性与传承年度选择」中重新判断资本、价格和能力圈。</small>
+  </span>
+  <span class="event-category">年度现场 / resilience</span>
+</a>
+<a class="event-row" href="decisions/2023.html" id="year-2023">
   <span class="event-year">2023</span>
   <span class="event-copy">
     <strong>Charlie Munger 去世</strong>
     <small>你能背 Munger，未必能拥有一个 Munger。</small>
   </span>
-  <span class="event-category">people</span>
+  <span class="event-category">重点年份 / people</span>
 </a>
-<a class="event-row" href="events/2024-sixty-year-scorecard.html" id="year-2024">
+<a class="event-row" href="decisions/2024.html" id="year-2024">
   <span class="event-year">2024</span>
   <span class="event-copy">
     <strong>60 年成绩单：5,502,284%</strong>
     <small>你看到的是复利，没看到的是机器。</small>
   </span>
-  <span class="event-category">scorecard</span>
+  <span class="event-category">重点年份 / scorecard</span>
 </a>
       </div>
     </section>
@@ -769,7 +1351,7 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
 
   <script>
     const DATA = [{"year": 1957, "buffett": 1.104, "sp500": 0.85686744, "dow": 0.87230464, "buffettReturn": 10.4, "sp500Return": -14.3133, "dowReturn": -12.7695, "buffettSource": "Buffett Partnership gain"}, {"year": 1958, "buffett": 1.555536, "sp500": 1.18298696, "dow": 1.16853865, "buffettReturn": 40.9, "sp500Return": 38.0595, "dowReturn": 33.9599, "buffettSource": "Buffett Partnership gain"}, {"year": 1959, "buffett": 1.95841982, "sp500": 1.28326552, "dow": 1.36016177, "buffettReturn": 25.9, "sp500Return": 8.4767, "dowReturn": 16.3985, "buffettSource": "Buffett Partnership gain"}, {"year": 1960, "buffett": 2.40493954, "sp500": 1.24512541, "dow": 1.23308707, "buffettReturn": 22.8, "sp500Return": -2.9721, "dowReturn": -9.3426, "buffettSource": "Buffett Partnership gain"}, {"year": 1961, "buffett": 3.50880679, "sp500": 1.5331049, "dow": 1.46383166, "buffettReturn": 45.9, "sp500Return": 23.1286, "dowReturn": 18.7128, "buffettSource": "Buffett Partnership gain"}, {"year": 1962, "buffett": 3.99653094, "sp500": 1.3520463, "dow": 1.30558392, "buffettReturn": 13.9, "sp500Return": -11.8099, "dowReturn": -10.8105, "buffettSource": "Buffett Partnership gain"}, {"year": 1963, "buffett": 5.54318841, "sp500": 1.6074566, "dow": 1.52751917, "buffettReturn": 38.7, "sp500Return": 18.8906, "dowReturn": 16.9989, "buffettSource": "Buffett Partnership gain"}, {"year": 1964, "buffett": 7.08419479, "sp500": 1.81594179, "dow": 1.75011512, "buffettReturn": 27.8, "sp500Return": 12.9699, "dowReturn": 14.5724, "buffettSource": "Buffett Partnership gain"}, {"year": 1965, "buffett": 10.59087121, "sp500": 1.98050148, "dow": 1.94057701, "buffettReturn": 49.5, "sp500Return": 9.0619, "dowReturn": 10.8828, "buffettSource": "Berkshire per-share market value"}, {"year": 1966, "buffett": 10.23078159, "sp500": 1.7212343, "dow": 1.57304743, "buffettReturn": -3.4, "sp500Return": -13.091, "dowReturn": -18.9392, "buffettSource": "Berkshire per-share market value"}, {"year": 1967, "buffett": 11.59147554, "sp500": 2.06706675, "dow": 1.81214087, "buffettReturn": 13.3, "sp500Return": 20.0921, "dowReturn": 15.1994, "buffettSource": "Berkshire per-share market value"}, {"year": 1968, "buffett": 20.60964352, "sp500": 2.22541257, "dow": 1.88950287, "buffettReturn": 77.8, "sp500Return": 7.6604, "dowReturn": 4.2691, "buffettSource": "Berkshire per-share market value"}, {"year": 1969, "buffett": 24.60791436, "sp500": 1.97257341, "dow": 1.60241856, "buffettReturn": 19.4, "sp500Return": -11.3615, "dowReturn": -15.1936, "buffettSource": "Berkshire per-share market value"}, {"year": 1970, "buffett": 23.4759503, "sp500": 1.97450193, "dow": 1.6796204, "buffettReturn": -4.6, "sp500Return": 0.0978, "dowReturn": 4.8178, "buffettSource": "Berkshire per-share market value"}, {"year": 1971, "buffett": 42.37409029, "sp500": 2.18748662, "dow": 1.78228923, "buffettReturn": 80.5, "sp500Return": 10.7868, "dowReturn": 6.1126, "buffettSource": "Berkshire per-share market value"}, {"year": 1972, "buffett": 45.8063916, "sp500": 2.52946235, "dow": 2.04220474, "buffettReturn": 8.1, "sp500Return": 15.6333, "dowReturn": 14.5832, "buffettSource": "Berkshire per-share market value"}, {"year": 1973, "buffett": 44.66123181, "sp500": 2.09020799, "dow": 1.70352574, "buffettReturn": -2.5, "sp500Return": -17.3655, "dowReturn": -16.584, "buffettSource": "Berkshire per-share market value"}, {"year": 1974, "buffett": 22.91121192, "sp500": 1.46903793, "dow": 1.23378782, "buffettReturn": -48.7, "sp500Return": -29.7181, "dowReturn": -27.5745, "buffettSource": "Berkshire per-share market value"}, {"year": 1975, "buffett": 23.48399222, "sp500": 1.93250495, "dow": 1.70662903, "buffettReturn": 2.5, "sp500Return": 31.549, "dowReturn": 38.3244, "buffettSource": "Berkshire per-share market value"}, {"year": 1976, "buffett": 53.84879415, "sp500": 2.30254989, "dow": 2.01143212, "buffettReturn": 129.3, "sp500Return": 19.1485, "dowReturn": 17.86, "buffettSource": "Berkshire per-share market value"}, {"year": 1977, "buffett": 79.05002981, "sp500": 2.03771164, "dow": 1.66410395, "buffettReturn": 46.8, "sp500Return": -11.502, "dowReturn": -17.2677, "buffettSource": "Berkshire per-share market value"}, {"year": 1978, "buffett": 90.51228414, "sp500": 2.059353, "dow": 1.61172843, "buffettReturn": 14.5, "sp500Return": 1.062, "dowReturn": -3.1474, "buffettSource": "Berkshire per-share market value"}, {"year": 1979, "buffett": 183.28737538, "sp500": 2.31283494, "dow": 1.67919995, "buffettReturn": 102.5, "sp500Return": 12.3088, "dowReturn": 4.1863, "buffettSource": "Berkshire per-share market value"}, {"year": 1980, "buffett": 243.4056345, "sp500": 2.90893507, "dow": 1.93002583, "buffettReturn": 32.8, "sp500Return": 25.7736, "dowReturn": 14.9372, "buffettSource": "Berkshire per-share market value"}, {"year": 1981, "buffett": 320.80862627, "sp500": 2.62588403, "dow": 1.75185697, "buffettReturn": 31.8, "sp500Return": -9.7304, "dowReturn": -9.2314, "buffettSource": "Berkshire per-share market value"}, {"year": 1982, "buffett": 443.99913876, "sp500": 3.01349914, "dow": 2.09530102, "buffettReturn": 38.4, "sp500Return": 14.7613, "dowReturn": 19.6046, "buffettSource": "Berkshire per-share market value"}, {"year": 1983, "buffett": 750.3585445, "sp500": 3.53396184, "dow": 2.51995115, "buffettReturn": 69.0, "sp500Return": 17.271, "dowReturn": 20.2668, "buffettSource": "Berkshire per-share market value"}, {"year": 1984, "buffett": 730.0988638, "sp500": 3.58345858, "dow": 2.42571125, "buffettReturn": -2.7, "sp500Return": 1.4006, "dowReturn": -3.7398, "buffettSource": "Berkshire per-share market value"}, {"year": 1985, "buffett": 1414.20149918, "sp500": 4.52710536, "dow": 3.09662242, "buffettReturn": 93.7, "sp500Return": 26.3334, "dowReturn": 27.6583, "buffettSource": "Berkshire per-share market value"}, {"year": 1986, "buffett": 1615.01811207, "sp500": 5.18898667, "dow": 3.79592368, "buffettReturn": 14.2, "sp500Return": 14.6204, "dowReturn": 22.5827, "buffettSource": "Berkshire per-share market value"}, {"year": 1987, "buffett": 1689.30894522, "sp500": 5.29419352, "dow": 3.88177468, "buffettReturn": 4.6, "sp500Return": 2.0275, "dowReturn": 2.2617, "buffettSource": "Berkshire per-share market value"}, {"year": 1988, "buffett": 2691.06914974, "sp500": 5.95071807, "dow": 4.34174225, "buffettReturn": 59.3, "sp500Return": 12.4008, "dowReturn": 11.8494, "buffettSource": "Berkshire per-share market value"}, {"year": 1989, "buffett": 4967.71365042, "sp500": 7.57231643, "dow": 5.51224298, "buffettReturn": 84.6, "sp500Return": 27.2505, "dowReturn": 26.9592, "buffettSource": "Berkshire per-share market value"}, {"year": 1990, "buffett": 3820.17179717, "sp500": 7.07563776, "dow": 5.27290928, "buffettReturn": -23.1, "sp500Return": -6.5591, "dowReturn": -4.3419, "buffettSource": "Berkshire per-share market value"}, {"year": 1991, "buffett": 5180.15295697, "sp500": 8.93700477, "dow": 6.34438505, "buffettReturn": 35.6, "sp500Return": 26.3067, "dowReturn": 20.3204, "buffettSource": "Berkshire per-share market value"}, {"year": 1992, "buffett": 6723.83853814, "sp500": 9.33597618, "dow": 6.60922578, "buffettReturn": 29.8, "sp500Return": 4.4643, "dowReturn": 4.1744, "buffettSource": "Berkshire per-share market value"}, {"year": 1993, "buffett": 9339.41172948, "sp500": 9.99464389, "dow": 7.51614712, "buffettReturn": 38.9, "sp500Return": 7.0552, "dowReturn": 13.7221, "buffettSource": "Berkshire per-share market value"}, {"year": 1994, "buffett": 11674.26466185, "sp500": 9.84079724, "dow": 7.67701764, "buffettReturn": 25.0, "sp500Return": -1.5393, "dowReturn": 2.1403, "buffettSource": "Berkshire per-share market value"}, {"year": 1995, "buffett": 18375.29257775, "sp500": 13.19755768, "dow": 10.24509981, "buffettReturn": 57.4, "sp500Return": 34.1107, "dowReturn": 33.4516, "buffettSource": "Berkshire per-share market value"}, {"year": 1996, "buffett": 19514.56071757, "sp500": 15.87186671, "dow": 12.91022484, "buffettReturn": 6.2, "sp500Return": 20.2637, "dowReturn": 26.0137, "buffettSource": "Berkshire per-share market value"}, {"year": 1997, "buffett": 26325.14240801, "sp500": 20.79344398, "dow": 15.83328328, "buffettReturn": 34.9, "sp500Return": 31.0082, "dowReturn": 22.6414, "buffettSource": "Berkshire per-share market value"}, {"year": 1998, "buffett": 40066.86674499, "sp500": 26.33876213, "dow": 18.38234529, "buffettReturn": 52.2, "sp500Return": 26.6686, "dowReturn": 16.0994, "buffettSource": "Berkshire per-share market value"}, {"year": 1999, "buffett": 32093.56026273, "sp500": 31.48168112, "dow": 23.01863976, "buffettReturn": -19.9, "sp500Return": 19.526, "dowReturn": 25.2215, "buffettSource": "Berkshire per-share market value"}, {"year": 2000, "buffett": 40630.44729262, "sp500": 28.28969533, "dow": 21.59659239, "buffettReturn": 26.6, "sp500Return": -10.1392, "dowReturn": -6.1778, "buffettSource": "Berkshire per-share market value"}, {"year": 2001, "buffett": 43271.42636664, "sp500": 24.59995717, "dow": 20.06426812, "buffettReturn": 6.5, "sp500Return": -13.0427, "dowReturn": -7.0952, "buffettSource": "Berkshire per-share market value"}, {"year": 2002, "buffett": 41627.11216471, "sp500": 18.85194004, "dow": 16.70096302, "buffettReturn": -3.8, "sp500Return": -23.366, "dowReturn": -16.7627, "buffettSource": "Berkshire per-share market value"}, {"year": 2003, "buffett": 48204.19588673, "sp500": 23.82515722, "dow": 20.93002583, "buffettReturn": 15.8, "sp500Return": 26.3804, "dowReturn": 25.3223, "buffettSource": "Berkshire per-share market value"}, {"year": 2004, "buffett": 50276.97630986, "sp500": 25.9678614, "dow": 21.58890424, "buffettReturn": 4.3, "sp500Return": 8.9935, "dowReturn": 3.148, "buffettSource": "Berkshire per-share market value"}, {"year": 2005, "buffett": 50679.19212034, "sp500": 26.7471628, "dow": 21.45774521, "buffettReturn": 0.8, "sp500Return": 3.001, "dowReturn": -0.6075, "buffettSource": "Berkshire per-share market value"}, {"year": 2006, "buffett": 62892.87742134, "sp500": 30.38997438, "dow": 24.95274991, "buffettReturn": 24.1, "sp500Return": 13.6194, "dowReturn": 16.2878, "buffettSource": "Berkshire per-share market value"}, {"year": 2007, "buffett": 80943.13324127, "sp500": 31.46261073, "dow": 26.55779126, "buffettReturn": 28.7, "sp500Return": 3.5296, "dowReturn": 6.4323, "buffettSource": "Berkshire per-share market value"}, {"year": 2008, "buffett": 55203.21687054, "sp500": 19.35397548, "dow": 17.57140569, "buffettReturn": -31.8, "sp500Return": -38.4858, "dowReturn": -33.8371, "buffettSource": "Berkshire per-share market value"}, {"year": 2009, "buffett": 56693.70372605, "sp500": 23.89329375, "dow": 20.87823092, "buffettReturn": 2.7, "sp500Return": 23.4542, "dowReturn": 18.8194, "buffettSource": "Berkshire per-share market value"}, {"year": 2010, "buffett": 68826.15632342, "sp500": 26.94750512, "dow": 23.17959037, "buffettReturn": 21.4, "sp500Return": 12.7827, "dowReturn": 11.0228, "buffettSource": "Berkshire per-share market value"}, {"year": 2011, "buffett": 65591.32697622, "sp500": 26.9466472, "dow": 24.46104871, "buffettReturn": -4.7, "sp500Return": -0.0032, "dowReturn": 5.5284, "buffettSource": "Berkshire per-share market value"}, {"year": 2012, "buffett": 76610.66990823, "sp500": 30.55903144, "dow": 26.23609026, "buffettReturn": 16.8, "sp500Return": 13.4057, "dowReturn": 7.2566, "buffettSource": "Berkshire per-share market value"}, {"year": 2013, "buffett": 101662.35896822, "sp500": 39.60488661, "dow": 33.18849981, "buffettReturn": 32.7, "sp500Return": 29.6012, "dowReturn": 26.4994, "buffettSource": "Berkshire per-share market value"}, {"year": 2014, "buffett": 129111.19588964, "sp500": 44.1161342, "dow": 35.683965, "buffettReturn": 27.0, "sp500Return": 11.3906, "dowReturn": 7.5191, "buffettSource": "Berkshire per-share market value"}, {"year": 2015, "buffett": 112972.29640343, "sp500": 43.79558649, "dow": 34.88704026, "buffettReturn": -12.5, "sp500Return": -0.7266, "dowReturn": -2.2333, "buffettSource": "Berkshire per-share market value"}, {"year": 2016, "buffett": 139407.81376184, "sp500": 47.97150559, "dow": 39.56714117, "buffettReturn": 23.4, "sp500Return": 9.535, "dowReturn": 13.415, "buffettSource": "Berkshire per-share market value"}, {"year": 2017, "buffett": 169938.12497568, "sp500": 57.28755544, "dow": 49.49090035, "buffettReturn": 21.9, "sp500Return": 19.42, "dowReturn": 25.0808, "buffettSource": "Berkshire per-share market value"}, {"year": 2018, "buffett": 174696.392475, "sp500": 53.71438174, "dow": 46.70442669, "buffettReturn": 2.8, "sp500Return": -6.2373, "dowReturn": -5.6303, "buffettSource": "Berkshire per-share market value"}, {"year": 2019, "buffett": 193912.99564725, "sp500": 69.22605863, "dow": 57.1374446, "buffettReturn": 11.0, "sp500Return": 28.8781, "dowReturn": 22.3384, "buffettSource": "Berkshire per-share market value"}, {"year": 2020, "buffett": 198566.90754278, "sp500": 80.48147023, "dow": 61.27791553, "buffettReturn": 2.4, "sp500Return": 16.2589, "dowReturn": 7.2465, "buffettSource": "Berkshire per-share market value"}, {"year": 2021, "buffett": 257342.71217544, "sp500": 102.12514169, "dow": 72.75372051, "buffettReturn": 29.6, "sp500Return": 26.8927, "dowReturn": 18.7275, "buffettSource": "Berkshire per-share market value"}, {"year": 2022, "buffett": 267636.42066246, "sp500": 82.26912686, "dow": 66.36484674, "buffettReturn": 4.0, "sp500Return": -19.4428, "dowReturn": -8.7815, "buffettSource": "Berkshire per-share market value"}, {"year": 2023, "buffett": 309922.97512713, "sp500": 102.2033483, "dow": 75.45906473, "buffettReturn": 15.8, "sp500Return": 24.2305, "dowReturn": 13.7034, "buffettSource": "Berkshire per-share market value"}, {"year": 2024, "buffett": 388953.33378455, "sp500": 126.02592915, "dow": 85.17872695, "buffettReturn": 25.5, "sp500Return": 23.309, "dowReturn": 12.8807, "buffettSource": "Berkshire per-share market value"}];
-    const EVENTS = [{"year": 1957, "slug": "1957-partnership-first-scorecard", "title": "合伙企业第一份成绩单", "category": "partnership", "impact": "在道指下跌的一年，合伙企业仍实现正收益，确立了熊市相对表现的主线。", "surfaceStory": "Buffett 在熊市里仍然赚钱，所以普通人也应该学习熊市防守和相对收益。", "hiddenCondition": "早期合伙企业规模小、市场信息效率低，且投资人用多年周期评价他，不是每天看账户波动的散户环境。", "mislearningRisk": "把“熊市不亏”理解成个人也应该每年战胜市场，最后在短期波动里频繁换策略。", "realLesson": "可学的是评价周期和相对思维，不是幻想每一年都能绝对赚钱。", "verdict": "你能学他的衡量方式，学不了他的早期市场环境。", "sceneSetting": "你刚开始管理合伙资本，美国经济进入衰退，市场下跌。外界不会因为你年轻就降低评价标准，合伙人真正关心的是：坏年份里，你到底有没有一套可执行的判断方式。", "readerDecision": "如果你是 Buffett，你会追求短期绝对收益，还是把目标定为长期、相对市场更好的表现？你能不能忍受用三到五年证明自己？", "shuToAvoid": "把巴菲特的早期成绩误读成每年都要赢，最后被短期排名牵着走。", "daoToLearn": "道在评价体系：先定义什么叫正确表现，再让策略为这个评价体系服务。", "macroRegime": "战后美国扩张早期，消费社会和股票市场仍在重新定价工业化后的企业利润。", "dollarContext": "布雷顿森林体系下美元仍锚定黄金，美元信用是战后资本秩序的中心。", "americaTailwind": "Buffett 的早期机会来自美国本土企业、分散市场和仍不充分的信息效率。", "globalShock": "1957-1958 年美国经济衰退提醒投资者：国际秩序稳定不等于商业周期消失。", "letterFocus": "不预测市场，寻找低估证券；坏年份更容易看出相对优势。", "world": "1957-1958 年美国经济衰退期间，道指承压。", "url": "events/1957-partnership-first-scorecard.html"}, {"year": 1962, "slug": "1962-partnership-consolidation", "title": "合伙企业合并成 Buffett Partnership Ltd.", "category": "structure", "impact": "分散的合伙结构被统一，投资业绩和资本配置从此有了更清晰的载体。", "surfaceStory": "Buffett 把分散合伙企业整合起来，说明优秀投资人应该集中控制资本。", "hiddenCondition": "他控制的是愿意长期委托的合伙资本，并且已经用早期业绩建立信任；普通人没有这种资本组织权。", "mislearningRisk": "把“集中管理”误学成个人账户高度集中，忽略资金来源、期限和信任结构。", "realLesson": "可学的是用统一口径审视长期业绩，不是模仿他的资本组织能力。", "verdict": "Buffett 不是只会选股，他先拥有了能承载策略的资本结构。", "sceneSetting": "你已经有多个合伙企业，也有了早期业绩。现在的问题不只是买什么股票，而是资本如何被组织、如何被信任、如何被长期评价。", "readerDecision": "如果你是 Buffett，你会继续分散管理多个小结构，还是把资本、口径和责任集中起来？你能不能让别人把长期资金交给你？", "shuToAvoid": "把集中管理误学成个人账户集中持仓，却没有长期资本和委托信任。", "daoToLearn": "道在结构：投资能力需要合适的载体，否则好判断也会被坏资金期限毁掉。", "macroRegime": "冷战高压期，美国企业利润和资本市场在地缘风险中继续扩张。", "dollarContext": "美元仍是战后体系核心货币，资本以美元资产作为安全和收益的共同锚点。", "americaTailwind": "合伙企业能以美国证券为主要猎场，本身就是美元资产深度和法治市场的红利。", "globalShock": "古巴导弹危机把核战争风险推到市场面前，但美国资本市场没有失去长期定价功能。", "letterFocus": "用三到五年评估投资表现，年度涨跌不是质量本身。", "world": "1962 年古巴导弹危机加剧市场波动，但合伙企业继续强调相对业绩。", "url": "events/1962-partnership-consolidation.html"}, {"year": 1965, "slug": "1965-berkshire-control", "title": "控制 Berkshire Hathaway", "category": "control", "impact": "一笔纺织股投资变成控制权交易，后来成为资本配置平台。", "surfaceStory": "买下 Berkshire 是一笔经典便宜股投资，后来变成巨大成功。", "hiddenCondition": "这不是普通股票买卖，而是控制权交易；控制权让资本配置、并购和现金再分配成为可能。", "mislearningRisk": "把便宜股当成 Berkshire 式机会，买入后却没有任何改变企业命运的权力。", "realLesson": "可学的是承认便宜不等于好生意，以及错误资产也要重新配置。", "verdict": "你买的是股票代码，Buffett 买到的是资本配置平台。", "sceneSetting": "你买到一家便宜的纺织公司，但它不是好生意。市场给了你价格，现实给了你一个低回报业务。你要面对的是：便宜和优秀不是一回事。", "readerDecision": "如果你是 Buffett，你会继续证明自己买得便宜，还是承认原始判断不完美，把控制权变成资本配置平台？", "shuToAvoid": "只学买便宜股，却没有控制权，也没有改变企业资本用途的能力。", "daoToLearn": "道在纠错：真正厉害的不是从不犯错，而是把错误资产重新放进更好的结构里。", "macroRegime": "美国战后繁荣进入后期，传统制造业和资本市场估值开始分化。", "dollarContext": "美元黄金锚仍在，但美国财政和国际收支压力已经为 1971 年转折埋下伏笔。", "americaTailwind": "控制 Berkshire 之所以有价值，是因为美国允许股东控制权、并购和资本再配置长期发挥作用。", "globalShock": "越战和战后财政压力逐渐改变美元体系，也改变未来通胀和资产定价环境。", "letterFocus": "便宜资产不等于好生意，控制权改变了复利路径。", "world": "美国战后扩张进入后期，资本市场估值和商业模式开始分化。", "url": "events/1965-berkshire-control.html"}, {"year": 1967, "slug": "1967-insurance-float", "title": "进入保险，建立浮存金引擎", "category": "insurance", "impact": "National Indemnity 把 Berkshire 从纺织公司推向保险驱动的控股公司。", "surfaceStory": "进入保险后，Buffett 找到了长期复利引擎。", "hiddenCondition": "保险浮存金是低成本、长期、可投资资金，和个人加杠杆完全不是一回事。", "mislearningRisk": "把浮存金误解成“借钱投资”，用短期限、高成本资金模仿长期资本。", "realLesson": "可学的是理解资金成本和资金期限，不是用杠杆冒充浮存金。", "verdict": "你能学他的耐心，但你学不了他的资金结构。", "sceneSetting": "你控制了 Berkshire，但纺织业务不是未来。保险业务出现了，它带来的不是一只股票，而是一种长期、低成本、可投资的资金来源。", "readerDecision": "如果你是 Buffett，你会把保险当作普通生意看，还是看见浮存金能改变整个资本机器？你能不能区分长期资金和危险杠杆？", "shuToAvoid": "把浮存金误学成借钱投资，用短钱模仿长钱。", "daoToLearn": "道在资金性质：同样是钱，期限、成本和稳定性不同，投资命运就完全不同。", "macroRegime": "通胀压力上升，美国金融体系开始进入更复杂的利率和信用周期。", "dollarContext": "低成本长期资金在美元体系里开始变得更稀缺，也更有价值。", "americaTailwind": "保险浮存金能投资美国优质资产，把家庭、汽车、企业风险转化为 Berkshire 的长期资金来源。", "globalShock": "1960 年代后期的财政压力、战争支出和通胀预期让资金成本成为决定长期胜负的变量。", "letterFocus": "保险浮存金让 Berkshire 获得长期、低成本、可投资资金。", "world": "1960 年代后期通胀压力上升，低成本长期资金的价值开始凸显。", "url": "events/1967-insurance-float.html"}, {"year": 1973, "slug": "1973-washington-post-bear-market", "title": "买入 Washington Post，遭遇熊市", "category": "bear_market", "impact": "在市场情绪低迷时买入高质量媒体资产，是价值投资逆向性的典型案例。", "surfaceStory": "Washington Post 说明 Buffett 敢在熊市买入好公司。", "hiddenCondition": "他有估值能力、资本期限和承受多年账面压力的结构，不需要在短期内向市场证明自己。", "mislearningRisk": "看到下跌就加仓，把价格便宜误认为价值便宜。", "realLesson": "可学的是以企业价值作为锚点，不是机械地越跌越买。", "verdict": "下跌不是机会，理解价值以后下跌才可能是机会。", "sceneSetting": "市场恐慌，通胀高企，媒体资产被压低估值。Washington Post 看起来便宜，但你必须判断它是真便宜，还是时代正在毁掉它。", "readerDecision": "如果你是 Buffett，你敢不敢在账面继续下跌时持有？你买的是市场下跌，还是企业价值和定价权？", "shuToAvoid": "把下跌当机会，越跌越买，却没有企业价值判断。", "daoToLearn": "道在锚点：不是逆市场就是对，只有价值判断能把逆向和固执分开。", "macroRegime": "布雷顿森林体系结束后，美国进入高通胀、低增长和估值压缩的年代。", "dollarContext": "美元脱离黄金后，现金购买力更容易被通胀侵蚀，优质资产的定价权变得更重要。", "americaTailwind": "即使在熊市，美国仍有能长期把通胀转嫁给消费者和广告市场的优质企业。", "globalShock": "第一次石油危机把地缘政治、能源价格和美国通胀直接压到投资者账户上。", "letterFocus": "以企业价值而不是市场报价作为决策锚点。", "world": "第一次石油危机、通胀和衰退预期冲击全球市场。", "url": "events/1973-washington-post-bear-market.html"}, {"year": 1976, "slug": "1976-geico-turning-point", "title": "GEICO 转折点", "category": "insurance", "impact": "对 GEICO 的投资把早年理解的保险商业模式转化为 Berkshire 的核心能力。", "surfaceStory": "GEICO 说明 Buffett 能在困境中发现伟大公司。", "hiddenCondition": "他对保险商业模式研究多年，早年就理解 GEICO 的成本结构和承保逻辑。", "mislearningRisk": "把困境反转当成勇敢，买入自己并不理解的烂公司。", "realLesson": "可学的是长期跟踪一个行业直到真正理解，不是困境里盲目抄底。", "verdict": "逆向投资不是站到多数人反面，而是知道多数人错在哪里。", "sceneSetting": "GEICO 陷入困境，但它不是你第一次听说的公司。你早年研究过它，理解成本结构和保险模型。现在市场给了你一次压力测试后的价格。", "readerDecision": "如果你是 Buffett，你会把它当作困境股回避，还是基于多年理解判断它能否活下来？你真的懂这个生意吗？", "shuToAvoid": "把困境投资理解成胆子大，买入自己并不理解的烂公司。", "daoToLearn": "道在准备：机会出现时的果断，来自机会出现前很多年的理解。", "macroRegime": "美国从 1973-1974 年深熊中恢复，但通胀和利率仍然支配资产定价。", "dollarContext": "高通胀环境惩罚现金和固定收益，也奖励能够调整价格、控制成本的商业模式。", "americaTailwind": "GEICO 绑定美国汽车社会和中产家庭风险池，这不是抽象好公司，而是美国生活方式的金融化。", "globalShock": "石油冲击后的经济恢复证明：宏观危机不会平均伤害所有企业，成本结构决定谁能活下来。", "letterFocus": "优秀保险公司的承保纪律和成本结构可以放大长期投资能力。", "world": "1970 年代中期美国市场从深度熊市恢复。", "url": "events/1976-geico-turning-point.html"}, {"year": 1985, "slug": "1985-textile-shutdown", "title": "纺织业务关停", "category": "mistake", "impact": "承认原始业务不可救药，把资本从低回报业务中解放出来。", "surfaceStory": "关闭纺织业务说明 Buffett 能承认错误。", "hiddenCondition": "Berkshire 已经有更好的资本去处，关闭低回报业务不是情绪动作，而是资本再配置。", "mislearningRisk": "把“长期持有”误学成永不认错，在低回报资产里消耗时间。", "realLesson": "可学的是处理沉没成本，不是把坚持包装成价值投资。", "verdict": "长期主义不是死扛，死扛只是慢速亏损。", "sceneSetting": "Berkshire 的纺织业务终于走到终点。继续经营可以维持体面，关停则承认最初那笔便宜股不是好生意。", "readerDecision": "如果你是 Buffett，你会继续讲长期主义，还是停止向低回报业务投入新的资本？你能不能亲手处理自己的旧判断？", "shuToAvoid": "把长期持有误学成永不认错。", "daoToLearn": "道在资本去处：长期主义不是死守，而是让资本持续流向更高回报的地方。", "macroRegime": "Volcker 高利率之后，美国重新压住通胀，资本市场进入长期牛市早期。", "dollarContext": "强美元和高利率重建美元信用，也让低回报传统制造业承压。", "americaTailwind": "Berkshire 能退出纺织，把资本投向美国更高回报部门，这依赖一个足够深的资本市场。", "globalShock": "1980 年代全球制造业竞争加剧，传统美国纺织业务不再享有战后保护性红利。", "letterFocus": "管理层必须处理错误，不能把沉没成本包装成坚持。", "world": "1980 年代美国资本市场进入长期牛市早期。", "url": "events/1985-textile-shutdown.html"}, {"year": 1988, "slug": "1988-coca-cola", "title": "开始买入 Coca-Cola", "category": "quality", "impact": "从烟蒂式便宜股进一步转向高质量品牌和长期持有。", "surfaceStory": "Coca-Cola 说明买好公司长期持有就能成功。", "hiddenCondition": "这是 Buffett 和 Munger 投资框架进化后的结果，背后是几十年商业判断训练、品牌理解和估值纪律。", "mislearningRisk": "把“好公司”简化成知名品牌，忽略价格、护城河变化和再投资能力。", "realLesson": "可学的是好生意和合理价格的结合，不是看到消费品牌就长期持有。", "verdict": "你学到的是买可乐，没学到的是判断好生意的能力。", "sceneSetting": "Coca-Cola 是人人知道的品牌，但人人知道不等于值得买。你要判断的是品牌、分销、定价权和价格之间是否仍有足够空间。", "readerDecision": "如果你是 Buffett，你会因为它是好公司就买，还是要求好公司、好价格和长期再投资逻辑同时成立？", "shuToAvoid": "把买好公司简化成买知名公司。", "daoToLearn": "道在商业质量：好公司不是标签，而是长期现金流、定价权和资本回报的组合。", "macroRegime": "美国消费品牌全球化，美国企业开始更充分收割全球市场。", "dollarContext": "通胀被压制后，长期权益资产重新获得估值空间，品牌定价权变成抗通胀资产。", "americaTailwind": "Coca-Cola 是美国消费文化全球扩张的符号，Buffett 买到的是品牌、分销和美元利润流。", "globalShock": "黑色星期一后市场恐慌仍在，但美国消费品牌的全球需求没有随股价一起崩掉。", "letterFocus": "好生意、护城河和长期再投资，比单纯低估更重要。", "world": "1987 年黑色星期一后，市场恐慌仍未完全消退。", "url": "events/1988-coca-cola.html"}, {"year": 1996, "slug": "1996-geico-acquisition", "title": "全资收购 GEICO", "category": "acquisition", "impact": "把长期研究和部分持股升级为全资控制，保险浮存金基础更稳。", "surfaceStory": "全资收购 GEICO 是长期研究后的果断出手。", "hiddenCondition": "Berkshire 可以从公开股权升级为控制权，把保险业务纳入整个资本机器。", "mislearningRisk": "把长期跟踪误学成只要熟悉一个公司就应该重仓，忽略控制权和经营整合价值。", "realLesson": "可学的是深度理解后再行动，不是用熟悉感替代研究。", "verdict": "Buffett 的加仓有时买到控制权，你的加仓只是更高仓位。", "sceneSetting": "你已经研究 GEICO 很久，也曾在它困难时下注。现在可以全资收购，把一项长期理解变成 Berkshire 内部的保险引擎。", "readerDecision": "如果你是 Buffett，你会满足于持股收益，还是在理解足够深时买下控制权？你有能力经营和配置这家公司吗？", "shuToAvoid": "把加仓理解成信心，却忽略 Buffett 的加仓有时是在买控制权。", "daoToLearn": "道在能力边界：当理解、价格、结构和控制权同时出现时，行动才有意义。", "macroRegime": "冷战后美国全球化红利扩大，金融市场深度和企业并购活动增强。", "dollarContext": "美元资产在全球资本流动中继续占据中心位置，优质美国企业享受更低融资成本。", "americaTailwind": "GEICO 全资并入 Berkshire，把美国汽车保险市场和低成本直销模式变成内部资本机器。", "globalShock": "全球化和互联网前夜扩大了美国企业利润池，也强化了资本市场给赢家的估值溢价。", "letterFocus": "当理解足够深、价格足够合理时，控制权能创造额外价值。", "world": "美国进入互联网泡沫前的高速扩张期。", "url": "events/1996-geico-acquisition.html"}, {"year": 1999, "slug": "1999-dotcom-discipline", "title": "科技泡沫中跑输", "category": "discipline", "impact": "Berkshire 在泡沫年份显著跑输，但没有改变能力圈纪律。", "surfaceStory": "科技泡沫中跑输，证明 Buffett 坚守能力圈。", "hiddenCondition": "他能承受舆论和相对业绩压力，因为 Berkshire 的资本基础和信誉足够稳固。", "mislearningRisk": "把能力圈当成不学习新事物的借口，在变化中把无知包装成纪律。", "realLesson": "可学的是不买不懂的东西，同时持续扩大真正能懂的范围。", "verdict": "能力圈不是护城河，懒惰才需要借口。", "sceneSetting": "互联网股票暴涨，Berkshire 跑输，外界质疑 Buffett 老了。你面对的不只是市场价格，还有声誉压力和时代叙事。", "readerDecision": "如果你是 Buffett，你会为了不落伍而买不懂的科技股，还是接受短期难看，坚持能力圈？同时你会不会继续学习新生意？", "shuToAvoid": "把能力圈当成拒绝学习的借口。", "daoToLearn": "道在诚实：不懂就是不懂，但真正的能力圈也必须能被持续扩展。", "macroRegime": "互联网泡沫把美国成长股推到极端估值，传统价值股短期失去叙事优势。", "dollarContext": "强美元、资本流入和科技乐观主义共同推高美国风险资产。", "americaTailwind": "即使 Berkshire 跑输，美国资本市场仍允许不同风格长期共存并接受最终业绩检验。", "globalShock": "亚洲金融危机后全球资本回流美元资产，强化了美国市场中心地位，也放大了泡沫。", "letterFocus": "不懂的不买，短期相对落后不等于原则失效。", "world": "互联网泡沫推高成长股估值，传统价值股承压。", "url": "events/1999-dotcom-discipline.html"}, {"year": 2008, "slug": "2008-financial-crisis-capital", "title": "金融危机中的资本提供者", "category": "crisis", "impact": "市场流动性枯竭时，Berkshire 的现金和声誉变成交易优势。", "surfaceStory": "金融危机说明 Buffett 能在别人恐惧时贪婪。", "hiddenCondition": "Berkshire 是危机中的资本提供者，拥有现金、信用和交易声誉，可以拿到普通投资者拿不到的条款。", "mislearningRisk": "把危机买入误学成个人账户盲目抄底，忽略流动性、杠杆和收入风险。", "realLesson": "可学的是危机前保留选择权，不是危机中喊口号。", "verdict": "你不是危机里的 Buffett，你只是危机里的价格接受者。", "sceneSetting": "全球金融体系冻结，所有人都在抢美元流动性。Berkshire 股价也跌，但它手里有现金、信用和可以被信任的名字。", "readerDecision": "如果你是 Buffett，你会先保命还是出手提供资本？如果没有永久资本和信用，你是否仍然敢说别人恐惧我贪婪？", "shuToAvoid": "把危机买入理解成抄底口号。", "daoToLearn": "道在位置：危机中重要的不是勇气，而是你到底是资本提供者还是价格接受者。", "macroRegime": "全球金融危机暴露美元信用体系的脆弱性，也显示美联储和美国资产的中心地位。", "dollarContext": "危机中全世界抢美元流动性，Berkshire 手里的美元现金变成稀缺交易筹码。", "americaTailwind": "Buffett 能以美国信用和 Berkshire 声誉成为资本提供者，普通投资者只是价格接受者。", "globalShock": "美国次贷危机变成全球危机，说明美国金融体系的问题会外溢到所有投资者。", "letterFocus": "保持流动性和信用，才能在别人被迫卖出时行动。", "world": "全球金融危机冲击银行、信用市场和实体经济。", "url": "events/2008-financial-crisis-capital.html"}, {"year": 2009, "slug": "2009-bnsf", "title": "宣布收购 BNSF", "category": "acquisition", "impact": "Berkshire 从证券投资进一步扩展到美国基础设施和铁路现金流。", "surfaceStory": "BNSF 是 Buffett 对美国长期经济的重下注。", "hiddenCondition": "Berkshire 能买下整家公司，用全资企业现金流承接长期资本，不是买几股铁路股。", "mislearningRisk": "把宏观信念当成投资理由，忽略自己没有控制权和现金流再配置权。", "realLesson": "可学的是把投资和真实经济现金流连接起来，不是用宏大叙事替代估值。", "verdict": "Buffett 押注美国时买下基础设施，你押注美国时只是买入波动。", "sceneSetting": "金融危机刚过，美国经济还没有恢复信心。BNSF 代表铁路、物流、能源、农业和美国实体经济底盘。", "readerDecision": "如果你是 Buffett，你会等待宏观数据好看，还是在恐惧未散时买下美国经济的基础设施？你能承受这笔长期押注吗？", "shuToAvoid": "用宏大叙事替代估值和现金流。", "daoToLearn": "道在连接：伟大投资不是喊相信未来，而是把未来落实到可拥有、可计价的现金流资产。", "macroRegime": "金融危机后美国进入低利率、量化宽松和缓慢复苏时代。", "dollarContext": "低利率降低长期资产折现率，也让拥有稳定现金流的实体资产更稀缺。", "americaTailwind": "BNSF 是美国货运、能源、农业和消费供应链的基础设施，直接绑定美国经济底盘。", "globalShock": "危机后的政策托底改变资产价格路径，长期资本能买到被恐慌压低的基础设施资产。", "letterFocus": "在美国经济长期增长上押注，用全资企业承接长期资本。", "world": "金融危机后，美国进入低利率和复苏周期。", "url": "events/2009-bnsf.html"}, {"year": 2016, "slug": "2016-apple", "title": "Apple 成为公开股权核心仓位", "category": "public_equity", "impact": "Berkshire 对消费品牌、生态系统和资本回报的理解延伸到科技巨头。", "surfaceStory": "Apple 说明 Buffett 的能力圈也能进化到科技公司。", "hiddenCondition": "他买的是成熟平台、消费者黏性、现金流和回购能力，不是追逐热门科技叙事。", "mislearningRisk": "用 Buffett 买 Apple 证明自己可以买任何科技股，把能力圈扩展误解成追热点。", "realLesson": "可学的是能力圈按商业理解扩展，不是按行业标签扩展。", "verdict": "Buffett 买 Apple 不是追科技，是买消费垄断和现金流。", "sceneSetting": "Apple 已经不是早期科技创业公司，而是成熟平台、消费品牌、现金流机器和回购机器。Buffett 的能力圈开始改变边界。", "readerDecision": "如果你是 Buffett，你会因为科技标签拒绝它，还是重新判断它是不是一个消费者生意？你能否说清楚自己懂的到底是什么？", "shuToAvoid": "用 Buffett 买 Apple 证明自己可以追任何科技热点。", "daoToLearn": "道在重新定义：能力圈不是行业标签，而是你能否理解现金流和用户黏性。", "macroRegime": "移动互联网成熟，美国平台公司成为全球利润池的中心。", "dollarContext": "低利率和全球美元利润回流支撑大型科技公司的回购、现金流和估值。", "americaTailwind": "Apple 把全球消费力、美国品牌、软件生态和资本回报机制集中到一家企业。", "globalShock": "全球化供应链和智能手机普及让美国平台公司赚取全球消费者和开发者的利润。", "letterFocus": "能力圈不是行业标签，而是能否理解消费者黏性和长期现金流。", "world": "移动互联网进入成熟期，平台型公司现金流能力凸显。", "url": "events/2016-apple.html"}, {"year": 2020, "slug": "2020-covid-balance-sheet", "title": "疫情冲击与保守资产负债表", "category": "risk", "impact": "疫情冲击验证了 Berkshire 对流动性和极端风险的长期偏好。", "surfaceStory": "疫情中 Berkshire 保守，说明现金会拖累收益但能防风险。", "hiddenCondition": "Berkshire 的现金是公司级选择权，背后有保险、全资企业和公开股票组合共同支撑。", "mislearningRisk": "把现金管理简化成择时，要么永远满仓，要么永远恐惧。", "realLesson": "可学的是现金的期权价值，不是把现金当作情绪避难所。", "verdict": "现金不是仓位，是身份。Berkshire 的现金和你的现金不是同一种资产。", "sceneSetting": "疫情让市场暴跌又快速反弹。Berkshire 没有像很多人期待那样大举抄底，保守资产负债表显得不够刺激。", "readerDecision": "如果你是 Buffett，你会为了证明自己还敢出手而行动，还是承认极端不确定性下现金本身就是选择权？", "shuToAvoid": "把现金管理变成情绪择时。", "daoToLearn": "道在选择权：有些时候不行动不是怯懦，而是保留未来行动的权利。", "macroRegime": "疫情冲击后，美国用财政和货币扩张托底资产和消费。", "dollarContext": "美元体系先经历流动性挤兑，再经历大规模宽松，现金既是防御也是等待再定价的选择权。", "americaTailwind": "美国政策能力、资本市场深度和大型企业利润恢复速度，让长期资产迅速重新定价。", "globalShock": "COVID-19 同时冲击供应链、消费和货币政策，把宏观风险直接推到每个投资者面前。", "letterFocus": "现金不是拖累，而是在不确定性爆发时保持选择权的资产。", "world": "COVID-19 改变全球经济活动和货币政策路径。", "url": "events/2020-covid-balance-sheet.html"}, {"year": 2023, "slug": "2023-munger", "title": "Charlie Munger 去世", "category": "people", "impact": "Berkshire 的投资文化进入传承阶段，Munger 对“好公司合理价”的影响成为核心遗产。", "surfaceStory": "Munger 去世，Buffett 投资思想进入传承阶段。", "hiddenCondition": "Munger 不是一句“买好公司”的名言，而是几十年反愚蠢、商业判断和人格互补。", "mislearningRisk": "摘录 Munger 金句，却没有建立反思错误和避免愚蠢的系统。", "realLesson": "可学的是思维搭档、反证习惯和减少愚蠢，不是收藏格言。", "verdict": "你能背 Munger，未必能拥有一个 Munger。", "sceneSetting": "Munger 去世，市场开始回顾“好公司合理价”的思想遗产。但真正的问题是：这些思想如何从金句变成决策系统。", "readerDecision": "如果你是 Buffett，你如何在失去最重要的思维搭档后继续保持判断质量？你有自己的反愚蠢机制吗？", "shuToAvoid": "背诵 Munger 金句，把智慧变成社交平台语录。", "daoToLearn": "道在反愚蠢：减少大错，比追求每次聪明更重要。", "macroRegime": "高利率、AI 热潮和地缘摩擦并存，美国资产重新按资本成本和技术垄断定价。", "dollarContext": "高利率强化美元吸引力，也提高普通投资者犯错的机会成本。", "americaTailwind": "Berkshire 继续持有大量美元现金和美国企业权益，仍站在美国资产体系内部。", "globalShock": "俄乌战争后能源、供应链和地缘安全重估，全球资本更关注安全资产和定价权。", "letterFocus": "理性、耐心、反愚蠢，比公式更重要。", "world": "高利率环境重新定价长期资产，市场关注大型科技公司集中度。", "url": "events/2023-munger.html"}, {"year": 2024, "slug": "2024-sixty-year-scorecard", "title": "60 年成绩单：5,502,284%", "category": "scorecard", "impact": "1965-2024 年 Berkshire 总收益 5,502,284%，S&P 500 含股息 39,054%。", "surfaceStory": "60 年 5,502,284% 的成绩单证明复利和长期主义的力量。", "hiddenCondition": "这个结果叠加了美国战后增长、保险浮存金、税务递延、控股平台、声誉交易流和极长寿命。", "mislearningRisk": "看到最终复利曲线，忽略支撑曲线的资本机器，然后把长期持有当作万能答案。", "realLesson": "可学的是复利需要结构承载，不是时间本身会自动奖励所有人。", "verdict": "你看到的是复利，没看到的是机器。", "sceneSetting": "60 年成绩单摆在面前：Berkshire 复利惊人。但这条曲线背后不只有耐心，还有美国、美元、保险、控制权、税务、声誉和寿命。", "readerDecision": "如果你是 Buffett，你能不能在 60 年里反复做少数正确决定，并让结构保护这些决定？如果不能，你到底应该学什么？", "shuToAvoid": "只看最终曲线，把长期持有当作万能答案。", "daoToLearn": "道在系统：复利不是时间自动给的奖励，而是正确判断被正确结构长期承载的结果。", "macroRegime": "美国进入高利率与 AI 资本开支并行阶段，少数大公司主导指数收益。", "dollarContext": "美元购买力长期被通胀侵蚀，但美元资产和全球储备货币地位仍支撑美国资本市场深度。", "americaTailwind": "60 年成绩单背后是美国消费、股东制度、企业利润、美元资产和资本市场共同提供的顺风。", "globalShock": "去全球化、地缘冲突和高利率没有终结美国资产中心地位，反而让安全资产溢价更明显。", "letterFocus": "复利来自长期资本配置、留存收益、保险浮存金和美国经济。", "world": "AI 热潮和高利率并存，Berkshire 继续持有大量现金和美国企业权益。", "url": "events/2024-sixty-year-scorecard.html"}];
+    const EVENTS = [{"year": 1957, "slug": "1957-decision", "title": "合伙企业第一份成绩单", "category": "partnership", "verdict": "你能学他的衡量方式，学不了他的早期市场环境。", "url": "decisions/1957.html", "key": true}, {"year": 1958, "slug": "1958-decision", "title": "1958：合伙企业年度选择", "category": "partnership", "verdict": "这一年的核心不是照抄动作，而是在「合伙企业年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1958.html", "key": false}, {"year": 1959, "slug": "1959-decision", "title": "1959：合伙企业年度选择", "category": "partnership", "verdict": "这一年的核心不是照抄动作，而是在「合伙企业年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1959.html", "key": false}, {"year": 1960, "slug": "1960-decision", "title": "1960：合伙企业年度选择", "category": "partnership", "verdict": "这一年的核心不是照抄动作，而是在「合伙企业年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1960.html", "key": false}, {"year": 1961, "slug": "1961-decision", "title": "1961：合伙企业年度选择", "category": "partnership", "verdict": "这一年的核心不是照抄动作，而是在「合伙企业年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1961.html", "key": false}, {"year": 1962, "slug": "1962-decision", "title": "合伙企业合并成 Buffett Partnership Ltd.", "category": "structure", "verdict": "Buffett 不是只会选股，他先拥有了能承载策略的资本结构。", "url": "decisions/1962.html", "key": true}, {"year": 1963, "slug": "1963-decision", "title": "1963：合伙企业年度选择", "category": "partnership", "verdict": "这一年的核心不是照抄动作，而是在「合伙企业年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1963.html", "key": false}, {"year": 1964, "slug": "1964-decision", "title": "1964：合伙企业年度选择", "category": "partnership", "verdict": "这一年的核心不是照抄动作，而是在「合伙企业年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1964.html", "key": false}, {"year": 1965, "slug": "1965-decision", "title": "控制 Berkshire Hathaway", "category": "control", "verdict": "你买的是股票代码，Buffett 买到的是资本配置平台。", "url": "decisions/1965.html", "key": true}, {"year": 1966, "slug": "1966-decision", "title": "1966：载体与退出年度选择", "category": "structure", "verdict": "这一年的核心不是照抄动作，而是在「载体与退出年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1966.html", "key": false}, {"year": 1967, "slug": "1967-decision", "title": "进入保险，建立浮存金引擎", "category": "insurance", "verdict": "你能学他的耐心，但你学不了他的资金结构。", "url": "decisions/1967.html", "key": true}, {"year": 1968, "slug": "1968-decision", "title": "1968：载体与退出年度选择", "category": "structure", "verdict": "这一年的核心不是照抄动作，而是在「载体与退出年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1968.html", "key": false}, {"year": 1969, "slug": "1969-decision", "title": "1969：载体与退出年度选择", "category": "structure", "verdict": "这一年的核心不是照抄动作，而是在「载体与退出年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1969.html", "key": false}, {"year": 1970, "slug": "1970-decision", "title": "1970：通胀与浮存金年度选择", "category": "float", "verdict": "这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1970.html", "key": false}, {"year": 1971, "slug": "1971-decision", "title": "1971：通胀与浮存金年度选择", "category": "float", "verdict": "这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1971.html", "key": false}, {"year": 1972, "slug": "1972-decision", "title": "1972：通胀与浮存金年度选择", "category": "float", "verdict": "这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1972.html", "key": false}, {"year": 1973, "slug": "1973-decision", "title": "买入 Washington Post，遭遇熊市", "category": "bear_market", "verdict": "下跌不是机会，理解价值以后下跌才可能是机会。", "url": "decisions/1973.html", "key": true}, {"year": 1974, "slug": "1974-decision", "title": "1974：通胀与浮存金年度选择", "category": "float", "verdict": "这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1974.html", "key": false}, {"year": 1975, "slug": "1975-decision", "title": "1975：通胀与浮存金年度选择", "category": "float", "verdict": "这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1975.html", "key": false}, {"year": 1976, "slug": "1976-decision", "title": "GEICO 转折点", "category": "insurance", "verdict": "逆向投资不是站到多数人反面，而是知道多数人错在哪里。", "url": "decisions/1976.html", "key": true}, {"year": 1977, "slug": "1977-decision", "title": "1977：通胀与浮存金年度选择", "category": "float", "verdict": "这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1977.html", "key": false}, {"year": 1978, "slug": "1978-decision", "title": "1978：通胀与浮存金年度选择", "category": "float", "verdict": "这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1978.html", "key": false}, {"year": 1979, "slug": "1979-decision", "title": "1979：通胀与浮存金年度选择", "category": "float", "verdict": "这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1979.html", "key": false}, {"year": 1980, "slug": "1980-decision", "title": "1980：品牌与特许经营年度选择", "category": "franchise", "verdict": "这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1980.html", "key": false}, {"year": 1981, "slug": "1981-decision", "title": "1981：品牌与特许经营年度选择", "category": "franchise", "verdict": "这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1981.html", "key": false}, {"year": 1982, "slug": "1982-decision", "title": "1982：品牌与特许经营年度选择", "category": "franchise", "verdict": "这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1982.html", "key": false}, {"year": 1983, "slug": "1983-decision", "title": "1983：品牌与特许经营年度选择", "category": "franchise", "verdict": "这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1983.html", "key": false}, {"year": 1984, "slug": "1984-decision", "title": "1984：品牌与特许经营年度选择", "category": "franchise", "verdict": "这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1984.html", "key": false}, {"year": 1985, "slug": "1985-decision", "title": "纺织业务关停", "category": "mistake", "verdict": "长期主义不是死扛，死扛只是慢速亏损。", "url": "decisions/1985.html", "key": true}, {"year": 1986, "slug": "1986-decision", "title": "1986：品牌与特许经营年度选择", "category": "franchise", "verdict": "这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1986.html", "key": false}, {"year": 1987, "slug": "1987-decision", "title": "1987：品牌与特许经营年度选择", "category": "franchise", "verdict": "这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1987.html", "key": false}, {"year": 1988, "slug": "1988-decision", "title": "开始买入 Coca-Cola", "category": "quality", "verdict": "你学到的是买可乐，没学到的是判断好生意的能力。", "url": "decisions/1988.html", "key": true}, {"year": 1989, "slug": "1989-decision", "title": "1989：品牌与特许经营年度选择", "category": "franchise", "verdict": "这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1989.html", "key": false}, {"year": 1990, "slug": "1990-decision", "title": "1990：全球化与泡沫年度选择", "category": "discipline", "verdict": "这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1990.html", "key": false}, {"year": 1991, "slug": "1991-decision", "title": "1991：全球化与泡沫年度选择", "category": "discipline", "verdict": "这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1991.html", "key": false}, {"year": 1992, "slug": "1992-decision", "title": "1992：全球化与泡沫年度选择", "category": "discipline", "verdict": "这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1992.html", "key": false}, {"year": 1993, "slug": "1993-decision", "title": "1993：全球化与泡沫年度选择", "category": "discipline", "verdict": "这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1993.html", "key": false}, {"year": 1994, "slug": "1994-decision", "title": "1994：全球化与泡沫年度选择", "category": "discipline", "verdict": "这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1994.html", "key": false}, {"year": 1995, "slug": "1995-decision", "title": "1995：全球化与泡沫年度选择", "category": "discipline", "verdict": "这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1995.html", "key": false}, {"year": 1996, "slug": "1996-decision", "title": "全资收购 GEICO", "category": "acquisition", "verdict": "Buffett 的加仓有时买到控制权，你的加仓只是更高仓位。", "url": "decisions/1996.html", "key": true}, {"year": 1997, "slug": "1997-decision", "title": "1997：全球化与泡沫年度选择", "category": "discipline", "verdict": "这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1997.html", "key": false}, {"year": 1998, "slug": "1998-decision", "title": "1998：全球化与泡沫年度选择", "category": "discipline", "verdict": "这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/1998.html", "key": false}, {"year": 1999, "slug": "1999-decision", "title": "科技泡沫中跑输", "category": "discipline", "verdict": "能力圈不是护城河，懒惰才需要借口。", "url": "decisions/1999.html", "key": true}, {"year": 2000, "slug": "2000-decision", "title": "2000：危机资本年度选择", "category": "crisis", "verdict": "这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/2000.html", "key": false}, {"year": 2001, "slug": "2001-decision", "title": "2001：危机资本年度选择", "category": "crisis", "verdict": "这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/2001.html", "key": false}, {"year": 2002, "slug": "2002-decision", "title": "2002：危机资本年度选择", "category": "crisis", "verdict": "这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/2002.html", "key": false}, {"year": 2003, "slug": "2003-decision", "title": "2003：危机资本年度选择", "category": "crisis", "verdict": "这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/2003.html", "key": false}, {"year": 2004, "slug": "2004-decision", "title": "2004：危机资本年度选择", "category": "crisis", "verdict": "这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/2004.html", "key": false}, {"year": 2005, "slug": "2005-decision", "title": "2005：危机资本年度选择", "category": "crisis", "verdict": "这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/2005.html", "key": false}, {"year": 2006, "slug": "2006-decision", "title": "2006：危机资本年度选择", "category": "crisis", "verdict": "这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/2006.html", "key": false}, {"year": 2007, "slug": "2007-decision", "title": "2007：危机资本年度选择", "category": "crisis", "verdict": "这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/2007.html", "key": false}, {"year": 2008, "slug": "2008-decision", "title": "金融危机中的资本提供者", "category": "crisis", "verdict": "你不是危机里的 Buffett，你只是危机里的价格接受者。", "url": "decisions/2008.html", "key": true}, {"year": 2009, "slug": "2009-decision", "title": "宣布收购 BNSF", "category": "acquisition", "verdict": "Buffett 押注美国时买下基础设施，你押注美国时只是买入波动。", "url": "decisions/2009.html", "key": true}, {"year": 2010, "slug": "2010-decision", "title": "2010：规模约束年度选择", "category": "scale", "verdict": "这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/2010.html", "key": false}, {"year": 2011, "slug": "2011-decision", "title": "2011：规模约束年度选择", "category": "scale", "verdict": "这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/2011.html", "key": false}, {"year": 2012, "slug": "2012-decision", "title": "2012：规模约束年度选择", "category": "scale", "verdict": "这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/2012.html", "key": false}, {"year": 2013, "slug": "2013-decision", "title": "2013：规模约束年度选择", "category": "scale", "verdict": "这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/2013.html", "key": false}, {"year": 2014, "slug": "2014-decision", "title": "2014：规模约束年度选择", "category": "scale", "verdict": "这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/2014.html", "key": false}, {"year": 2015, "slug": "2015-decision", "title": "2015：规模约束年度选择", "category": "scale", "verdict": "这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/2015.html", "key": false}, {"year": 2016, "slug": "2016-decision", "title": "Apple 成为公开股权核心仓位", "category": "public_equity", "verdict": "Buffett 买 Apple 不是追科技，是买消费垄断和现金流。", "url": "decisions/2016.html", "key": true}, {"year": 2017, "slug": "2017-decision", "title": "2017：规模约束年度选择", "category": "scale", "verdict": "这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/2017.html", "key": false}, {"year": 2018, "slug": "2018-decision", "title": "2018：规模约束年度选择", "category": "scale", "verdict": "这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/2018.html", "key": false}, {"year": 2019, "slug": "2019-decision", "title": "2019：规模约束年度选择", "category": "scale", "verdict": "这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/2019.html", "key": false}, {"year": 2020, "slug": "2020-decision", "title": "疫情冲击与保守资产负债表", "category": "risk", "verdict": "现金不是仓位，是身份。Berkshire 的现金和你的现金不是同一种资产。", "url": "decisions/2020.html", "key": true}, {"year": 2021, "slug": "2021-decision", "title": "2021：韧性与传承年度选择", "category": "resilience", "verdict": "这一年的核心不是照抄动作，而是在「韧性与传承年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/2021.html", "key": false}, {"year": 2022, "slug": "2022-decision", "title": "2022：韧性与传承年度选择", "category": "resilience", "verdict": "这一年的核心不是照抄动作，而是在「韧性与传承年度选择」中重新判断资本、价格和能力圈。", "url": "decisions/2022.html", "key": false}, {"year": 2023, "slug": "2023-decision", "title": "Charlie Munger 去世", "category": "people", "verdict": "你能背 Munger，未必能拥有一个 Munger。", "url": "decisions/2023.html", "key": true}, {"year": 2024, "slug": "2024-decision", "title": "60 年成绩单：5,502,284%", "category": "scorecard", "verdict": "你看到的是复利，没看到的是机器。", "url": "decisions/2024.html", "key": true}];
 
     const svg = document.getElementById('returnChart');
     const tooltip = document.getElementById('tooltip');
@@ -784,7 +1366,6 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
     };
     const ns = 'http://www.w3.org/2000/svg';
     const rowByYear = new Map(DATA.map(d => [d.year, d]));
-    const eventByYear = new Map(EVENTS.map(d => [d.year, d]));
 
     function clearSvg() {
       while (svg.firstChild) svg.removeChild(svg.firstChild);
@@ -914,7 +1495,7 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
         if (!row || event.year < state.xDomain[0] || event.year > state.xDomain[1]) continue;
         const x = xScale(event.year, d);
         const y = yScale(row.buffett, d);
-        const circle = make('circle', { class: 'event-dot', cx: x, cy: y, r: 6, tabindex: 0, role: 'link', 'data-url': event.url, 'aria-label': `${event.year} ${event.title}` });
+        const circle = make('circle', { class: event.key ? 'event-dot key' : 'event-dot', cx: x, cy: y, r: event.key ? 6 : 4, tabindex: 0, role: 'link', 'data-url': event.url, 'aria-label': `${event.year} ${event.title}` });
         circle.addEventListener('mouseenter', () => showTooltip(event, row, x, y, d));
         circle.addEventListener('mouseleave', hideTooltip);
         circle.addEventListener('focus', () => showTooltip(event, row, x, y, d));

@@ -1,0 +1,4262 @@
+[
+  {
+    "year": 1957,
+    "slug": "1957-decision",
+    "title": "合伙企业第一份成绩单",
+    "category": "partnership",
+    "url": "decisions/1957.html",
+    "key": true,
+    "verdict": "你能学他的衡量方式，学不了他的早期市场环境。",
+    "scene": "你刚开始管理合伙资本，美国经济进入衰退，市场下跌。外界不会因为你年轻就降低评价标准，合伙人真正关心的是：坏年份里，你到底有没有一套可执行的判断方式。",
+    "reader_prompt": "如果你是 Buffett，你会追求短期绝对收益，还是把目标定为长期、相对市场更好的表现？你能不能忍受用三到五年证明自己？",
+    "actual_title": "合伙企业第一份成绩单",
+    "actual_thesis": "可学的是评价周期和相对思维，不是幻想每一年都能绝对赚钱。",
+    "hidden_condition": "早期合伙企业规模小、市场信息效率低，且投资人用多年周期评价他，不是每天看账户波动的散户环境。",
+    "letter_focus": "不预测市场，寻找低估证券；坏年份更容易看出相对优势。",
+    "detail": "1957 年三只 1956 年成立的合伙企业明显好于整体市场。之后的表格显示合伙企业 1957 年收益为 10.4%，道指含股息为 -8.4%。这不是一条直线增长的开始，而是一个衡量标准的开始：不是绝对每年赚钱，而是长期显著胜过可比市场。",
+    "world": "1957-1958 年美国经济衰退期间，道指承压。",
+    "macro": "战后美国扩张早期，消费社会和股票市场仍在重新定价工业化后的企业利润。",
+    "dollar": "布雷顿森林体系下美元仍锚定黄金，美元信用是战后资本秩序的中心。",
+    "tailwind": "Buffett 的早期机会来自美国本土企业、分散市场和仍不充分的信息效率。",
+    "shock": "1957-1958 年美国经济衰退提醒投资者：国际秩序稳定不等于商业周期消失。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1957.pdf",
+    "event": {
+      "year": "1957",
+      "slug": "1957-partnership-first-scorecard",
+      "title": "合伙企业第一份成绩单",
+      "category": "partnership",
+      "impact": "在道指下跌的一年，合伙企业仍实现正收益，确立了熊市相对表现的主线。",
+      "surface_story": "Buffett 在熊市里仍然赚钱，所以普通人也应该学习熊市防守和相对收益。",
+      "hidden_condition": "早期合伙企业规模小、市场信息效率低，且投资人用多年周期评价他，不是每天看账户波动的散户环境。",
+      "mislearning_risk": "把“熊市不亏”理解成个人也应该每年战胜市场，最后在短期波动里频繁换策略。",
+      "real_lesson": "可学的是评价周期和相对思维，不是幻想每一年都能绝对赚钱。",
+      "verdict": "你能学他的衡量方式，学不了他的早期市场环境。",
+      "scene_setting": "你刚开始管理合伙资本，美国经济进入衰退，市场下跌。外界不会因为你年轻就降低评价标准，合伙人真正关心的是：坏年份里，你到底有没有一套可执行的判断方式。",
+      "reader_decision": "如果你是 Buffett，你会追求短期绝对收益，还是把目标定为长期、相对市场更好的表现？你能不能忍受用三到五年证明自己？",
+      "shu_to_avoid": "把巴菲特的早期成绩误读成每年都要赢，最后被短期排名牵着走。",
+      "dao_to_learn": "道在评价体系：先定义什么叫正确表现，再让策略为这个评价体系服务。",
+      "macro_regime": "战后美国扩张早期，消费社会和股票市场仍在重新定价工业化后的企业利润。",
+      "dollar_context": "布雷顿森林体系下美元仍锚定黄金，美元信用是战后资本秩序的中心。",
+      "america_tailwind": "Buffett 的早期机会来自美国本土企业、分散市场和仍不充分的信息效率。",
+      "global_shock": "1957-1958 年美国经济衰退提醒投资者：国际秩序稳定不等于商业周期消失。",
+      "letter_focus": "不预测市场，寻找低估证券；坏年份更容易看出相对优势。",
+      "detail": "1957 年三只 1956 年成立的合伙企业明显好于整体市场。之后的表格显示合伙企业 1957 年收益为 10.4%，道指含股息为 -8.4%。这不是一条直线增长的开始，而是一个衡量标准的开始：不是绝对每年赚钱，而是长期显著胜过可比市场。",
+      "world": "1957-1958 年美国经济衰退期间，道指承压。",
+      "source_ids": "buffett_partnership_letters_ivey",
+      "source_urls": "https://www.ivey.uwo.ca/media/2975913/buffett-partnership-letters.pdf"
+    },
+    "options": [
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 -14.3%。",
+        "later": "到 1962 年，S&P 500 price路径约累计 57.8%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1962 年，Buffett 实际路径约累计 262.0%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "把短期战胜市场当成唯一目标",
+        "thesis": "短期排名会诱导更高换手和更高杠杆，反而破坏长期评价体系。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 -12.8%。",
+        "later": "到 1962 年，Dow price路径约累计 49.7%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "合伙企业第一份成绩单",
+        "thesis": "可学的是评价周期和相对思维，不是幻想每一年都能绝对赚钱。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 10.4%，S&P 500 price -14.3%，领先 24.7 个百分点。",
+        "later": "到 1962 年，Buffett 实际路径约累计 262.0%。",
+        "actual": true
+      }
+    ]
+  },
+  {
+    "year": 1958,
+    "slug": "1958-decision",
+    "title": "1958：合伙企业年度选择",
+    "category": "partnership",
+    "url": "decisions/1958.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「合伙企业年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1958 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 40.9%，S&P 500 price 38.1%，领先 2.8 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "用相对收益和长期评价体系管理合伙资本",
+    "actual_thesis": "先定义什么叫正确表现，再让仓位、回撤和机会成本服从这个评价体系。",
+    "hidden_condition": "美国本土企业、分散市场和信息效率不足，给小规模合伙资本留下了可挖掘空间。",
+    "letter_focus": "重点不是预测指数，而是用多年周期衡量相对表现、work-outs 和低估证券。",
+    "detail": "1958 年 Buffett 线收益为 40.9%，S&P 500 price 为 38.1%，Dow price 为 34.0%。",
+    "world": "冷战、衰退和市场下跌让投资者持续面对周期风险。",
+    "macro": "战后美国扩张早期，消费社会、制造业利润和证券市场仍在重新定价。",
+    "dollar": "布雷顿森林体系下美元仍锚定黄金，美元资产是战后资本秩序中心。",
+    "tailwind": "美国本土企业、分散市场和信息效率不足，给小规模合伙资本留下了可挖掘空间。",
+    "shock": "冷战、衰退和市场下跌让投资者持续面对周期风险。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1958.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1963 年，Buffett 实际路径约累计 256.4%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "把短期战胜市场当成唯一目标",
+        "thesis": "短期排名会诱导更高换手和更高杠杆，反而破坏长期评价体系。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 34.0%。",
+        "later": "到 1963 年，Dow price路径约累计 30.7%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "用相对收益和长期评价体系管理合伙资本",
+        "thesis": "先定义什么叫正确表现，再让仓位、回撤和机会成本服从这个评价体系。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 40.9%，S&P 500 price 38.1%，领先 2.8 个百分点。",
+        "later": "到 1963 年，Buffett 实际路径约累计 256.4%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 38.1%。",
+        "later": "到 1963 年，S&P 500 price路径约累计 35.9%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1959,
+    "slug": "1959-decision",
+    "title": "1959：合伙企业年度选择",
+    "category": "partnership",
+    "url": "decisions/1959.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「合伙企业年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1959 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 25.9%，S&P 500 price 8.5%，领先 17.4 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "用相对收益和长期评价体系管理合伙资本",
+    "actual_thesis": "先定义什么叫正确表现，再让仓位、回撤和机会成本服从这个评价体系。",
+    "hidden_condition": "美国本土企业、分散市场和信息效率不足，给小规模合伙资本留下了可挖掘空间。",
+    "letter_focus": "重点不是预测指数，而是用多年周期衡量相对表现、work-outs 和低估证券。",
+    "detail": "1959 年 Buffett 线收益为 25.9%，S&P 500 price 为 8.5%，Dow price 为 16.4%。",
+    "world": "冷战、衰退和市场下跌让投资者持续面对周期风险。",
+    "macro": "战后美国扩张早期，消费社会、制造业利润和证券市场仍在重新定价。",
+    "dollar": "布雷顿森林体系下美元仍锚定黄金，美元资产是战后资本秩序中心。",
+    "tailwind": "美国本土企业、分散市场和信息效率不足，给小规模合伙资本留下了可挖掘空间。",
+    "shock": "冷战、衰退和市场下跌让投资者持续面对周期风险。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1959.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "temptation",
+        "title": "把短期战胜市场当成唯一目标",
+        "thesis": "短期排名会诱导更高换手和更高杠杆，反而破坏长期评价体系。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 16.4%。",
+        "later": "到 1964 年，Dow price路径约累计 28.7%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "用相对收益和长期评价体系管理合伙资本",
+        "thesis": "先定义什么叫正确表现，再让仓位、回撤和机会成本服从这个评价体系。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 25.9%，S&P 500 price 8.5%，领先 17.4 个百分点。",
+        "later": "到 1964 年，Buffett 实际路径约累计 261.7%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 8.5%。",
+        "later": "到 1964 年，S&P 500 price路径约累计 41.5%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1964 年，Buffett 实际路径约累计 261.7%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1960,
+    "slug": "1960-decision",
+    "title": "1960：合伙企业年度选择",
+    "category": "partnership",
+    "url": "decisions/1960.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「合伙企业年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1960 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 22.8%，S&P 500 price -3.0%，领先 25.8 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "用相对收益和长期评价体系管理合伙资本",
+    "actual_thesis": "先定义什么叫正确表现，再让仓位、回撤和机会成本服从这个评价体系。",
+    "hidden_condition": "美国本土企业、分散市场和信息效率不足，给小规模合伙资本留下了可挖掘空间。",
+    "letter_focus": "重点不是预测指数，而是用多年周期衡量相对表现、work-outs 和低估证券。",
+    "detail": "1960 年 Buffett 线收益为 22.8%，S&P 500 price 为 -3.0%，Dow price 为 -9.3%。",
+    "world": "冷战、衰退和市场下跌让投资者持续面对周期风险。",
+    "macro": "战后美国扩张早期，消费社会、制造业利润和证券市场仍在重新定价。",
+    "dollar": "布雷顿森林体系下美元仍锚定黄金，美元资产是战后资本秩序中心。",
+    "tailwind": "美国本土企业、分散市场和信息效率不足，给小规模合伙资本留下了可挖掘空间。",
+    "shock": "冷战、衰退和市场下跌让投资者持续面对周期风险。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1960.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "actual",
+        "title": "用相对收益和长期评价体系管理合伙资本",
+        "thesis": "先定义什么叫正确表现，再让仓位、回撤和机会成本服从这个评价体系。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 22.8%，S&P 500 price -3.0%，领先 25.8 个百分点。",
+        "later": "到 1965 年，Buffett 实际路径约累计 340.4%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 -3.0%。",
+        "later": "到 1965 年，S&P 500 price路径约累计 59.1%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1965 年，Buffett 实际路径约累计 340.4%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "把短期战胜市场当成唯一目标",
+        "thesis": "短期排名会诱导更高换手和更高杠杆，反而破坏长期评价体系。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 -9.3%。",
+        "later": "到 1965 年，Dow price路径约累计 57.4%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1961,
+    "slug": "1961-decision",
+    "title": "1961：合伙企业年度选择",
+    "category": "partnership",
+    "url": "decisions/1961.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「合伙企业年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1961 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 45.9%，S&P 500 price 23.1%，领先 22.8 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "用相对收益和长期评价体系管理合伙资本",
+    "actual_thesis": "先定义什么叫正确表现，再让仓位、回撤和机会成本服从这个评价体系。",
+    "hidden_condition": "美国本土企业、分散市场和信息效率不足，给小规模合伙资本留下了可挖掘空间。",
+    "letter_focus": "重点不是预测指数，而是用多年周期衡量相对表现、work-outs 和低估证券。",
+    "detail": "1961 年 Buffett 线收益为 45.9%，S&P 500 price 为 23.1%，Dow price 为 18.7%。",
+    "world": "冷战、衰退和市场下跌让投资者持续面对周期风险。",
+    "macro": "战后美国扩张早期，消费社会、制造业利润和证券市场仍在重新定价。",
+    "dollar": "布雷顿森林体系下美元仍锚定黄金，美元资产是战后资本秩序中心。",
+    "tailwind": "美国本土企业、分散市场和信息效率不足，给小规模合伙资本留下了可挖掘空间。",
+    "shock": "冷战、衰退和市场下跌让投资者持续面对周期风险。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1961.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 23.1%。",
+        "later": "到 1966 年，S&P 500 price路径约累计 12.3%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1966 年，Buffett 实际路径约累计 191.6%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "把短期战胜市场当成唯一目标",
+        "thesis": "短期排名会诱导更高换手和更高杠杆，反而破坏长期评价体系。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 18.7%。",
+        "later": "到 1966 年，Dow price路径约累计 7.5%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "用相对收益和长期评价体系管理合伙资本",
+        "thesis": "先定义什么叫正确表现，再让仓位、回撤和机会成本服从这个评价体系。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 45.9%，S&P 500 price 23.1%，领先 22.8 个百分点。",
+        "later": "到 1966 年，Buffett 实际路径约累计 191.6%。",
+        "actual": true
+      }
+    ]
+  },
+  {
+    "year": 1962,
+    "slug": "1962-decision",
+    "title": "合伙企业合并成 Buffett Partnership Ltd.",
+    "category": "structure",
+    "url": "decisions/1962.html",
+    "key": true,
+    "verdict": "Buffett 不是只会选股，他先拥有了能承载策略的资本结构。",
+    "scene": "你已经有多个合伙企业，也有了早期业绩。现在的问题不只是买什么股票，而是资本如何被组织、如何被信任、如何被长期评价。",
+    "reader_prompt": "如果你是 Buffett，你会继续分散管理多个小结构，还是把资本、口径和责任集中起来？你能不能让别人把长期资金交给你？",
+    "actual_title": "合伙企业合并成 Buffett Partnership Ltd.",
+    "actual_thesis": "可学的是用统一口径审视长期业绩，不是模仿他的资本组织能力。",
+    "hidden_condition": "他控制的是愿意长期委托的合伙资本，并且已经用早期业绩建立信任；普通人没有这种资本组织权。",
+    "letter_focus": "用三到五年评估投资表现，年度涨跌不是质量本身。",
+    "detail": "1962 年左右，多个合伙企业被整合为 Buffett Partnership Ltd.。这让资金、持仓和业绩口径更集中，也为随后买入 Berkshire Hathaway 打下结构基础。",
+    "world": "1962 年古巴导弹危机加剧市场波动，但合伙企业继续强调相对业绩。",
+    "macro": "冷战高压期，美国企业利润和资本市场在地缘风险中继续扩张。",
+    "dollar": "美元仍是战后体系核心货币，资本以美元资产作为安全和收益的共同锚点。",
+    "tailwind": "合伙企业能以美国证券为主要猎场，本身就是美元资产深度和法治市场的红利。",
+    "shock": "古巴导弹危机把核战争风险推到市场面前，但美国资本市场没有失去长期定价功能。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1962.pdf",
+    "event": {
+      "year": "1962",
+      "slug": "1962-partnership-consolidation",
+      "title": "合伙企业合并成 Buffett Partnership Ltd.",
+      "category": "structure",
+      "impact": "分散的合伙结构被统一，投资业绩和资本配置从此有了更清晰的载体。",
+      "surface_story": "Buffett 把分散合伙企业整合起来，说明优秀投资人应该集中控制资本。",
+      "hidden_condition": "他控制的是愿意长期委托的合伙资本，并且已经用早期业绩建立信任；普通人没有这种资本组织权。",
+      "mislearning_risk": "把“集中管理”误学成个人账户高度集中，忽略资金来源、期限和信任结构。",
+      "real_lesson": "可学的是用统一口径审视长期业绩，不是模仿他的资本组织能力。",
+      "verdict": "Buffett 不是只会选股，他先拥有了能承载策略的资本结构。",
+      "scene_setting": "你已经有多个合伙企业，也有了早期业绩。现在的问题不只是买什么股票，而是资本如何被组织、如何被信任、如何被长期评价。",
+      "reader_decision": "如果你是 Buffett，你会继续分散管理多个小结构，还是把资本、口径和责任集中起来？你能不能让别人把长期资金交给你？",
+      "shu_to_avoid": "把集中管理误学成个人账户集中持仓，却没有长期资本和委托信任。",
+      "dao_to_learn": "道在结构：投资能力需要合适的载体，否则好判断也会被坏资金期限毁掉。",
+      "macro_regime": "冷战高压期，美国企业利润和资本市场在地缘风险中继续扩张。",
+      "dollar_context": "美元仍是战后体系核心货币，资本以美元资产作为安全和收益的共同锚点。",
+      "america_tailwind": "合伙企业能以美国证券为主要猎场，本身就是美元资产深度和法治市场的红利。",
+      "global_shock": "古巴导弹危机把核战争风险推到市场面前，但美国资本市场没有失去长期定价功能。",
+      "letter_focus": "用三到五年评估投资表现，年度涨跌不是质量本身。",
+      "detail": "1962 年左右，多个合伙企业被整合为 Buffett Partnership Ltd.。这让资金、持仓和业绩口径更集中，也为随后买入 Berkshire Hathaway 打下结构基础。",
+      "world": "1962 年古巴导弹危机加剧市场波动，但合伙企业继续强调相对业绩。",
+      "source_ids": "buffett_partnership_letters_ivey,britannica_buffett",
+      "source_urls": "https://www.ivey.uwo.ca/media/2975913/buffett-partnership-letters.pdf | https://www.britannica.com/money/Warren-Edward-Buffett"
+    },
+    "options": [
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1967 年，Buffett 实际路径约累计 190.0%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "把短期战胜市场当成唯一目标",
+        "thesis": "短期排名会诱导更高换手和更高杠杆，反而破坏长期评价体系。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 -10.8%。",
+        "later": "到 1967 年，Dow price路径约累计 38.8%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "合伙企业合并成 Buffett Partnership Ltd.",
+        "thesis": "可学的是用统一口径审视长期业绩，不是模仿他的资本组织能力。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 13.9%，S&P 500 price -11.8%，领先 25.7 个百分点。",
+        "later": "到 1967 年，Buffett 实际路径约累计 190.0%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 -11.8%。",
+        "later": "到 1967 年，S&P 500 price路径约累计 52.9%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1963,
+    "slug": "1963-decision",
+    "title": "1963：合伙企业年度选择",
+    "category": "partnership",
+    "url": "decisions/1963.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「合伙企业年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1963 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 38.7%，S&P 500 price 18.9%，领先 19.8 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "用相对收益和长期评价体系管理合伙资本",
+    "actual_thesis": "先定义什么叫正确表现，再让仓位、回撤和机会成本服从这个评价体系。",
+    "hidden_condition": "美国本土企业、分散市场和信息效率不足，给小规模合伙资本留下了可挖掘空间。",
+    "letter_focus": "重点不是预测指数，而是用多年周期衡量相对表现、work-outs 和低估证券。",
+    "detail": "1963 年 Buffett 线收益为 38.7%，S&P 500 price 为 18.9%，Dow price 为 17.0%。",
+    "world": "冷战、衰退和市场下跌让投资者持续面对周期风险。",
+    "macro": "战后美国扩张早期，消费社会、制造业利润和证券市场仍在重新定价。",
+    "dollar": "布雷顿森林体系下美元仍锚定黄金，美元资产是战后资本秩序中心。",
+    "tailwind": "美国本土企业、分散市场和信息效率不足，给小规模合伙资本留下了可挖掘空间。",
+    "shock": "冷战、衰退和市场下跌让投资者持续面对周期风险。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1963.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "temptation",
+        "title": "把短期战胜市场当成唯一目标",
+        "thesis": "短期排名会诱导更高换手和更高杠杆，反而破坏长期评价体系。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 17.0%。",
+        "later": "到 1968 年，Dow price路径约累计 23.7%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "用相对收益和长期评价体系管理合伙资本",
+        "thesis": "先定义什么叫正确表现，再让仓位、回撤和机会成本服从这个评价体系。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 38.7%，S&P 500 price 18.9%，领先 19.8 个百分点。",
+        "later": "到 1968 年，Buffett 实际路径约累计 271.8%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 18.9%。",
+        "later": "到 1968 年，S&P 500 price路径约累计 38.4%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1968 年，Buffett 实际路径约累计 271.8%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1964,
+    "slug": "1964-decision",
+    "title": "1964：合伙企业年度选择",
+    "category": "partnership",
+    "url": "decisions/1964.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「合伙企业年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1964 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 27.8%，S&P 500 price 13.0%，领先 14.8 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "用相对收益和长期评价体系管理合伙资本",
+    "actual_thesis": "先定义什么叫正确表现，再让仓位、回撤和机会成本服从这个评价体系。",
+    "hidden_condition": "美国本土企业、分散市场和信息效率不足，给小规模合伙资本留下了可挖掘空间。",
+    "letter_focus": "重点不是预测指数，而是用多年周期衡量相对表现、work-outs 和低估证券。",
+    "detail": "1964 年 Buffett 线收益为 27.8%，S&P 500 price 为 13.0%，Dow price 为 14.6%。",
+    "world": "冷战、衰退和市场下跌让投资者持续面对周期风险。",
+    "macro": "战后美国扩张早期，消费社会、制造业利润和证券市场仍在重新定价。",
+    "dollar": "布雷顿森林体系下美元仍锚定黄金，美元资产是战后资本秩序中心。",
+    "tailwind": "美国本土企业、分散市场和信息效率不足，给小规模合伙资本留下了可挖掘空间。",
+    "shock": "冷战、衰退和市场下跌让投资者持续面对周期风险。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1964.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "actual",
+        "title": "用相对收益和长期评价体系管理合伙资本",
+        "thesis": "先定义什么叫正确表现，再让仓位、回撤和机会成本服从这个评价体系。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 27.8%，S&P 500 price 13.0%，领先 14.8 个百分点。",
+        "later": "到 1969 年，Buffett 实际路径约累计 247.4%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 13.0%。",
+        "later": "到 1969 年，S&P 500 price路径约累计 8.6%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1969 年，Buffett 实际路径约累计 247.4%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "把短期战胜市场当成唯一目标",
+        "thesis": "短期排名会诱导更高换手和更高杠杆，反而破坏长期评价体系。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 14.6%。",
+        "later": "到 1969 年，Dow price路径约累计 -8.4%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1965,
+    "slug": "1965-decision",
+    "title": "控制 Berkshire Hathaway",
+    "category": "control",
+    "url": "decisions/1965.html",
+    "key": true,
+    "verdict": "你买的是股票代码，Buffett 买到的是资本配置平台。",
+    "scene": "你买到一家便宜的纺织公司，但它不是好生意。市场给了你价格，现实给了你一个低回报业务。你要面对的是：便宜和优秀不是一回事。",
+    "reader_prompt": "如果你是 Buffett，你会继续证明自己买得便宜，还是承认原始判断不完美，把控制权变成资本配置平台？",
+    "actual_title": "控制 Berkshire Hathaway",
+    "actual_thesis": "可学的是承认便宜不等于好生意，以及错误资产也要重新配置。",
+    "hidden_condition": "这不是普通股票买卖，而是控制权交易；控制权让资本配置、并购和现金再分配成为可能。",
+    "letter_focus": "便宜资产不等于好生意，控制权改变了复利路径。",
+    "detail": "1965 年 Buffett 取得 Berkshire Hathaway 控制权。按他后来反思，这家纺织公司的商业质量并不好，但这个壳后来承载了保险浮存金、全资收购和长期股权投资。",
+    "world": "美国战后扩张进入后期，资本市场估值和商业模式开始分化。",
+    "macro": "美国战后繁荣进入后期，传统制造业和资本市场估值开始分化。",
+    "dollar": "美元黄金锚仍在，但美国财政和国际收支压力已经为 1971 年转折埋下伏笔。",
+    "tailwind": "控制 Berkshire 之所以有价值，是因为美国允许股东控制权、并购和资本再配置长期发挥作用。",
+    "shock": "越战和战后财政压力逐渐改变美元体系，也改变未来通胀和资产定价环境。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1965.pdf",
+    "event": {
+      "year": "1965",
+      "slug": "1965-berkshire-control",
+      "title": "控制 Berkshire Hathaway",
+      "category": "control",
+      "impact": "一笔纺织股投资变成控制权交易，后来成为资本配置平台。",
+      "surface_story": "买下 Berkshire 是一笔经典便宜股投资，后来变成巨大成功。",
+      "hidden_condition": "这不是普通股票买卖，而是控制权交易；控制权让资本配置、并购和现金再分配成为可能。",
+      "mislearning_risk": "把便宜股当成 Berkshire 式机会，买入后却没有任何改变企业命运的权力。",
+      "real_lesson": "可学的是承认便宜不等于好生意，以及错误资产也要重新配置。",
+      "verdict": "你买的是股票代码，Buffett 买到的是资本配置平台。",
+      "scene_setting": "你买到一家便宜的纺织公司，但它不是好生意。市场给了你价格，现实给了你一个低回报业务。你要面对的是：便宜和优秀不是一回事。",
+      "reader_decision": "如果你是 Buffett，你会继续证明自己买得便宜，还是承认原始判断不完美，把控制权变成资本配置平台？",
+      "shu_to_avoid": "只学买便宜股，却没有控制权，也没有改变企业资本用途的能力。",
+      "dao_to_learn": "道在纠错：真正厉害的不是从不犯错，而是把错误资产重新放进更好的结构里。",
+      "macro_regime": "美国战后繁荣进入后期，传统制造业和资本市场估值开始分化。",
+      "dollar_context": "美元黄金锚仍在，但美国财政和国际收支压力已经为 1971 年转折埋下伏笔。",
+      "america_tailwind": "控制 Berkshire 之所以有价值，是因为美国允许股东控制权、并购和资本再配置长期发挥作用。",
+      "global_shock": "越战和战后财政压力逐渐改变美元体系，也改变未来通胀和资产定价环境。",
+      "letter_focus": "便宜资产不等于好生意，控制权改变了复利路径。",
+      "detail": "1965 年 Buffett 取得 Berkshire Hathaway 控制权。按他后来反思，这家纺织公司的商业质量并不好，但这个壳后来承载了保险浮存金、全资收购和长期股权投资。",
+      "world": "美国战后扩张进入后期，资本市场估值和商业模式开始分化。",
+      "source_ids": "berkshire_2024_annual_report,britannica_buffett,britannica_berkshire",
+      "source_urls": "https://www.berkshirehathaway.com/2024ar/2024ar.pdf | https://www.britannica.com/money/Warren-Edward-Buffett | https://www.britannica.com/money/Berkshire-Hathaway"
+    },
+    "options": [
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 9.1%。",
+        "later": "到 1970 年，S&P 500 price路径约累计 -0.3%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1970 年，Buffett 实际路径约累计 121.7%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "为了维持过往收益继续扩大合伙企业",
+        "thesis": "资金规模和市场估值会吞掉早期优势，继续扩张反而会稀释判断质量。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 10.9%。",
+        "later": "到 1970 年，Dow price路径约累计 -13.4%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "控制 Berkshire Hathaway",
+        "thesis": "可学的是承认便宜不等于好生意，以及错误资产也要重新配置。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 49.5%，S&P 500 price 9.1%，领先 40.4 个百分点。",
+        "later": "到 1970 年，Buffett 实际路径约累计 121.7%。",
+        "actual": true
+      }
+    ]
+  },
+  {
+    "year": 1966,
+    "slug": "1966-decision",
+    "title": "1966：载体与退出年度选择",
+    "category": "structure",
+    "url": "decisions/1966.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「载体与退出年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1966 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 -3.4%，S&P 500 price -13.1%，领先 9.7 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "把资本载体从合伙企业推向 Berkshire，并在机会变少时收紧甚至退出",
+    "actual_thesis": "当环境不再适合原策略，真正重要的不是硬做，而是改变资本结构和机会标准。",
+    "hidden_condition": "美国资本市场深度继续扩大，Berkshire 这样的公司载体开始承接长期资本配置。",
+    "letter_focus": "重点转向资本结构、机会稀缺、控制型投资和是否继续接受外部资金。",
+    "detail": "1966 年 Buffett 线收益为 -3.4%，S&P 500 price 为 -13.1%，Dow price 为 -18.9%。",
+    "world": "越战、财政压力和市场投机让长期资本开始面对更复杂的宏观环境。",
+    "macro": "美国市场经历战后繁荣后估值上升，越战和通胀压力开始抬头。",
+    "dollar": "布雷顿森林体系仍在，但美元外部约束和黄金兑换压力越来越明显。",
+    "tailwind": "美国资本市场深度继续扩大，Berkshire 这样的公司载体开始承接长期资本配置。",
+    "shock": "越战、财政压力和市场投机让长期资本开始面对更复杂的宏观环境。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1966.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1971 年，Buffett 实际路径约累计 314.2%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "为了维持过往收益继续扩大合伙企业",
+        "thesis": "资金规模和市场估值会吞掉早期优势，继续扩张反而会稀释判断质量。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 -18.9%。",
+        "later": "到 1971 年，Dow price路径约累计 13.3%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "把资本载体从合伙企业推向 Berkshire，并在机会变少时收紧甚至退出",
+        "thesis": "当环境不再适合原策略，真正重要的不是硬做，而是改变资本结构和机会标准。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 -3.4%，S&P 500 price -13.1%，领先 9.7 个百分点。",
+        "later": "到 1971 年，Buffett 实际路径约累计 314.2%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 -13.1%。",
+        "later": "到 1971 年，S&P 500 price路径约累计 27.1%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1967,
+    "slug": "1967-decision",
+    "title": "进入保险，建立浮存金引擎",
+    "category": "insurance",
+    "url": "decisions/1967.html",
+    "key": true,
+    "verdict": "你能学他的耐心，但你学不了他的资金结构。",
+    "scene": "你控制了 Berkshire，但纺织业务不是未来。保险业务出现了，它带来的不是一只股票，而是一种长期、低成本、可投资的资金来源。",
+    "reader_prompt": "如果你是 Buffett，你会把保险当作普通生意看，还是看见浮存金能改变整个资本机器？你能不能区分长期资金和危险杠杆？",
+    "actual_title": "进入保险，建立浮存金引擎",
+    "actual_thesis": "可学的是理解资金成本和资金期限，不是用杠杆冒充浮存金。",
+    "hidden_condition": "保险浮存金是低成本、长期、可投资资金，和个人加杠杆完全不是一回事。",
+    "letter_focus": "保险浮存金让 Berkshire 获得长期、低成本、可投资资金。",
+    "detail": "1967 年 Berkshire 进入保险业务，后来浮存金成为 Buffett 复利机器最重要的结构性优势之一。同年 Berkshire 支付了唯一一次每股 10 美分现金股息，之后长期选择留存再投资。",
+    "world": "1960 年代后期通胀压力上升，低成本长期资金的价值开始凸显。",
+    "macro": "通胀压力上升，美国金融体系开始进入更复杂的利率和信用周期。",
+    "dollar": "低成本长期资金在美元体系里开始变得更稀缺，也更有价值。",
+    "tailwind": "保险浮存金能投资美国优质资产，把家庭、汽车、企业风险转化为 Berkshire 的长期资金来源。",
+    "shock": "1960 年代后期的财政压力、战争支出和通胀预期让资金成本成为决定长期胜负的变量。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1967.pdf",
+    "event": {
+      "year": "1967",
+      "slug": "1967-insurance-float",
+      "title": "进入保险，建立浮存金引擎",
+      "category": "insurance",
+      "impact": "National Indemnity 把 Berkshire 从纺织公司推向保险驱动的控股公司。",
+      "surface_story": "进入保险后，Buffett 找到了长期复利引擎。",
+      "hidden_condition": "保险浮存金是低成本、长期、可投资资金，和个人加杠杆完全不是一回事。",
+      "mislearning_risk": "把浮存金误解成“借钱投资”，用短期限、高成本资金模仿长期资本。",
+      "real_lesson": "可学的是理解资金成本和资金期限，不是用杠杆冒充浮存金。",
+      "verdict": "你能学他的耐心，但你学不了他的资金结构。",
+      "scene_setting": "你控制了 Berkshire，但纺织业务不是未来。保险业务出现了，它带来的不是一只股票，而是一种长期、低成本、可投资的资金来源。",
+      "reader_decision": "如果你是 Buffett，你会把保险当作普通生意看，还是看见浮存金能改变整个资本机器？你能不能区分长期资金和危险杠杆？",
+      "shu_to_avoid": "把浮存金误学成借钱投资，用短钱模仿长钱。",
+      "dao_to_learn": "道在资金性质：同样是钱，期限、成本和稳定性不同，投资命运就完全不同。",
+      "macro_regime": "通胀压力上升，美国金融体系开始进入更复杂的利率和信用周期。",
+      "dollar_context": "低成本长期资金在美元体系里开始变得更稀缺，也更有价值。",
+      "america_tailwind": "保险浮存金能投资美国优质资产，把家庭、汽车、企业风险转化为 Berkshire 的长期资金来源。",
+      "global_shock": "1960 年代后期的财政压力、战争支出和通胀预期让资金成本成为决定长期胜负的变量。",
+      "letter_focus": "保险浮存金让 Berkshire 获得长期、低成本、可投资资金。",
+      "detail": "1967 年 Berkshire 进入保险业务，后来浮存金成为 Buffett 复利机器最重要的结构性优势之一。同年 Berkshire 支付了唯一一次每股 10 美分现金股息，之后长期选择留存再投资。",
+      "world": "1960 年代后期通胀压力上升，低成本长期资金的价值开始凸显。",
+      "source_ids": "berkshire_2024_annual_report,britannica_berkshire",
+      "source_urls": "https://www.berkshirehathaway.com/2024ar/2024ar.pdf | https://www.britannica.com/money/Berkshire-Hathaway"
+    },
+    "options": [
+      {
+        "id": "temptation",
+        "title": "为了维持过往收益继续扩大合伙企业",
+        "thesis": "资金规模和市场估值会吞掉早期优势，继续扩张反而会稀释判断质量。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 15.2%。",
+        "later": "到 1972 年，Dow price路径约累计 12.7%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "进入保险，建立浮存金引擎",
+        "thesis": "可学的是理解资金成本和资金期限，不是用杠杆冒充浮存金。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 13.3%，S&P 500 price 20.1%，落后 6.8 个百分点。",
+        "later": "到 1972 年，Buffett 实际路径约累计 295.2%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 20.1%。",
+        "later": "到 1972 年，S&P 500 price路径约累计 22.4%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1972 年，Buffett 实际路径约累计 295.2%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1968,
+    "slug": "1968-decision",
+    "title": "1968：载体与退出年度选择",
+    "category": "structure",
+    "url": "decisions/1968.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「载体与退出年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1968 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 77.8%，S&P 500 price 7.7%，领先 70.1 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "把资本载体从合伙企业推向 Berkshire，并在机会变少时收紧甚至退出",
+    "actual_thesis": "当环境不再适合原策略，真正重要的不是硬做，而是改变资本结构和机会标准。",
+    "hidden_condition": "美国资本市场深度继续扩大，Berkshire 这样的公司载体开始承接长期资本配置。",
+    "letter_focus": "重点转向资本结构、机会稀缺、控制型投资和是否继续接受外部资金。",
+    "detail": "1968 年 Buffett 线收益为 77.8%，S&P 500 price 为 7.7%，Dow price 为 4.3%。",
+    "world": "越战、财政压力和市场投机让长期资本开始面对更复杂的宏观环境。",
+    "macro": "美国市场经历战后繁荣后估值上升，越战和通胀压力开始抬头。",
+    "dollar": "布雷顿森林体系仍在，但美元外部约束和黄金兑换压力越来越明显。",
+    "tailwind": "美国资本市场深度继续扩大，Berkshire 这样的公司载体开始承接长期资本配置。",
+    "shock": "越战、财政压力和市场投机让长期资本开始面对更复杂的宏观环境。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1968.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "actual",
+        "title": "把资本载体从合伙企业推向 Berkshire，并在机会变少时收紧甚至退出",
+        "thesis": "当环境不再适合原策略，真正重要的不是硬做，而是改变资本结构和机会标准。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 77.8%，S&P 500 price 7.7%，领先 70.1 个百分点。",
+        "later": "到 1973 年，Buffett 实际路径约累计 116.7%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 7.7%。",
+        "later": "到 1973 年，S&P 500 price路径约累计 -6.1%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1973 年，Buffett 实际路径约累计 116.7%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "为了维持过往收益继续扩大合伙企业",
+        "thesis": "资金规模和市场估值会吞掉早期优势，继续扩张反而会稀释判断质量。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 4.3%。",
+        "later": "到 1973 年，Dow price路径约累计 -9.8%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1969,
+    "slug": "1969-decision",
+    "title": "1969：载体与退出年度选择",
+    "category": "structure",
+    "url": "decisions/1969.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「载体与退出年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1969 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 19.4%，S&P 500 price -11.4%，领先 30.8 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "把资本载体从合伙企业推向 Berkshire，并在机会变少时收紧甚至退出",
+    "actual_thesis": "当环境不再适合原策略，真正重要的不是硬做，而是改变资本结构和机会标准。",
+    "hidden_condition": "美国资本市场深度继续扩大，Berkshire 这样的公司载体开始承接长期资本配置。",
+    "letter_focus": "重点转向资本结构、机会稀缺、控制型投资和是否继续接受外部资金。",
+    "detail": "1969 年 Buffett 线收益为 19.4%，S&P 500 price 为 -11.4%，Dow price 为 -15.2%。",
+    "world": "越战、财政压力和市场投机让长期资本开始面对更复杂的宏观环境。",
+    "macro": "美国市场经历战后繁荣后估值上升，越战和通胀压力开始抬头。",
+    "dollar": "布雷顿森林体系仍在，但美元外部约束和黄金兑换压力越来越明显。",
+    "tailwind": "美国资本市场深度继续扩大，Berkshire 这样的公司载体开始承接长期资本配置。",
+    "shock": "越战、财政压力和市场投机让长期资本开始面对更复杂的宏观环境。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1969.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 -11.4%。",
+        "later": "到 1974 年，S&P 500 price路径约累计 -25.5%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1974 年，Buffett 实际路径约累计 -6.9%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "为了维持过往收益继续扩大合伙企业",
+        "thesis": "资金规模和市场估值会吞掉早期优势，继续扩张反而会稀释判断质量。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 -15.2%。",
+        "later": "到 1974 年，Dow price路径约累计 -23.0%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "把资本载体从合伙企业推向 Berkshire，并在机会变少时收紧甚至退出",
+        "thesis": "当环境不再适合原策略，真正重要的不是硬做，而是改变资本结构和机会标准。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 19.4%，S&P 500 price -11.4%，领先 30.8 个百分点。",
+        "later": "到 1974 年，Buffett 实际路径约累计 -6.9%。",
+        "actual": true
+      }
+    ]
+  },
+  {
+    "year": 1970,
+    "slug": "1970-decision",
+    "title": "1970：通胀与浮存金年度选择",
+    "category": "float",
+    "url": "decisions/1970.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1970 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 -4.6%，S&P 500 price 0.1%，落后 4.7 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "把重心从纺织和普通股票选择，转向保险浮存金、低估证券和资本再配置",
+    "actual_thesis": "通胀和熊市不是简单的买入信号，关键是能否拥有低成本、长期、可再配置的资金。",
+    "hidden_condition": "美国仍拥有深厚资本市场和可收购企业，危机中低估资产开始出现。",
+    "letter_focus": "重点是保险浮存金、低估证券、纺织业务困境和通胀对企业经济性的侵蚀。",
+    "detail": "1970 年 Buffett 线收益为 -4.6%，S&P 500 price 为 0.1%，Dow price 为 4.8%。",
+    "world": "石油冲击、布雷顿森林瓦解和滞胀改变了投资者对安全资产的理解。",
+    "macro": "高通胀、石油冲击和熊市让美国投资者重新审视股票、债券和现金的真实购买力。",
+    "dollar": "1971 年美元停止兑换黄金后，美元信用进入法币时代，通胀成为投资核心变量。",
+    "tailwind": "美国仍拥有深厚资本市场和可收购企业，危机中低估资产开始出现。",
+    "shock": "石油冲击、布雷顿森林瓦解和滞胀改变了投资者对安全资产的理解。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1970.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1975 年，Buffett 实际路径约累计 0.0%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "因为通胀恐惧追逐硬资产和热门宏观交易",
+        "thesis": "宏观交易看似解释一切，却很容易让投资者用价格波动代替企业价值判断。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 4.8%。",
+        "later": "到 1975 年，Dow price路径约累计 1.6%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "把重心从纺织和普通股票选择，转向保险浮存金、低估证券和资本再配置",
+        "thesis": "通胀和熊市不是简单的买入信号，关键是能否拥有低成本、长期、可再配置的资金。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 -4.6%，S&P 500 price 0.1%，落后 4.7 个百分点。",
+        "later": "到 1975 年，Buffett 实际路径约累计 0.0%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 0.1%。",
+        "later": "到 1975 年，S&P 500 price路径约累计 -2.1%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1971,
+    "slug": "1971-decision",
+    "title": "1971：通胀与浮存金年度选择",
+    "category": "float",
+    "url": "decisions/1971.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1971 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 80.5%，S&P 500 price 10.8%，领先 69.7 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "把重心从纺织和普通股票选择，转向保险浮存金、低估证券和资本再配置",
+    "actual_thesis": "通胀和熊市不是简单的买入信号，关键是能否拥有低成本、长期、可再配置的资金。",
+    "hidden_condition": "美国仍拥有深厚资本市场和可收购企业，危机中低估资产开始出现。",
+    "letter_focus": "重点是保险浮存金、低估证券、纺织业务困境和通胀对企业经济性的侵蚀。",
+    "detail": "1971 年 Buffett 线收益为 80.5%，S&P 500 price 为 10.8%，Dow price 为 6.1%。",
+    "world": "石油冲击、布雷顿森林瓦解和滞胀改变了投资者对安全资产的理解。",
+    "macro": "高通胀、石油冲击和熊市让美国投资者重新审视股票、债券和现金的真实购买力。",
+    "dollar": "1971 年美元停止兑换黄金后，美元信用进入法币时代，通胀成为投资核心变量。",
+    "tailwind": "美国仍拥有深厚资本市场和可收购企业，危机中低估资产开始出现。",
+    "shock": "石油冲击、布雷顿森林瓦解和滞胀改变了投资者对安全资产的理解。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1971.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "temptation",
+        "title": "因为通胀恐惧追逐硬资产和热门宏观交易",
+        "thesis": "宏观交易看似解释一切，却很容易让投资者用价格波动代替企业价值判断。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 6.1%。",
+        "later": "到 1976 年，Dow price路径约累计 12.9%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "把重心从纺织和普通股票选择，转向保险浮存金、低估证券和资本再配置",
+        "thesis": "通胀和熊市不是简单的买入信号，关键是能否拥有低成本、长期、可再配置的资金。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 80.5%，S&P 500 price 10.8%，领先 69.7 个百分点。",
+        "later": "到 1976 年，Buffett 实际路径约累计 27.1%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 10.8%。",
+        "later": "到 1976 年，S&P 500 price路径约累计 5.3%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1976 年，Buffett 实际路径约累计 27.1%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1972,
+    "slug": "1972-decision",
+    "title": "1972：通胀与浮存金年度选择",
+    "category": "float",
+    "url": "decisions/1972.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1972 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 8.1%，S&P 500 price 15.6%，落后 7.5 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "把重心从纺织和普通股票选择，转向保险浮存金、低估证券和资本再配置",
+    "actual_thesis": "通胀和熊市不是简单的买入信号，关键是能否拥有低成本、长期、可再配置的资金。",
+    "hidden_condition": "美国仍拥有深厚资本市场和可收购企业，危机中低估资产开始出现。",
+    "letter_focus": "重点是保险浮存金、低估证券、纺织业务困境和通胀对企业经济性的侵蚀。",
+    "detail": "1972 年 Buffett 线收益为 8.1%，S&P 500 price 为 15.6%，Dow price 为 14.6%。",
+    "world": "石油冲击、布雷顿森林瓦解和滞胀改变了投资者对安全资产的理解。",
+    "macro": "高通胀、石油冲击和熊市让美国投资者重新审视股票、债券和现金的真实购买力。",
+    "dollar": "1971 年美元停止兑换黄金后，美元信用进入法币时代，通胀成为投资核心变量。",
+    "tailwind": "美国仍拥有深厚资本市场和可收购企业，危机中低估资产开始出现。",
+    "shock": "石油冲击、布雷顿森林瓦解和滞胀改变了投资者对安全资产的理解。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1972.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "actual",
+        "title": "把重心从纺织和普通股票选择，转向保险浮存金、低估证券和资本再配置",
+        "thesis": "通胀和熊市不是简单的买入信号，关键是能否拥有低成本、长期、可再配置的资金。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 8.1%，S&P 500 price 15.6%，落后 7.5 个百分点。",
+        "later": "到 1977 年，Buffett 实际路径约累计 72.6%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 15.6%。",
+        "later": "到 1977 年，S&P 500 price路径约累计 -19.4%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1977 年，Buffett 实际路径约累计 72.6%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "因为通胀恐惧追逐硬资产和热门宏观交易",
+        "thesis": "宏观交易看似解释一切，却很容易让投资者用价格波动代替企业价值判断。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 14.6%。",
+        "later": "到 1977 年，Dow price路径约累计 -18.5%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1973,
+    "slug": "1973-decision",
+    "title": "买入 Washington Post，遭遇熊市",
+    "category": "bear_market",
+    "url": "decisions/1973.html",
+    "key": true,
+    "verdict": "下跌不是机会，理解价值以后下跌才可能是机会。",
+    "scene": "市场恐慌，通胀高企，媒体资产被压低估值。Washington Post 看起来便宜，但你必须判断它是真便宜，还是时代正在毁掉它。",
+    "reader_prompt": "如果你是 Buffett，你敢不敢在账面继续下跌时持有？你买的是市场下跌，还是企业价值和定价权？",
+    "actual_title": "买入 Washington Post，遭遇熊市",
+    "actual_thesis": "可学的是以企业价值作为锚点，不是机械地越跌越买。",
+    "hidden_condition": "他有估值能力、资本期限和承受多年账面压力的结构，不需要在短期内向市场证明自己。",
+    "letter_focus": "以企业价值而不是市场报价作为决策锚点。",
+    "detail": "1973 年 Berkshire 开始买入 Washington Post。1973-1974 年熊市使账面市值承压，但也提供了以低价买入优质资产的环境。",
+    "world": "第一次石油危机、通胀和衰退预期冲击全球市场。",
+    "macro": "布雷顿森林体系结束后，美国进入高通胀、低增长和估值压缩的年代。",
+    "dollar": "美元脱离黄金后，现金购买力更容易被通胀侵蚀，优质资产的定价权变得更重要。",
+    "tailwind": "即使在熊市，美国仍有能长期把通胀转嫁给消费者和广告市场的优质企业。",
+    "shock": "第一次石油危机把地缘政治、能源价格和美国通胀直接压到投资者账户上。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1973.pdf",
+    "event": {
+      "year": "1973",
+      "slug": "1973-washington-post-bear-market",
+      "title": "买入 Washington Post，遭遇熊市",
+      "category": "bear_market",
+      "impact": "在市场情绪低迷时买入高质量媒体资产，是价值投资逆向性的典型案例。",
+      "surface_story": "Washington Post 说明 Buffett 敢在熊市买入好公司。",
+      "hidden_condition": "他有估值能力、资本期限和承受多年账面压力的结构，不需要在短期内向市场证明自己。",
+      "mislearning_risk": "看到下跌就加仓，把价格便宜误认为价值便宜。",
+      "real_lesson": "可学的是以企业价值作为锚点，不是机械地越跌越买。",
+      "verdict": "下跌不是机会，理解价值以后下跌才可能是机会。",
+      "scene_setting": "市场恐慌，通胀高企，媒体资产被压低估值。Washington Post 看起来便宜，但你必须判断它是真便宜，还是时代正在毁掉它。",
+      "reader_decision": "如果你是 Buffett，你敢不敢在账面继续下跌时持有？你买的是市场下跌，还是企业价值和定价权？",
+      "shu_to_avoid": "把下跌当机会，越跌越买，却没有企业价值判断。",
+      "dao_to_learn": "道在锚点：不是逆市场就是对，只有价值判断能把逆向和固执分开。",
+      "macro_regime": "布雷顿森林体系结束后，美国进入高通胀、低增长和估值压缩的年代。",
+      "dollar_context": "美元脱离黄金后，现金购买力更容易被通胀侵蚀，优质资产的定价权变得更重要。",
+      "america_tailwind": "即使在熊市，美国仍有能长期把通胀转嫁给消费者和广告市场的优质企业。",
+      "global_shock": "第一次石油危机把地缘政治、能源价格和美国通胀直接压到投资者账户上。",
+      "letter_focus": "以企业价值而不是市场报价作为决策锚点。",
+      "detail": "1973 年 Berkshire 开始买入 Washington Post。1973-1974 年熊市使账面市值承压，但也提供了以低价买入优质资产的环境。",
+      "world": "第一次石油危机、通胀和衰退预期冲击全球市场。",
+      "source_ids": "britannica_buffett",
+      "source_urls": "https://www.britannica.com/money/Warren-Edward-Buffett"
+    },
+    "options": [
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 -17.4%。",
+        "later": "到 1978 年，S&P 500 price路径约累计 -1.5%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1978 年，Buffett 实际路径约累计 102.7%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "因为通胀恐惧追逐硬资产和热门宏观交易",
+        "thesis": "宏观交易看似解释一切，却很容易让投资者用价格波动代替企业价值判断。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 -16.6%。",
+        "later": "到 1978 年，Dow price路径约累计 -5.4%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "买入 Washington Post，遭遇熊市",
+        "thesis": "可学的是以企业价值作为锚点，不是机械地越跌越买。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 -2.5%，S&P 500 price -17.4%，领先 14.9 个百分点。",
+        "later": "到 1978 年，Buffett 实际路径约累计 102.7%。",
+        "actual": true
+      }
+    ]
+  },
+  {
+    "year": 1974,
+    "slug": "1974-decision",
+    "title": "1974：通胀与浮存金年度选择",
+    "category": "float",
+    "url": "decisions/1974.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1974 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 -48.7%，S&P 500 price -29.7%，落后 19.0 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "把重心从纺织和普通股票选择，转向保险浮存金、低估证券和资本再配置",
+    "actual_thesis": "通胀和熊市不是简单的买入信号，关键是能否拥有低成本、长期、可再配置的资金。",
+    "hidden_condition": "美国仍拥有深厚资本市场和可收购企业，危机中低估资产开始出现。",
+    "letter_focus": "重点是保险浮存金、低估证券、纺织业务困境和通胀对企业经济性的侵蚀。",
+    "detail": "1974 年 Buffett 线收益为 -48.7%，S&P 500 price 为 -29.7%，Dow price 为 -27.6%。",
+    "world": "石油冲击、布雷顿森林瓦解和滞胀改变了投资者对安全资产的理解。",
+    "macro": "高通胀、石油冲击和熊市让美国投资者重新审视股票、债券和现金的真实购买力。",
+    "dollar": "1971 年美元停止兑换黄金后，美元信用进入法币时代，通胀成为投资核心变量。",
+    "tailwind": "美国仍拥有深厚资本市场和可收购企业，危机中低估资产开始出现。",
+    "shock": "石油冲击、布雷顿森林瓦解和滞胀改变了投资者对安全资产的理解。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1974.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1979 年，Buffett 实际路径约累计 700.0%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "因为通胀恐惧追逐硬资产和热门宏观交易",
+        "thesis": "宏观交易看似解释一切，却很容易让投资者用价格波动代替企业价值判断。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 -27.6%。",
+        "later": "到 1979 年，Dow price路径约累计 36.1%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "把重心从纺织和普通股票选择，转向保险浮存金、低估证券和资本再配置",
+        "thesis": "通胀和熊市不是简单的买入信号，关键是能否拥有低成本、长期、可再配置的资金。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 -48.7%，S&P 500 price -29.7%，落后 19.0 个百分点。",
+        "later": "到 1979 年，Buffett 实际路径约累计 700.0%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 -29.7%。",
+        "later": "到 1979 年，S&P 500 price路径约累计 57.4%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1975,
+    "slug": "1975-decision",
+    "title": "1975：通胀与浮存金年度选择",
+    "category": "float",
+    "url": "decisions/1975.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1975 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 2.5%，S&P 500 price 31.5%，落后 29.0 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "把重心从纺织和普通股票选择，转向保险浮存金、低估证券和资本再配置",
+    "actual_thesis": "通胀和熊市不是简单的买入信号，关键是能否拥有低成本、长期、可再配置的资金。",
+    "hidden_condition": "美国仍拥有深厚资本市场和可收购企业，危机中低估资产开始出现。",
+    "letter_focus": "重点是保险浮存金、低估证券、纺织业务困境和通胀对企业经济性的侵蚀。",
+    "detail": "1975 年 Buffett 线收益为 2.5%，S&P 500 price 为 31.5%，Dow price 为 38.3%。",
+    "world": "石油冲击、布雷顿森林瓦解和滞胀改变了投资者对安全资产的理解。",
+    "macro": "高通胀、石油冲击和熊市让美国投资者重新审视股票、债券和现金的真实购买力。",
+    "dollar": "1971 年美元停止兑换黄金后，美元信用进入法币时代，通胀成为投资核心变量。",
+    "tailwind": "美国仍拥有深厚资本市场和可收购企业，危机中低估资产开始出现。",
+    "shock": "石油冲击、布雷顿森林瓦解和滞胀改变了投资者对安全资产的理解。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1975.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "temptation",
+        "title": "因为通胀恐惧追逐硬资产和热门宏观交易",
+        "thesis": "宏观交易看似解释一切，却很容易让投资者用价格波动代替企业价值判断。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 38.3%。",
+        "later": "到 1980 年，Dow price路径约累计 13.1%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "把重心从纺织和普通股票选择，转向保险浮存金、低估证券和资本再配置",
+        "thesis": "通胀和熊市不是简单的买入信号，关键是能否拥有低成本、长期、可再配置的资金。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 2.5%，S&P 500 price 31.5%，落后 29.0 个百分点。",
+        "later": "到 1980 年，Buffett 实际路径约累计 936.5%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 31.5%。",
+        "later": "到 1980 年，S&P 500 price路径约累计 50.5%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1980 年，Buffett 实际路径约累计 936.5%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1976,
+    "slug": "1976-decision",
+    "title": "GEICO 转折点",
+    "category": "insurance",
+    "url": "decisions/1976.html",
+    "key": true,
+    "verdict": "逆向投资不是站到多数人反面，而是知道多数人错在哪里。",
+    "scene": "GEICO 陷入困境，但它不是你第一次听说的公司。你早年研究过它，理解成本结构和保险模型。现在市场给了你一次压力测试后的价格。",
+    "reader_prompt": "如果你是 Buffett，你会把它当作困境股回避，还是基于多年理解判断它能否活下来？你真的懂这个生意吗？",
+    "actual_title": "GEICO 转折点",
+    "actual_thesis": "可学的是长期跟踪一个行业直到真正理解，不是困境里盲目抄底。",
+    "hidden_condition": "他对保险商业模式研究多年，早年就理解 GEICO 的成本结构和承保逻辑。",
+    "letter_focus": "优秀保险公司的承保纪律和成本结构可以放大长期投资能力。",
+    "detail": "Buffett 早年研究 GEICO，1970 年代中期在 GEICO 困境中大举投资。之后 Berkshire 于 1996 年完成全资收购，GEICO 成为保险业务支柱。",
+    "world": "1970 年代中期美国市场从深度熊市恢复。",
+    "macro": "美国从 1973-1974 年深熊中恢复，但通胀和利率仍然支配资产定价。",
+    "dollar": "高通胀环境惩罚现金和固定收益，也奖励能够调整价格、控制成本的商业模式。",
+    "tailwind": "GEICO 绑定美国汽车社会和中产家庭风险池，这不是抽象好公司，而是美国生活方式的金融化。",
+    "shock": "石油冲击后的经济恢复证明：宏观危机不会平均伤害所有企业，成本结构决定谁能活下来。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1976.pdf",
+    "event": {
+      "year": "1976",
+      "slug": "1976-geico-turning-point",
+      "title": "GEICO 转折点",
+      "category": "insurance",
+      "impact": "对 GEICO 的投资把早年理解的保险商业模式转化为 Berkshire 的核心能力。",
+      "surface_story": "GEICO 说明 Buffett 能在困境中发现伟大公司。",
+      "hidden_condition": "他对保险商业模式研究多年，早年就理解 GEICO 的成本结构和承保逻辑。",
+      "mislearning_risk": "把困境反转当成勇敢，买入自己并不理解的烂公司。",
+      "real_lesson": "可学的是长期跟踪一个行业直到真正理解，不是困境里盲目抄底。",
+      "verdict": "逆向投资不是站到多数人反面，而是知道多数人错在哪里。",
+      "scene_setting": "GEICO 陷入困境，但它不是你第一次听说的公司。你早年研究过它，理解成本结构和保险模型。现在市场给了你一次压力测试后的价格。",
+      "reader_decision": "如果你是 Buffett，你会把它当作困境股回避，还是基于多年理解判断它能否活下来？你真的懂这个生意吗？",
+      "shu_to_avoid": "把困境投资理解成胆子大，买入自己并不理解的烂公司。",
+      "dao_to_learn": "道在准备：机会出现时的果断，来自机会出现前很多年的理解。",
+      "macro_regime": "美国从 1973-1974 年深熊中恢复，但通胀和利率仍然支配资产定价。",
+      "dollar_context": "高通胀环境惩罚现金和固定收益，也奖励能够调整价格、控制成本的商业模式。",
+      "america_tailwind": "GEICO 绑定美国汽车社会和中产家庭风险池，这不是抽象好公司，而是美国生活方式的金融化。",
+      "global_shock": "石油冲击后的经济恢复证明：宏观危机不会平均伤害所有企业，成本结构决定谁能活下来。",
+      "letter_focus": "优秀保险公司的承保纪律和成本结构可以放大长期投资能力。",
+      "detail": "Buffett 早年研究 GEICO，1970 年代中期在 GEICO 困境中大举投资。之后 Berkshire 于 1996 年完成全资收购，GEICO 成为保险业务支柱。",
+      "world": "1970 年代中期美国市场从深度熊市恢复。",
+      "source_ids": "britannica_buffett,britannica_berkshire",
+      "source_urls": "https://www.britannica.com/money/Warren-Edward-Buffett | https://www.britannica.com/money/Berkshire-Hathaway"
+    },
+    "options": [
+      {
+        "id": "actual",
+        "title": "GEICO 转折点",
+        "thesis": "可学的是长期跟踪一个行业直到真正理解，不是困境里盲目抄底。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 129.3%，S&P 500 price 19.1%，领先 110.2 个百分点。",
+        "later": "到 1981 年，Buffett 实际路径约累计 495.8%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 19.1%。",
+        "later": "到 1981 年，S&P 500 price路径约累计 14.0%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1981 年，Buffett 实际路径约累计 495.8%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "因为通胀恐惧追逐硬资产和热门宏观交易",
+        "thesis": "宏观交易看似解释一切，却很容易让投资者用价格波动代替企业价值判断。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 17.9%。",
+        "later": "到 1981 年，Dow price路径约累计 -12.9%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1977,
+    "slug": "1977-decision",
+    "title": "1977：通胀与浮存金年度选择",
+    "category": "float",
+    "url": "decisions/1977.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1977 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 46.8%，S&P 500 price -11.5%，领先 58.3 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "把重心从纺织和普通股票选择，转向保险浮存金、低估证券和资本再配置",
+    "actual_thesis": "通胀和熊市不是简单的买入信号，关键是能否拥有低成本、长期、可再配置的资金。",
+    "hidden_condition": "美国仍拥有深厚资本市场和可收购企业，危机中低估资产开始出现。",
+    "letter_focus": "重点是保险浮存金、低估证券、纺织业务困境和通胀对企业经济性的侵蚀。",
+    "detail": "1977 年 Buffett 线收益为 46.8%，S&P 500 price 为 -11.5%，Dow price 为 -17.3%。",
+    "world": "石油冲击、布雷顿森林瓦解和滞胀改变了投资者对安全资产的理解。",
+    "macro": "高通胀、石油冲击和熊市让美国投资者重新审视股票、债券和现金的真实购买力。",
+    "dollar": "1971 年美元停止兑换黄金后，美元信用进入法币时代，通胀成为投资核心变量。",
+    "tailwind": "美国仍拥有深厚资本市场和可收购企业，危机中低估资产开始出现。",
+    "shock": "石油冲击、布雷顿森林瓦解和滞胀改变了投资者对安全资产的理解。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1977.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 -11.5%。",
+        "later": "到 1982 年，S&P 500 price路径约累计 47.9%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1982 年，Buffett 实际路径约累计 461.7%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "因为通胀恐惧追逐硬资产和热门宏观交易",
+        "thesis": "宏观交易看似解释一切，却很容易让投资者用价格波动代替企业价值判断。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 -17.3%。",
+        "later": "到 1982 年，Dow price路径约累计 25.9%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "把重心从纺织和普通股票选择，转向保险浮存金、低估证券和资本再配置",
+        "thesis": "通胀和熊市不是简单的买入信号，关键是能否拥有低成本、长期、可再配置的资金。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 46.8%，S&P 500 price -11.5%，领先 58.3 个百分点。",
+        "later": "到 1982 年，Buffett 实际路径约累计 461.7%。",
+        "actual": true
+      }
+    ]
+  },
+  {
+    "year": 1978,
+    "slug": "1978-decision",
+    "title": "1978：通胀与浮存金年度选择",
+    "category": "float",
+    "url": "decisions/1978.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1978 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 14.5%，S&P 500 price 1.1%，领先 13.4 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "把重心从纺织和普通股票选择，转向保险浮存金、低估证券和资本再配置",
+    "actual_thesis": "通胀和熊市不是简单的买入信号，关键是能否拥有低成本、长期、可再配置的资金。",
+    "hidden_condition": "美国仍拥有深厚资本市场和可收购企业，危机中低估资产开始出现。",
+    "letter_focus": "重点是保险浮存金、低估证券、纺织业务困境和通胀对企业经济性的侵蚀。",
+    "detail": "1978 年 Buffett 线收益为 14.5%，S&P 500 price 为 1.1%，Dow price 为 -3.1%。",
+    "world": "石油冲击、布雷顿森林瓦解和滞胀改变了投资者对安全资产的理解。",
+    "macro": "高通胀、石油冲击和熊市让美国投资者重新审视股票、债券和现金的真实购买力。",
+    "dollar": "1971 年美元停止兑换黄金后，美元信用进入法币时代，通胀成为投资核心变量。",
+    "tailwind": "美国仍拥有深厚资本市场和可收购企业，危机中低估资产开始出现。",
+    "shock": "石油冲击、布雷顿森林瓦解和滞胀改变了投资者对安全资产的理解。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1978.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1983 年，Buffett 实际路径约累计 729.0%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "因为通胀恐惧追逐硬资产和热门宏观交易",
+        "thesis": "宏观交易看似解释一切，却很容易让投资者用价格波动代替企业价值判断。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 -3.1%。",
+        "later": "到 1983 年，Dow price路径约累计 56.4%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "把重心从纺织和普通股票选择，转向保险浮存金、低估证券和资本再配置",
+        "thesis": "通胀和熊市不是简单的买入信号，关键是能否拥有低成本、长期、可再配置的资金。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 14.5%，S&P 500 price 1.1%，领先 13.4 个百分点。",
+        "later": "到 1983 年，Buffett 实际路径约累计 729.0%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 1.1%。",
+        "later": "到 1983 年，S&P 500 price路径约累计 71.6%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1979,
+    "slug": "1979-decision",
+    "title": "1979：通胀与浮存金年度选择",
+    "category": "float",
+    "url": "decisions/1979.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「通胀与浮存金年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1979 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 102.5%，S&P 500 price 12.3%，领先 90.2 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "把重心从纺织和普通股票选择，转向保险浮存金、低估证券和资本再配置",
+    "actual_thesis": "通胀和熊市不是简单的买入信号，关键是能否拥有低成本、长期、可再配置的资金。",
+    "hidden_condition": "美国仍拥有深厚资本市场和可收购企业，危机中低估资产开始出现。",
+    "letter_focus": "重点是保险浮存金、低估证券、纺织业务困境和通胀对企业经济性的侵蚀。",
+    "detail": "1979 年 Buffett 线收益为 102.5%，S&P 500 price 为 12.3%，Dow price 为 4.2%。",
+    "world": "石油冲击、布雷顿森林瓦解和滞胀改变了投资者对安全资产的理解。",
+    "macro": "高通胀、石油冲击和熊市让美国投资者重新审视股票、债券和现金的真实购买力。",
+    "dollar": "1971 年美元停止兑换黄金后，美元信用进入法币时代，通胀成为投资核心变量。",
+    "tailwind": "美国仍拥有深厚资本市场和可收购企业，危机中低估资产开始出现。",
+    "shock": "石油冲击、布雷顿森林瓦解和滞胀改变了投资者对安全资产的理解。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1979.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "temptation",
+        "title": "因为通胀恐惧追逐硬资产和热门宏观交易",
+        "thesis": "宏观交易看似解释一切，却很容易让投资者用价格波动代替企业价值判断。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 4.2%。",
+        "later": "到 1984 年，Dow price路径约累计 44.5%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "把重心从纺织和普通股票选择，转向保险浮存金、低估证券和资本再配置",
+        "thesis": "通胀和熊市不是简单的买入信号，关键是能否拥有低成本、长期、可再配置的资金。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 102.5%，S&P 500 price 12.3%，领先 90.2 个百分点。",
+        "later": "到 1984 年，Buffett 实际路径约累计 298.3%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 12.3%。",
+        "later": "到 1984 年，S&P 500 price路径约累计 54.9%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1984 年，Buffett 实际路径约累计 298.3%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1980,
+    "slug": "1980-decision",
+    "title": "1980：品牌与特许经营年度选择",
+    "category": "franchise",
+    "url": "decisions/1980.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1980 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 32.8%，S&P 500 price 25.8%，领先 7.0 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "用保险资金买入更持久的消费、媒体和金融特许经营权",
+    "actual_thesis": "从便宜资产进化到好生意合理价，核心是企业能否在通胀和竞争后仍保持定价权。",
+    "hidden_condition": "美国消费品牌、媒体网络和金融市场给高质量企业提供更长的复利跑道。",
+    "letter_focus": "重点是内在价值、特许经营权、保险浮存金成本，以及从烟蒂股向好公司的转变。",
+    "detail": "1980 年 Buffett 线收益为 32.8%，S&P 500 price 为 25.8%，Dow price 为 14.9%。",
+    "world": "高利率、1987 年股灾和全球资本流动让投资者反复面对估值与流动性冲击。",
+    "macro": "Volcker 高利率压住通胀后，美国进入新一轮资本市场扩张。",
+    "dollar": "强美元和全球资本回流强化了美国金融资产的中心地位。",
+    "tailwind": "美国消费品牌、媒体网络和金融市场给高质量企业提供更长的复利跑道。",
+    "shock": "高利率、1987 年股灾和全球资本流动让投资者反复面对估值与流动性冲击。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1980.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "actual",
+        "title": "用保险资金买入更持久的消费、媒体和金融特许经营权",
+        "thesis": "从便宜资产进化到好生意合理价，核心是企业能否在通胀和竞争后仍保持定价权。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 32.8%，S&P 500 price 25.8%，领先 7.0 个百分点。",
+        "later": "到 1985 年，Buffett 实际路径约累计 481.0%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 25.8%。",
+        "later": "到 1985 年，S&P 500 price路径约累计 55.6%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1985 年，Buffett 实际路径约累计 481.0%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "只按低市净率继续寻找烟蒂股",
+        "thesis": "便宜但衰退的资产可能长期吞噬资本，账面便宜不等于真实复利。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 14.9%。",
+        "later": "到 1985 年，Dow price路径约累计 60.4%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1981,
+    "slug": "1981-decision",
+    "title": "1981：品牌与特许经营年度选择",
+    "category": "franchise",
+    "url": "decisions/1981.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1981 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 31.8%，S&P 500 price -9.7%，领先 41.5 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "用保险资金买入更持久的消费、媒体和金融特许经营权",
+    "actual_thesis": "从便宜资产进化到好生意合理价，核心是企业能否在通胀和竞争后仍保持定价权。",
+    "hidden_condition": "美国消费品牌、媒体网络和金融市场给高质量企业提供更长的复利跑道。",
+    "letter_focus": "重点是内在价值、特许经营权、保险浮存金成本，以及从烟蒂股向好公司的转变。",
+    "detail": "1981 年 Buffett 线收益为 31.8%，S&P 500 price 为 -9.7%，Dow price 为 -9.2%。",
+    "world": "高利率、1987 年股灾和全球资本流动让投资者反复面对估值与流动性冲击。",
+    "macro": "Volcker 高利率压住通胀后，美国进入新一轮资本市场扩张。",
+    "dollar": "强美元和全球资本回流强化了美国金融资产的中心地位。",
+    "tailwind": "美国消费品牌、媒体网络和金融市场给高质量企业提供更长的复利跑道。",
+    "shock": "高利率、1987 年股灾和全球资本流动让投资者反复面对估值与流动性冲击。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1981.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 -9.7%。",
+        "later": "到 1986 年，S&P 500 price路径约累计 97.6%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1986 年，Buffett 实际路径约累计 403.4%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "只按低市净率继续寻找烟蒂股",
+        "thesis": "便宜但衰退的资产可能长期吞噬资本，账面便宜不等于真实复利。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 -9.2%。",
+        "later": "到 1986 年，Dow price路径约累计 116.7%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "用保险资金买入更持久的消费、媒体和金融特许经营权",
+        "thesis": "从便宜资产进化到好生意合理价，核心是企业能否在通胀和竞争后仍保持定价权。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 31.8%，S&P 500 price -9.7%，领先 41.5 个百分点。",
+        "later": "到 1986 年，Buffett 实际路径约累计 403.4%。",
+        "actual": true
+      }
+    ]
+  },
+  {
+    "year": 1982,
+    "slug": "1982-decision",
+    "title": "1982：品牌与特许经营年度选择",
+    "category": "franchise",
+    "url": "decisions/1982.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1982 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 38.4%，S&P 500 price 14.8%，领先 23.6 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "用保险资金买入更持久的消费、媒体和金融特许经营权",
+    "actual_thesis": "从便宜资产进化到好生意合理价，核心是企业能否在通胀和竞争后仍保持定价权。",
+    "hidden_condition": "美国消费品牌、媒体网络和金融市场给高质量企业提供更长的复利跑道。",
+    "letter_focus": "重点是内在价值、特许经营权、保险浮存金成本，以及从烟蒂股向好公司的转变。",
+    "detail": "1982 年 Buffett 线收益为 38.4%，S&P 500 price 为 14.8%，Dow price 为 19.6%。",
+    "world": "高利率、1987 年股灾和全球资本流动让投资者反复面对估值与流动性冲击。",
+    "macro": "Volcker 高利率压住通胀后，美国进入新一轮资本市场扩张。",
+    "dollar": "强美元和全球资本回流强化了美国金融资产的中心地位。",
+    "tailwind": "美国消费品牌、媒体网络和金融市场给高质量企业提供更长的复利跑道。",
+    "shock": "高利率、1987 年股灾和全球资本流动让投资者反复面对估值与流动性冲击。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1982.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1987 年，Buffett 实际路径约累计 280.5%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "只按低市净率继续寻找烟蒂股",
+        "thesis": "便宜但衰退的资产可能长期吞噬资本，账面便宜不等于真实复利。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 19.6%。",
+        "later": "到 1987 年，Dow price路径约累计 85.3%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "用保险资金买入更持久的消费、媒体和金融特许经营权",
+        "thesis": "从便宜资产进化到好生意合理价，核心是企业能否在通胀和竞争后仍保持定价权。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 38.4%，S&P 500 price 14.8%，领先 23.6 个百分点。",
+        "later": "到 1987 年，Buffett 实际路径约累计 280.5%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 14.8%。",
+        "later": "到 1987 年，S&P 500 price路径约累计 75.7%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1983,
+    "slug": "1983-decision",
+    "title": "1983：品牌与特许经营年度选择",
+    "category": "franchise",
+    "url": "decisions/1983.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1983 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 69.0%，S&P 500 price 17.3%，领先 51.7 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "用保险资金买入更持久的消费、媒体和金融特许经营权",
+    "actual_thesis": "从便宜资产进化到好生意合理价，核心是企业能否在通胀和竞争后仍保持定价权。",
+    "hidden_condition": "美国消费品牌、媒体网络和金融市场给高质量企业提供更长的复利跑道。",
+    "letter_focus": "重点是内在价值、特许经营权、保险浮存金成本，以及从烟蒂股向好公司的转变。",
+    "detail": "1983 年 Buffett 线收益为 69.0%，S&P 500 price 为 17.3%，Dow price 为 20.3%。",
+    "world": "高利率、1987 年股灾和全球资本流动让投资者反复面对估值与流动性冲击。",
+    "macro": "Volcker 高利率压住通胀后，美国进入新一轮资本市场扩张。",
+    "dollar": "强美元和全球资本回流强化了美国金融资产的中心地位。",
+    "tailwind": "美国消费品牌、媒体网络和金融市场给高质量企业提供更长的复利跑道。",
+    "shock": "高利率、1987 年股灾和全球资本流动让投资者反复面对估值与流动性冲击。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1983.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "temptation",
+        "title": "只按低市净率继续寻找烟蒂股",
+        "thesis": "便宜但衰退的资产可能长期吞噬资本，账面便宜不等于真实复利。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 20.3%。",
+        "later": "到 1988 年，Dow price路径约累计 72.3%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "用保险资金买入更持久的消费、媒体和金融特许经营权",
+        "thesis": "从便宜资产进化到好生意合理价，核心是企业能否在通胀和竞争后仍保持定价权。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 69.0%，S&P 500 price 17.3%，领先 51.7 个百分点。",
+        "later": "到 1988 年，Buffett 实际路径约累计 258.6%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 17.3%。",
+        "later": "到 1988 年，S&P 500 price路径约累计 68.4%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1988 年，Buffett 实际路径约累计 258.6%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1984,
+    "slug": "1984-decision",
+    "title": "1984：品牌与特许经营年度选择",
+    "category": "franchise",
+    "url": "decisions/1984.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1984 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 -2.7%，S&P 500 price 1.4%，落后 4.1 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "用保险资金买入更持久的消费、媒体和金融特许经营权",
+    "actual_thesis": "从便宜资产进化到好生意合理价，核心是企业能否在通胀和竞争后仍保持定价权。",
+    "hidden_condition": "美国消费品牌、媒体网络和金融市场给高质量企业提供更长的复利跑道。",
+    "letter_focus": "重点是内在价值、特许经营权、保险浮存金成本，以及从烟蒂股向好公司的转变。",
+    "detail": "1984 年 Buffett 线收益为 -2.7%，S&P 500 price 为 1.4%，Dow price 为 -3.7%。",
+    "world": "高利率、1987 年股灾和全球资本流动让投资者反复面对估值与流动性冲击。",
+    "macro": "Volcker 高利率压住通胀后，美国进入新一轮资本市场扩张。",
+    "dollar": "强美元和全球资本回流强化了美国金融资产的中心地位。",
+    "tailwind": "美国消费品牌、媒体网络和金融市场给高质量企业提供更长的复利跑道。",
+    "shock": "高利率、1987 年股灾和全球资本流动让投资者反复面对估值与流动性冲击。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1984.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "actual",
+        "title": "用保险资金买入更持久的消费、媒体和金融特许经营权",
+        "thesis": "从便宜资产进化到好生意合理价，核心是企业能否在通胀和竞争后仍保持定价权。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 -2.7%，S&P 500 price 1.4%，落后 4.1 个百分点。",
+        "later": "到 1989 年，Buffett 实际路径约累计 580.4%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 1.4%。",
+        "later": "到 1989 年，S&P 500 price路径约累计 111.3%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1989 年，Buffett 实际路径约累计 580.4%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "只按低市净率继续寻找烟蒂股",
+        "thesis": "便宜但衰退的资产可能长期吞噬资本，账面便宜不等于真实复利。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 -3.7%。",
+        "later": "到 1989 年，Dow price路径约累计 127.2%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1985,
+    "slug": "1985-decision",
+    "title": "纺织业务关停",
+    "category": "mistake",
+    "url": "decisions/1985.html",
+    "key": true,
+    "verdict": "长期主义不是死扛，死扛只是慢速亏损。",
+    "scene": "Berkshire 的纺织业务终于走到终点。继续经营可以维持体面，关停则承认最初那笔便宜股不是好生意。",
+    "reader_prompt": "如果你是 Buffett，你会继续讲长期主义，还是停止向低回报业务投入新的资本？你能不能亲手处理自己的旧判断？",
+    "actual_title": "纺织业务关停",
+    "actual_thesis": "可学的是处理沉没成本，不是把坚持包装成价值投资。",
+    "hidden_condition": "Berkshire 已经有更好的资本去处，关闭低回报业务不是情绪动作，而是资本再配置。",
+    "letter_focus": "管理层必须处理错误，不能把沉没成本包装成坚持。",
+    "detail": "1985 年 Berkshire 关闭纺织业务，标志着最初那笔便宜股投资的商业终点。此后公司重心已经实质转为保险、可控企业和长期证券投资。",
+    "world": "1980 年代美国资本市场进入长期牛市早期。",
+    "macro": "Volcker 高利率之后，美国重新压住通胀，资本市场进入长期牛市早期。",
+    "dollar": "强美元和高利率重建美元信用，也让低回报传统制造业承压。",
+    "tailwind": "Berkshire 能退出纺织，把资本投向美国更高回报部门，这依赖一个足够深的资本市场。",
+    "shock": "1980 年代全球制造业竞争加剧，传统美国纺织业务不再享有战后保护性红利。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1985.pdf",
+    "event": {
+      "year": "1985",
+      "slug": "1985-textile-shutdown",
+      "title": "纺织业务关停",
+      "category": "mistake",
+      "impact": "承认原始业务不可救药，把资本从低回报业务中解放出来。",
+      "surface_story": "关闭纺织业务说明 Buffett 能承认错误。",
+      "hidden_condition": "Berkshire 已经有更好的资本去处，关闭低回报业务不是情绪动作，而是资本再配置。",
+      "mislearning_risk": "把“长期持有”误学成永不认错，在低回报资产里消耗时间。",
+      "real_lesson": "可学的是处理沉没成本，不是把坚持包装成价值投资。",
+      "verdict": "长期主义不是死扛，死扛只是慢速亏损。",
+      "scene_setting": "Berkshire 的纺织业务终于走到终点。继续经营可以维持体面，关停则承认最初那笔便宜股不是好生意。",
+      "reader_decision": "如果你是 Buffett，你会继续讲长期主义，还是停止向低回报业务投入新的资本？你能不能亲手处理自己的旧判断？",
+      "shu_to_avoid": "把长期持有误学成永不认错。",
+      "dao_to_learn": "道在资本去处：长期主义不是死守，而是让资本持续流向更高回报的地方。",
+      "macro_regime": "Volcker 高利率之后，美国重新压住通胀，资本市场进入长期牛市早期。",
+      "dollar_context": "强美元和高利率重建美元信用，也让低回报传统制造业承压。",
+      "america_tailwind": "Berkshire 能退出纺织，把资本投向美国更高回报部门，这依赖一个足够深的资本市场。",
+      "global_shock": "1980 年代全球制造业竞争加剧，传统美国纺织业务不再享有战后保护性红利。",
+      "letter_focus": "管理层必须处理错误，不能把沉没成本包装成坚持。",
+      "detail": "1985 年 Berkshire 关闭纺织业务，标志着最初那笔便宜股投资的商业终点。此后公司重心已经实质转为保险、可控企业和长期证券投资。",
+      "world": "1980 年代美国资本市场进入长期牛市早期。",
+      "source_ids": "britannica_buffett,britannica_berkshire",
+      "source_urls": "https://www.britannica.com/money/Warren-Edward-Buffett | https://www.britannica.com/money/Berkshire-Hathaway"
+    },
+    "options": [
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 26.3%。",
+        "later": "到 1990 年，S&P 500 price路径约累计 56.3%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1990 年，Buffett 实际路径约累计 170.1%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "只按低市净率继续寻找烟蒂股",
+        "thesis": "便宜但衰退的资产可能长期吞噬资本，账面便宜不等于真实复利。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 27.7%。",
+        "later": "到 1990 年，Dow price路径约累计 70.3%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "纺织业务关停",
+        "thesis": "可学的是处理沉没成本，不是把坚持包装成价值投资。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 93.7%，S&P 500 price 26.3%，领先 67.4 个百分点。",
+        "later": "到 1990 年，Buffett 实际路径约累计 170.1%。",
+        "actual": true
+      }
+    ]
+  },
+  {
+    "year": 1986,
+    "slug": "1986-decision",
+    "title": "1986：品牌与特许经营年度选择",
+    "category": "franchise",
+    "url": "decisions/1986.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1986 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 14.2%，S&P 500 price 14.6%，落后 0.4 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "用保险资金买入更持久的消费、媒体和金融特许经营权",
+    "actual_thesis": "从便宜资产进化到好生意合理价，核心是企业能否在通胀和竞争后仍保持定价权。",
+    "hidden_condition": "美国消费品牌、媒体网络和金融市场给高质量企业提供更长的复利跑道。",
+    "letter_focus": "重点是内在价值、特许经营权、保险浮存金成本，以及从烟蒂股向好公司的转变。",
+    "detail": "1986 年 Buffett 线收益为 14.2%，S&P 500 price 为 14.6%，Dow price 为 22.6%。",
+    "world": "高利率、1987 年股灾和全球资本流动让投资者反复面对估值与流动性冲击。",
+    "macro": "Volcker 高利率压住通胀后，美国进入新一轮资本市场扩张。",
+    "dollar": "强美元和全球资本回流强化了美国金融资产的中心地位。",
+    "tailwind": "美国消费品牌、媒体网络和金融市场给高质量企业提供更长的复利跑道。",
+    "shock": "高利率、1987 年股灾和全球资本流动让投资者反复面对估值与流动性冲击。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1986.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1991 年，Buffett 实际路径约累计 220.7%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "只按低市净率继续寻找烟蒂股",
+        "thesis": "便宜但衰退的资产可能长期吞噬资本，账面便宜不等于真实复利。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 22.6%。",
+        "later": "到 1991 年，Dow price路径约累计 67.1%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "用保险资金买入更持久的消费、媒体和金融特许经营权",
+        "thesis": "从便宜资产进化到好生意合理价，核心是企业能否在通胀和竞争后仍保持定价权。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 14.2%，S&P 500 price 14.6%，落后 0.4 个百分点。",
+        "later": "到 1991 年，Buffett 实际路径约累计 220.7%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 14.6%。",
+        "later": "到 1991 年，S&P 500 price路径约累计 72.2%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1987,
+    "slug": "1987-decision",
+    "title": "1987：品牌与特许经营年度选择",
+    "category": "franchise",
+    "url": "decisions/1987.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1987 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 4.6%，S&P 500 price 2.0%，领先 2.6 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "用保险资金买入更持久的消费、媒体和金融特许经营权",
+    "actual_thesis": "从便宜资产进化到好生意合理价，核心是企业能否在通胀和竞争后仍保持定价权。",
+    "hidden_condition": "美国消费品牌、媒体网络和金融市场给高质量企业提供更长的复利跑道。",
+    "letter_focus": "重点是内在价值、特许经营权、保险浮存金成本，以及从烟蒂股向好公司的转变。",
+    "detail": "1987 年 Buffett 线收益为 4.6%，S&P 500 price 为 2.0%，Dow price 为 2.3%。",
+    "world": "高利率、1987 年股灾和全球资本流动让投资者反复面对估值与流动性冲击。",
+    "macro": "Volcker 高利率压住通胀后，美国进入新一轮资本市场扩张。",
+    "dollar": "强美元和全球资本回流强化了美国金融资产的中心地位。",
+    "tailwind": "美国消费品牌、媒体网络和金融市场给高质量企业提供更长的复利跑道。",
+    "shock": "高利率、1987 年股灾和全球资本流动让投资者反复面对估值与流动性冲击。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1987.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "temptation",
+        "title": "只按低市净率继续寻找烟蒂股",
+        "thesis": "便宜但衰退的资产可能长期吞噬资本，账面便宜不等于真实复利。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 2.3%。",
+        "later": "到 1992 年，Dow price路径约累计 70.3%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "用保险资金买入更持久的消费、媒体和金融特许经营权",
+        "thesis": "从便宜资产进化到好生意合理价，核心是企业能否在通胀和竞争后仍保持定价权。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 4.6%，S&P 500 price 2.0%，领先 2.6 个百分点。",
+        "later": "到 1992 年，Buffett 实际路径约累计 298.0%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 2.0%。",
+        "later": "到 1992 年，S&P 500 price路径约累计 76.3%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1992 年，Buffett 实际路径约累计 298.0%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1988,
+    "slug": "1988-decision",
+    "title": "开始买入 Coca-Cola",
+    "category": "quality",
+    "url": "decisions/1988.html",
+    "key": true,
+    "verdict": "你学到的是买可乐，没学到的是判断好生意的能力。",
+    "scene": "Coca-Cola 是人人知道的品牌，但人人知道不等于值得买。你要判断的是品牌、分销、定价权和价格之间是否仍有足够空间。",
+    "reader_prompt": "如果你是 Buffett，你会因为它是好公司就买，还是要求好公司、好价格和长期再投资逻辑同时成立？",
+    "actual_title": "开始买入 Coca-Cola",
+    "actual_thesis": "可学的是好生意和合理价格的结合，不是看到消费品牌就长期持有。",
+    "hidden_condition": "这是 Buffett 和 Munger 投资框架进化后的结果，背后是几十年商业判断训练、品牌理解和估值纪律。",
+    "letter_focus": "好生意、护城河和长期再投资，比单纯低估更重要。",
+    "detail": "1988 年 Berkshire 开始买入 Coca-Cola。这笔投资后来成为 Buffett 从 Graham 式低估资产向 Munger 式优质企业进化的代表案例。",
+    "world": "1987 年黑色星期一后，市场恐慌仍未完全消退。",
+    "macro": "美国消费品牌全球化，美国企业开始更充分收割全球市场。",
+    "dollar": "通胀被压制后，长期权益资产重新获得估值空间，品牌定价权变成抗通胀资产。",
+    "tailwind": "Coca-Cola 是美国消费文化全球扩张的符号，Buffett 买到的是品牌、分销和美元利润流。",
+    "shock": "黑色星期一后市场恐慌仍在，但美国消费品牌的全球需求没有随股价一起崩掉。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1988.pdf",
+    "event": {
+      "year": "1988",
+      "slug": "1988-coca-cola",
+      "title": "开始买入 Coca-Cola",
+      "category": "quality",
+      "impact": "从烟蒂式便宜股进一步转向高质量品牌和长期持有。",
+      "surface_story": "Coca-Cola 说明买好公司长期持有就能成功。",
+      "hidden_condition": "这是 Buffett 和 Munger 投资框架进化后的结果，背后是几十年商业判断训练、品牌理解和估值纪律。",
+      "mislearning_risk": "把“好公司”简化成知名品牌，忽略价格、护城河变化和再投资能力。",
+      "real_lesson": "可学的是好生意和合理价格的结合，不是看到消费品牌就长期持有。",
+      "verdict": "你学到的是买可乐，没学到的是判断好生意的能力。",
+      "scene_setting": "Coca-Cola 是人人知道的品牌，但人人知道不等于值得买。你要判断的是品牌、分销、定价权和价格之间是否仍有足够空间。",
+      "reader_decision": "如果你是 Buffett，你会因为它是好公司就买，还是要求好公司、好价格和长期再投资逻辑同时成立？",
+      "shu_to_avoid": "把买好公司简化成买知名公司。",
+      "dao_to_learn": "道在商业质量：好公司不是标签，而是长期现金流、定价权和资本回报的组合。",
+      "macro_regime": "美国消费品牌全球化，美国企业开始更充分收割全球市场。",
+      "dollar_context": "通胀被压制后，长期权益资产重新获得估值空间，品牌定价权变成抗通胀资产。",
+      "america_tailwind": "Coca-Cola 是美国消费文化全球扩张的符号，Buffett 买到的是品牌、分销和美元利润流。",
+      "global_shock": "黑色星期一后市场恐慌仍在，但美国消费品牌的全球需求没有随股价一起崩掉。",
+      "letter_focus": "好生意、护城河和长期再投资，比单纯低估更重要。",
+      "detail": "1988 年 Berkshire 开始买入 Coca-Cola。这笔投资后来成为 Buffett 从 Graham 式低估资产向 Munger 式优质企业进化的代表案例。",
+      "world": "1987 年黑色星期一后，市场恐慌仍未完全消退。",
+      "source_ids": "britannica_berkshire,tang_tangshufang_context",
+      "source_urls": "https://www.britannica.com/money/Berkshire-Hathaway | https://10year.wordpress.com/tag/%E5%94%90%E4%B9%A6%E6%88%BF/"
+    },
+    "options": [
+      {
+        "id": "actual",
+        "title": "开始买入 Coca-Cola",
+        "thesis": "可学的是好生意和合理价格的结合，不是看到消费品牌就长期持有。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 59.3%，S&P 500 price 12.4%，领先 46.9 个百分点。",
+        "later": "到 1993 年，Buffett 实际路径约累计 247.1%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 12.4%。",
+        "later": "到 1993 年，S&P 500 price路径约累计 68.0%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1993 年，Buffett 实际路径约累计 247.1%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "只按低市净率继续寻找烟蒂股",
+        "thesis": "便宜但衰退的资产可能长期吞噬资本，账面便宜不等于真实复利。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 11.8%。",
+        "later": "到 1993 年，Dow price路径约累计 73.1%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1989,
+    "slug": "1989-decision",
+    "title": "1989：品牌与特许经营年度选择",
+    "category": "franchise",
+    "url": "decisions/1989.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「品牌与特许经营年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1989 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 84.6%，S&P 500 price 27.3%，领先 57.3 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "用保险资金买入更持久的消费、媒体和金融特许经营权",
+    "actual_thesis": "从便宜资产进化到好生意合理价，核心是企业能否在通胀和竞争后仍保持定价权。",
+    "hidden_condition": "美国消费品牌、媒体网络和金融市场给高质量企业提供更长的复利跑道。",
+    "letter_focus": "重点是内在价值、特许经营权、保险浮存金成本，以及从烟蒂股向好公司的转变。",
+    "detail": "1989 年 Buffett 线收益为 84.6%，S&P 500 price 为 27.3%，Dow price 为 27.0%。",
+    "world": "高利率、1987 年股灾和全球资本流动让投资者反复面对估值与流动性冲击。",
+    "macro": "Volcker 高利率压住通胀后，美国进入新一轮资本市场扩张。",
+    "dollar": "强美元和全球资本回流强化了美国金融资产的中心地位。",
+    "tailwind": "美国消费品牌、媒体网络和金融市场给高质量企业提供更长的复利跑道。",
+    "shock": "高利率、1987 年股灾和全球资本流动让投资者反复面对估值与流动性冲击。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1989.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 27.3%。",
+        "later": "到 1994 年，S&P 500 price路径约累计 30.0%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1994 年，Buffett 实际路径约累计 135.0%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "只按低市净率继续寻找烟蒂股",
+        "thesis": "便宜但衰退的资产可能长期吞噬资本，账面便宜不等于真实复利。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 27.0%。",
+        "later": "到 1994 年，Dow price路径约累计 39.3%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "用保险资金买入更持久的消费、媒体和金融特许经营权",
+        "thesis": "从便宜资产进化到好生意合理价，核心是企业能否在通胀和竞争后仍保持定价权。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 84.6%，S&P 500 price 27.3%，领先 57.3 个百分点。",
+        "later": "到 1994 年，Buffett 实际路径约累计 135.0%。",
+        "actual": true
+      }
+    ]
+  },
+  {
+    "year": 1990,
+    "slug": "1990-decision",
+    "title": "1990：全球化与泡沫年度选择",
+    "category": "discipline",
+    "url": "decisions/1990.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1990 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 -23.1%，S&P 500 price -6.6%，落后 16.5 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "在全球化和科技泡沫中坚持能力圈，承认看不懂的高增长也可以不买",
+    "actual_thesis": "能力圈不是行业标签，而是能否解释现金流、竞争优势和价格之间的关系。",
+    "hidden_condition": "美国企业开始从全球消费者、供应链和金融市场中获取更大范围的利润。",
+    "letter_focus": "重点是能力圈、保险风险、并购纪律，以及在科技泡沫中承受相对落后的压力。",
+    "detail": "1990 年 Buffett 线收益为 -23.1%，S&P 500 price 为 -6.6%，Dow price 为 -4.3%。",
+    "world": "日本泡沫破裂、亚洲金融危机和互联网泡沫让全球资本快速轮动。",
+    "macro": "冷战结束、全球化加速和互联网兴起改变了利润池和市场叙事。",
+    "dollar": "美元资产在全球化中继续吸收资本，美国资本市场成为全球风险资产定价中心。",
+    "tailwind": "美国企业开始从全球消费者、供应链和金融市场中获取更大范围的利润。",
+    "shock": "日本泡沫破裂、亚洲金融危机和互联网泡沫让全球资本快速轮动。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1990.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1995 年，Buffett 实际路径约累计 381.0%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "为了不落后纳斯达克而追逐科技叙事",
+        "thesis": "相对落后会制造强烈心理压力，但为了跟上泡沫而买入看不懂资产，可能破坏整个体系。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 -4.3%。",
+        "later": "到 1995 年，Dow price路径约累计 94.3%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "在全球化和科技泡沫中坚持能力圈，承认看不懂的高增长也可以不买",
+        "thesis": "能力圈不是行业标签，而是能否解释现金流、竞争优势和价格之间的关系。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 -23.1%，S&P 500 price -6.6%，落后 16.5 个百分点。",
+        "later": "到 1995 年，Buffett 实际路径约累计 381.0%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 -6.6%。",
+        "later": "到 1995 年，S&P 500 price路径约累计 86.5%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1991,
+    "slug": "1991-decision",
+    "title": "1991：全球化与泡沫年度选择",
+    "category": "discipline",
+    "url": "decisions/1991.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1991 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 35.6%，S&P 500 price 26.3%，领先 9.3 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "在全球化和科技泡沫中坚持能力圈，承认看不懂的高增长也可以不买",
+    "actual_thesis": "能力圈不是行业标签，而是能否解释现金流、竞争优势和价格之间的关系。",
+    "hidden_condition": "美国企业开始从全球消费者、供应链和金融市场中获取更大范围的利润。",
+    "letter_focus": "重点是能力圈、保险风险、并购纪律，以及在科技泡沫中承受相对落后的压力。",
+    "detail": "1991 年 Buffett 线收益为 35.6%，S&P 500 price 为 26.3%，Dow price 为 20.3%。",
+    "world": "日本泡沫破裂、亚洲金融危机和互联网泡沫让全球资本快速轮动。",
+    "macro": "冷战结束、全球化加速和互联网兴起改变了利润池和市场叙事。",
+    "dollar": "美元资产在全球化中继续吸收资本，美国资本市场成为全球风险资产定价中心。",
+    "tailwind": "美国企业开始从全球消费者、供应链和金融市场中获取更大范围的利润。",
+    "shock": "日本泡沫破裂、亚洲金融危机和互联网泡沫让全球资本快速轮动。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1991.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "temptation",
+        "title": "为了不落后纳斯达克而追逐科技叙事",
+        "thesis": "相对落后会制造强烈心理压力，但为了跟上泡沫而买入看不懂资产，可能破坏整个体系。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 20.3%。",
+        "later": "到 1996 年，Dow price路径约累计 103.5%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "在全球化和科技泡沫中坚持能力圈，承认看不懂的高增长也可以不买",
+        "thesis": "能力圈不是行业标签，而是能否解释现金流、竞争优势和价格之间的关系。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 35.6%，S&P 500 price 26.3%，领先 9.3 个百分点。",
+        "later": "到 1996 年，Buffett 实际路径约累计 276.7%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 26.3%。",
+        "later": "到 1996 年，S&P 500 price路径约累计 77.6%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1996 年，Buffett 实际路径约累计 276.7%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1992,
+    "slug": "1992-decision",
+    "title": "1992：全球化与泡沫年度选择",
+    "category": "discipline",
+    "url": "decisions/1992.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1992 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 29.8%，S&P 500 price 4.5%，领先 25.3 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "在全球化和科技泡沫中坚持能力圈，承认看不懂的高增长也可以不买",
+    "actual_thesis": "能力圈不是行业标签，而是能否解释现金流、竞争优势和价格之间的关系。",
+    "hidden_condition": "美国企业开始从全球消费者、供应链和金融市场中获取更大范围的利润。",
+    "letter_focus": "重点是能力圈、保险风险、并购纪律，以及在科技泡沫中承受相对落后的压力。",
+    "detail": "1992 年 Buffett 线收益为 29.8%，S&P 500 price 为 4.5%，Dow price 为 4.2%。",
+    "world": "日本泡沫破裂、亚洲金融危机和互联网泡沫让全球资本快速轮动。",
+    "macro": "冷战结束、全球化加速和互联网兴起改变了利润池和市场叙事。",
+    "dollar": "美元资产在全球化中继续吸收资本，美国资本市场成为全球风险资产定价中心。",
+    "tailwind": "美国企业开始从全球消费者、供应链和金融市场中获取更大范围的利润。",
+    "shock": "日本泡沫破裂、亚洲金融危机和互联网泡沫让全球资本快速轮动。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1992.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "actual",
+        "title": "在全球化和科技泡沫中坚持能力圈，承认看不懂的高增长也可以不买",
+        "thesis": "能力圈不是行业标签，而是能否解释现金流、竞争优势和价格之间的关系。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 29.8%，S&P 500 price 4.5%，领先 25.3 个百分点。",
+        "later": "到 1997 年，Buffett 实际路径约累计 291.5%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 4.5%。",
+        "later": "到 1997 年，S&P 500 price路径约累计 122.7%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1997 年，Buffett 实际路径约累计 291.5%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "为了不落后纳斯达克而追逐科技叙事",
+        "thesis": "相对落后会制造强烈心理压力，但为了跟上泡沫而买入看不懂资产，可能破坏整个体系。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 4.2%。",
+        "later": "到 1997 年，Dow price路径约累计 139.6%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1993,
+    "slug": "1993-decision",
+    "title": "1993：全球化与泡沫年度选择",
+    "category": "discipline",
+    "url": "decisions/1993.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1993 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 38.9%，S&P 500 price 7.1%，领先 31.8 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "在全球化和科技泡沫中坚持能力圈，承认看不懂的高增长也可以不买",
+    "actual_thesis": "能力圈不是行业标签，而是能否解释现金流、竞争优势和价格之间的关系。",
+    "hidden_condition": "美国企业开始从全球消费者、供应链和金融市场中获取更大范围的利润。",
+    "letter_focus": "重点是能力圈、保险风险、并购纪律，以及在科技泡沫中承受相对落后的压力。",
+    "detail": "1993 年 Buffett 线收益为 38.9%，S&P 500 price 为 7.1%，Dow price 为 13.7%。",
+    "world": "日本泡沫破裂、亚洲金融危机和互联网泡沫让全球资本快速轮动。",
+    "macro": "冷战结束、全球化加速和互联网兴起改变了利润池和市场叙事。",
+    "dollar": "美元资产在全球化中继续吸收资本，美国资本市场成为全球风险资产定价中心。",
+    "tailwind": "美国企业开始从全球消费者、供应链和金融市场中获取更大范围的利润。",
+    "shock": "日本泡沫破裂、亚洲金融危机和互联网泡沫让全球资本快速轮动。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1993.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 7.1%。",
+        "later": "到 1998 年，S&P 500 price路径约累计 163.5%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1998 年，Buffett 实际路径约累计 329.0%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "为了不落后纳斯达克而追逐科技叙事",
+        "thesis": "相对落后会制造强烈心理压力，但为了跟上泡沫而买入看不懂资产，可能破坏整个体系。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 13.7%。",
+        "later": "到 1998 年，Dow price路径约累计 144.6%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "在全球化和科技泡沫中坚持能力圈，承认看不懂的高增长也可以不买",
+        "thesis": "能力圈不是行业标签，而是能否解释现金流、竞争优势和价格之间的关系。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 38.9%，S&P 500 price 7.1%，领先 31.8 个百分点。",
+        "later": "到 1998 年，Buffett 实际路径约累计 329.0%。",
+        "actual": true
+      }
+    ]
+  },
+  {
+    "year": 1994,
+    "slug": "1994-decision",
+    "title": "1994：全球化与泡沫年度选择",
+    "category": "discipline",
+    "url": "decisions/1994.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1994 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 25.0%，S&P 500 price -1.5%，领先 26.5 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "在全球化和科技泡沫中坚持能力圈，承认看不懂的高增长也可以不买",
+    "actual_thesis": "能力圈不是行业标签，而是能否解释现金流、竞争优势和价格之间的关系。",
+    "hidden_condition": "美国企业开始从全球消费者、供应链和金融市场中获取更大范围的利润。",
+    "letter_focus": "重点是能力圈、保险风险、并购纪律，以及在科技泡沫中承受相对落后的压力。",
+    "detail": "1994 年 Buffett 线收益为 25.0%，S&P 500 price 为 -1.5%，Dow price 为 2.1%。",
+    "world": "日本泡沫破裂、亚洲金融危机和互联网泡沫让全球资本快速轮动。",
+    "macro": "冷战结束、全球化加速和互联网兴起改变了利润池和市场叙事。",
+    "dollar": "美元资产在全球化中继续吸收资本，美国资本市场成为全球风险资产定价中心。",
+    "tailwind": "美国企业开始从全球消费者、供应链和金融市场中获取更大范围的利润。",
+    "shock": "日本泡沫破裂、亚洲金融危机和互联网泡沫让全球资本快速轮动。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1994.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 1999 年，Buffett 实际路径约累计 174.9%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "为了不落后纳斯达克而追逐科技叙事",
+        "thesis": "相对落后会制造强烈心理压力，但为了跟上泡沫而买入看不懂资产，可能破坏整个体系。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 2.1%。",
+        "later": "到 1999 年，Dow price路径约累计 199.8%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "在全球化和科技泡沫中坚持能力圈，承认看不懂的高增长也可以不买",
+        "thesis": "能力圈不是行业标签，而是能否解释现金流、竞争优势和价格之间的关系。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 25.0%，S&P 500 price -1.5%，领先 26.5 个百分点。",
+        "later": "到 1999 年，Buffett 实际路径约累计 174.9%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 -1.5%。",
+        "later": "到 1999 年，S&P 500 price路径约累计 219.9%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1995,
+    "slug": "1995-decision",
+    "title": "1995：全球化与泡沫年度选择",
+    "category": "discipline",
+    "url": "decisions/1995.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1995 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 57.4%，S&P 500 price 34.1%，领先 23.3 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "在全球化和科技泡沫中坚持能力圈，承认看不懂的高增长也可以不买",
+    "actual_thesis": "能力圈不是行业标签，而是能否解释现金流、竞争优势和价格之间的关系。",
+    "hidden_condition": "美国企业开始从全球消费者、供应链和金融市场中获取更大范围的利润。",
+    "letter_focus": "重点是能力圈、保险风险、并购纪律，以及在科技泡沫中承受相对落后的压力。",
+    "detail": "1995 年 Buffett 线收益为 57.4%，S&P 500 price 为 34.1%，Dow price 为 33.5%。",
+    "world": "日本泡沫破裂、亚洲金融危机和互联网泡沫让全球资本快速轮动。",
+    "macro": "冷战结束、全球化加速和互联网兴起改变了利润池和市场叙事。",
+    "dollar": "美元资产在全球化中继续吸收资本，美国资本市场成为全球风险资产定价中心。",
+    "tailwind": "美国企业开始从全球消费者、供应链和金融市场中获取更大范围的利润。",
+    "shock": "日本泡沫破裂、亚洲金融危机和互联网泡沫让全球资本快速轮动。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1995.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "temptation",
+        "title": "为了不落后纳斯达克而追逐科技叙事",
+        "thesis": "相对落后会制造强烈心理压力，但为了跟上泡沫而买入看不懂资产，可能破坏整个体系。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 33.5%。",
+        "later": "到 2000 年，Dow price路径约累计 110.8%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "在全球化和科技泡沫中坚持能力圈，承认看不懂的高增长也可以不买",
+        "thesis": "能力圈不是行业标签，而是能否解释现金流、竞争优势和价格之间的关系。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 57.4%，S&P 500 price 34.1%，领先 23.3 个百分点。",
+        "later": "到 2000 年，Buffett 实际路径约累计 121.1%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 34.1%。",
+        "later": "到 2000 年，S&P 500 price路径约累计 114.4%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2000 年，Buffett 实际路径约累计 121.1%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1996,
+    "slug": "1996-decision",
+    "title": "全资收购 GEICO",
+    "category": "acquisition",
+    "url": "decisions/1996.html",
+    "key": true,
+    "verdict": "Buffett 的加仓有时买到控制权，你的加仓只是更高仓位。",
+    "scene": "你已经研究 GEICO 很久，也曾在它困难时下注。现在可以全资收购，把一项长期理解变成 Berkshire 内部的保险引擎。",
+    "reader_prompt": "如果你是 Buffett，你会满足于持股收益，还是在理解足够深时买下控制权？你有能力经营和配置这家公司吗？",
+    "actual_title": "全资收购 GEICO",
+    "actual_thesis": "可学的是深度理解后再行动，不是用熟悉感替代研究。",
+    "hidden_condition": "Berkshire 可以从公开股权升级为控制权，把保险业务纳入整个资本机器。",
+    "letter_focus": "当理解足够深、价格足够合理时，控制权能创造额外价值。",
+    "detail": "1996 年 Berkshire 完成 GEICO 全资收购。GEICO 的低成本直销模式和承保规模，强化了 Berkshire 保险业务的长期资金来源。",
+    "world": "美国进入互联网泡沫前的高速扩张期。",
+    "macro": "冷战后美国全球化红利扩大，金融市场深度和企业并购活动增强。",
+    "dollar": "美元资产在全球资本流动中继续占据中心位置，优质美国企业享受更低融资成本。",
+    "tailwind": "GEICO 全资并入 Berkshire，把美国汽车保险市场和低成本直销模式变成内部资本机器。",
+    "shock": "全球化和互联网前夜扩大了美国企业利润池，也强化了资本市场给赢家的估值溢价。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1996.pdf",
+    "event": {
+      "year": "1996",
+      "slug": "1996-geico-acquisition",
+      "title": "全资收购 GEICO",
+      "category": "acquisition",
+      "impact": "把长期研究和部分持股升级为全资控制，保险浮存金基础更稳。",
+      "surface_story": "全资收购 GEICO 是长期研究后的果断出手。",
+      "hidden_condition": "Berkshire 可以从公开股权升级为控制权，把保险业务纳入整个资本机器。",
+      "mislearning_risk": "把长期跟踪误学成只要熟悉一个公司就应该重仓，忽略控制权和经营整合价值。",
+      "real_lesson": "可学的是深度理解后再行动，不是用熟悉感替代研究。",
+      "verdict": "Buffett 的加仓有时买到控制权，你的加仓只是更高仓位。",
+      "scene_setting": "你已经研究 GEICO 很久，也曾在它困难时下注。现在可以全资收购，把一项长期理解变成 Berkshire 内部的保险引擎。",
+      "reader_decision": "如果你是 Buffett，你会满足于持股收益，还是在理解足够深时买下控制权？你有能力经营和配置这家公司吗？",
+      "shu_to_avoid": "把加仓理解成信心，却忽略 Buffett 的加仓有时是在买控制权。",
+      "dao_to_learn": "道在能力边界：当理解、价格、结构和控制权同时出现时，行动才有意义。",
+      "macro_regime": "冷战后美国全球化红利扩大，金融市场深度和企业并购活动增强。",
+      "dollar_context": "美元资产在全球资本流动中继续占据中心位置，优质美国企业享受更低融资成本。",
+      "america_tailwind": "GEICO 全资并入 Berkshire，把美国汽车保险市场和低成本直销模式变成内部资本机器。",
+      "global_shock": "全球化和互联网前夜扩大了美国企业利润池，也强化了资本市场给赢家的估值溢价。",
+      "letter_focus": "当理解足够深、价格足够合理时，控制权能创造额外价值。",
+      "detail": "1996 年 Berkshire 完成 GEICO 全资收购。GEICO 的低成本直销模式和承保规模，强化了 Berkshire 保险业务的长期资金来源。",
+      "world": "美国进入互联网泡沫前的高速扩张期。",
+      "source_ids": "britannica_berkshire",
+      "source_urls": "https://www.britannica.com/money/Berkshire-Hathaway"
+    },
+    "options": [
+      {
+        "id": "actual",
+        "title": "全资收购 GEICO",
+        "thesis": "可学的是深度理解后再行动，不是用熟悉感替代研究。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 6.2%，S&P 500 price 20.3%，落后 14.1 个百分点。",
+        "later": "到 2001 年，Buffett 实际路径约累计 121.7%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 20.3%。",
+        "later": "到 2001 年，S&P 500 price路径约累计 55.0%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2001 年，Buffett 实际路径约累计 121.7%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "为了不落后纳斯达克而追逐科技叙事",
+        "thesis": "相对落后会制造强烈心理压力，但为了跟上泡沫而买入看不懂资产，可能破坏整个体系。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 26.0%。",
+        "later": "到 2001 年，Dow price路径约累计 55.4%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1997,
+    "slug": "1997-decision",
+    "title": "1997：全球化与泡沫年度选择",
+    "category": "discipline",
+    "url": "decisions/1997.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1997 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 34.9%，S&P 500 price 31.0%，领先 3.9 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "在全球化和科技泡沫中坚持能力圈，承认看不懂的高增长也可以不买",
+    "actual_thesis": "能力圈不是行业标签，而是能否解释现金流、竞争优势和价格之间的关系。",
+    "hidden_condition": "美国企业开始从全球消费者、供应链和金融市场中获取更大范围的利润。",
+    "letter_focus": "重点是能力圈、保险风险、并购纪律，以及在科技泡沫中承受相对落后的压力。",
+    "detail": "1997 年 Buffett 线收益为 34.9%，S&P 500 price 为 31.0%，Dow price 为 22.6%。",
+    "world": "日本泡沫破裂、亚洲金融危机和互联网泡沫让全球资本快速轮动。",
+    "macro": "冷战结束、全球化加速和互联网兴起改变了利润池和市场叙事。",
+    "dollar": "美元资产在全球化中继续吸收资本，美国资本市场成为全球风险资产定价中心。",
+    "tailwind": "美国企业开始从全球消费者、供应链和金融市场中获取更大范围的利润。",
+    "shock": "日本泡沫破裂、亚洲金融危机和互联网泡沫让全球资本快速轮动。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1997.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 31.0%。",
+        "later": "到 2002 年，S&P 500 price路径约累计 -9.3%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2002 年，Buffett 实际路径约累计 58.1%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "为了不落后纳斯达克而追逐科技叙事",
+        "thesis": "相对落后会制造强烈心理压力，但为了跟上泡沫而买入看不懂资产，可能破坏整个体系。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 22.6%。",
+        "later": "到 2002 年，Dow price路径约累计 5.5%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "在全球化和科技泡沫中坚持能力圈，承认看不懂的高增长也可以不买",
+        "thesis": "能力圈不是行业标签，而是能否解释现金流、竞争优势和价格之间的关系。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 34.9%，S&P 500 price 31.0%，领先 3.9 个百分点。",
+        "later": "到 2002 年，Buffett 实际路径约累计 58.1%。",
+        "actual": true
+      }
+    ]
+  },
+  {
+    "year": 1998,
+    "slug": "1998-decision",
+    "title": "1998：全球化与泡沫年度选择",
+    "category": "discipline",
+    "url": "decisions/1998.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「全球化与泡沫年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 1998 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 52.2%，S&P 500 price 26.7%，领先 25.5 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "在全球化和科技泡沫中坚持能力圈，承认看不懂的高增长也可以不买",
+    "actual_thesis": "能力圈不是行业标签，而是能否解释现金流、竞争优势和价格之间的关系。",
+    "hidden_condition": "美国企业开始从全球消费者、供应链和金融市场中获取更大范围的利润。",
+    "letter_focus": "重点是能力圈、保险风险、并购纪律，以及在科技泡沫中承受相对落后的压力。",
+    "detail": "1998 年 Buffett 线收益为 52.2%，S&P 500 price 为 26.7%，Dow price 为 16.1%。",
+    "world": "日本泡沫破裂、亚洲金融危机和互联网泡沫让全球资本快速轮动。",
+    "macro": "冷战结束、全球化加速和互联网兴起改变了利润池和市场叙事。",
+    "dollar": "美元资产在全球化中继续吸收资本，美国资本市场成为全球风险资产定价中心。",
+    "tailwind": "美国企业开始从全球消费者、供应链和金融市场中获取更大范围的利润。",
+    "shock": "日本泡沫破裂、亚洲金融危机和互联网泡沫让全球资本快速轮动。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1998.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2003 年，Buffett 实际路径约累计 20.3%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "为了不落后纳斯达克而追逐科技叙事",
+        "thesis": "相对落后会制造强烈心理压力，但为了跟上泡沫而买入看不懂资产，可能破坏整个体系。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 16.1%。",
+        "later": "到 2003 年，Dow price路径约累计 13.9%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "在全球化和科技泡沫中坚持能力圈，承认看不懂的高增长也可以不买",
+        "thesis": "能力圈不是行业标签，而是能否解释现金流、竞争优势和价格之间的关系。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 52.2%，S&P 500 price 26.7%，领先 25.5 个百分点。",
+        "later": "到 2003 年，Buffett 实际路径约累计 20.3%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 26.7%。",
+        "later": "到 2003 年，S&P 500 price路径约累计 -9.5%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 1999,
+    "slug": "1999-decision",
+    "title": "科技泡沫中跑输",
+    "category": "discipline",
+    "url": "decisions/1999.html",
+    "key": true,
+    "verdict": "能力圈不是护城河，懒惰才需要借口。",
+    "scene": "互联网股票暴涨，Berkshire 跑输，外界质疑 Buffett 老了。你面对的不只是市场价格，还有声誉压力和时代叙事。",
+    "reader_prompt": "如果你是 Buffett，你会为了不落伍而买不懂的科技股，还是接受短期难看，坚持能力圈？同时你会不会继续学习新生意？",
+    "actual_title": "科技泡沫中跑输",
+    "actual_thesis": "可学的是不买不懂的东西，同时持续扩大真正能懂的范围。",
+    "hidden_condition": "他能承受舆论和相对业绩压力，因为 Berkshire 的资本基础和信誉足够稳固。",
+    "letter_focus": "不懂的不买，短期相对落后不等于原则失效。",
+    "detail": "1999 年 Berkshire 每股市值下跌 19.9%，而 S&P 500 含股息上涨 21.0%。这是全图中最重要的心理压力年份之一：坚持能力圈意味着会在热门资产泡沫中显得落伍。",
+    "world": "互联网泡沫推高成长股估值，传统价值股承压。",
+    "macro": "互联网泡沫把美国成长股推到极端估值，传统价值股短期失去叙事优势。",
+    "dollar": "强美元、资本流入和科技乐观主义共同推高美国风险资产。",
+    "tailwind": "即使 Berkshire 跑输，美国资本市场仍允许不同风格长期共存并接受最终业绩检验。",
+    "shock": "亚洲金融危机后全球资本回流美元资产，强化了美国市场中心地位，也放大了泡沫。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/1999.pdf",
+    "event": {
+      "year": "1999",
+      "slug": "1999-dotcom-discipline",
+      "title": "科技泡沫中跑输",
+      "category": "discipline",
+      "impact": "Berkshire 在泡沫年份显著跑输，但没有改变能力圈纪律。",
+      "surface_story": "科技泡沫中跑输，证明 Buffett 坚守能力圈。",
+      "hidden_condition": "他能承受舆论和相对业绩压力，因为 Berkshire 的资本基础和信誉足够稳固。",
+      "mislearning_risk": "把能力圈当成不学习新事物的借口，在变化中把无知包装成纪律。",
+      "real_lesson": "可学的是不买不懂的东西，同时持续扩大真正能懂的范围。",
+      "verdict": "能力圈不是护城河，懒惰才需要借口。",
+      "scene_setting": "互联网股票暴涨，Berkshire 跑输，外界质疑 Buffett 老了。你面对的不只是市场价格，还有声誉压力和时代叙事。",
+      "reader_decision": "如果你是 Buffett，你会为了不落伍而买不懂的科技股，还是接受短期难看，坚持能力圈？同时你会不会继续学习新生意？",
+      "shu_to_avoid": "把能力圈当成拒绝学习的借口。",
+      "dao_to_learn": "道在诚实：不懂就是不懂，但真正的能力圈也必须能被持续扩展。",
+      "macro_regime": "互联网泡沫把美国成长股推到极端估值，传统价值股短期失去叙事优势。",
+      "dollar_context": "强美元、资本流入和科技乐观主义共同推高美国风险资产。",
+      "america_tailwind": "即使 Berkshire 跑输，美国资本市场仍允许不同风格长期共存并接受最终业绩检验。",
+      "global_shock": "亚洲金融危机后全球资本回流美元资产，强化了美国市场中心地位，也放大了泡沫。",
+      "letter_focus": "不懂的不买，短期相对落后不等于原则失效。",
+      "detail": "1999 年 Berkshire 每股市值下跌 19.9%，而 S&P 500 含股息上涨 21.0%。这是全图中最重要的心理压力年份之一：坚持能力圈意味着会在热门资产泡沫中显得落伍。",
+      "world": "互联网泡沫推高成长股估值，传统价值股承压。",
+      "source_ids": "berkshire_2024_annual_report",
+      "source_urls": "https://www.berkshirehathaway.com/2024ar/2024ar.pdf"
+    },
+    "options": [
+      {
+        "id": "temptation",
+        "title": "为了不落后纳斯达克而追逐科技叙事",
+        "thesis": "相对落后会制造强烈心理压力，但为了跟上泡沫而买入看不懂资产，可能破坏整个体系。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 25.2%。",
+        "later": "到 2004 年，Dow price路径约累计 -6.2%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "科技泡沫中跑输",
+        "thesis": "可学的是不买不懂的东西，同时持续扩大真正能懂的范围。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 -19.9%，S&P 500 price 19.5%，落后 39.4 个百分点。",
+        "later": "到 2004 年，Buffett 实际路径约累计 56.7%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 19.5%。",
+        "later": "到 2004 年，S&P 500 price路径约累计 -17.5%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2004 年，Buffett 实际路径约累计 56.7%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 2000,
+    "slug": "2000-decision",
+    "title": "2000：危机资本年度选择",
+    "category": "crisis",
+    "url": "decisions/2000.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 2000 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 26.6%，S&P 500 price -10.1%，领先 36.7 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "在泡沫破裂和金融危机中用 Berkshire 资产负债表提供稀缺资本",
+    "actual_thesis": "危机中真正稀缺的不是观点，而是长期信誉、流动性和可以迅速部署的资本。",
+    "hidden_condition": "美国市场允许强资产负债表在恐慌中以优先条款提供资本。",
+    "letter_focus": "重点是衍生品风险、保险承保纪律、现金储备和危机时的资本投放。",
+    "detail": "2000 年 Buffett 线收益为 26.6%，S&P 500 price 为 -10.1%，Dow price 为 -6.2%。",
+    "world": "9/11、次贷危机和全球金融危机让投资者重新认识杠杆、流动性和信用风险。",
+    "macro": "互联网泡沫破裂、低利率、住房信贷扩张和 2008 年金融危机重塑市场。",
+    "dollar": "美元体系在危机中承压，但也通过全球避险需求继续保持中心地位。",
+    "tailwind": "美国市场允许强资产负债表在恐慌中以优先条款提供资本。",
+    "shock": "9/11、次贷危机和全球金融危机让投资者重新认识杠杆、流动性和信用风险。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2000.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "actual",
+        "title": "在泡沫破裂和金融危机中用 Berkshire 资产负债表提供稀缺资本",
+        "thesis": "危机中真正稀缺的不是观点，而是长期信誉、流动性和可以迅速部署的资本。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 26.6%，S&P 500 price -10.1%，领先 36.7 个百分点。",
+        "later": "到 2005 年，Buffett 实际路径约累计 24.7%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 -10.1%。",
+        "later": "到 2005 年，S&P 500 price路径约累计 -5.5%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2005 年，Buffett 实际路径约累计 24.7%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "在危机中彻底离场，等媒体确认安全后再回来",
+        "thesis": "等确定性出现时，价格和条款往往已经不再属于长期资本。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 -6.2%。",
+        "later": "到 2005 年，Dow price路径约累计 -0.6%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 2001,
+    "slug": "2001-decision",
+    "title": "2001：危机资本年度选择",
+    "category": "crisis",
+    "url": "decisions/2001.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 2001 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 6.5%，S&P 500 price -13.0%，领先 19.5 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "在泡沫破裂和金融危机中用 Berkshire 资产负债表提供稀缺资本",
+    "actual_thesis": "危机中真正稀缺的不是观点，而是长期信誉、流动性和可以迅速部署的资本。",
+    "hidden_condition": "美国市场允许强资产负债表在恐慌中以优先条款提供资本。",
+    "letter_focus": "重点是衍生品风险、保险承保纪律、现金储备和危机时的资本投放。",
+    "detail": "2001 年 Buffett 线收益为 6.5%，S&P 500 price 为 -13.0%，Dow price 为 -7.1%。",
+    "world": "9/11、次贷危机和全球金融危机让投资者重新认识杠杆、流动性和信用风险。",
+    "macro": "互联网泡沫破裂、低利率、住房信贷扩张和 2008 年金融危机重塑市场。",
+    "dollar": "美元体系在危机中承压，但也通过全球避险需求继续保持中心地位。",
+    "tailwind": "美国市场允许强资产负债表在恐慌中以优先条款提供资本。",
+    "shock": "9/11、次贷危机和全球金融危机让投资者重新认识杠杆、流动性和信用风险。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2001.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 -13.0%。",
+        "later": "到 2006 年，S&P 500 price路径约累计 23.5%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2006 年，Buffett 实际路径约累计 45.3%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "在危机中彻底离场，等媒体确认安全后再回来",
+        "thesis": "等确定性出现时，价格和条款往往已经不再属于长期资本。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 -7.1%。",
+        "later": "到 2006 年，Dow price路径约累计 24.4%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "在泡沫破裂和金融危机中用 Berkshire 资产负债表提供稀缺资本",
+        "thesis": "危机中真正稀缺的不是观点，而是长期信誉、流动性和可以迅速部署的资本。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 6.5%，S&P 500 price -13.0%，领先 19.5 个百分点。",
+        "later": "到 2006 年，Buffett 实际路径约累计 45.3%。",
+        "actual": true
+      }
+    ]
+  },
+  {
+    "year": 2002,
+    "slug": "2002-decision",
+    "title": "2002：危机资本年度选择",
+    "category": "crisis",
+    "url": "decisions/2002.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 2002 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 -3.8%，S&P 500 price -23.4%，领先 19.6 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "在泡沫破裂和金融危机中用 Berkshire 资产负债表提供稀缺资本",
+    "actual_thesis": "危机中真正稀缺的不是观点，而是长期信誉、流动性和可以迅速部署的资本。",
+    "hidden_condition": "美国市场允许强资产负债表在恐慌中以优先条款提供资本。",
+    "letter_focus": "重点是衍生品风险、保险承保纪律、现金储备和危机时的资本投放。",
+    "detail": "2002 年 Buffett 线收益为 -3.8%，S&P 500 price 为 -23.4%，Dow price 为 -16.8%。",
+    "world": "9/11、次贷危机和全球金融危机让投资者重新认识杠杆、流动性和信用风险。",
+    "macro": "互联网泡沫破裂、低利率、住房信贷扩张和 2008 年金融危机重塑市场。",
+    "dollar": "美元体系在危机中承压，但也通过全球避险需求继续保持中心地位。",
+    "tailwind": "美国市场允许强资产负债表在恐慌中以优先条款提供资本。",
+    "shock": "9/11、次贷危机和全球金融危机让投资者重新认识杠杆、流动性和信用风险。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2002.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2007 年，Buffett 实际路径约累计 94.4%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "在危机中彻底离场，等媒体确认安全后再回来",
+        "thesis": "等确定性出现时，价格和条款往往已经不再属于长期资本。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 -16.8%。",
+        "later": "到 2007 年，Dow price路径约累计 59.0%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "在泡沫破裂和金融危机中用 Berkshire 资产负债表提供稀缺资本",
+        "thesis": "危机中真正稀缺的不是观点，而是长期信誉、流动性和可以迅速部署的资本。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 -3.8%，S&P 500 price -23.4%，领先 19.6 个百分点。",
+        "later": "到 2007 年，Buffett 实际路径约累计 94.4%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 -23.4%。",
+        "later": "到 2007 年，S&P 500 price路径约累计 66.9%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 2003,
+    "slug": "2003-decision",
+    "title": "2003：危机资本年度选择",
+    "category": "crisis",
+    "url": "decisions/2003.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 2003 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 15.8%，S&P 500 price 26.4%，落后 10.6 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "在泡沫破裂和金融危机中用 Berkshire 资产负债表提供稀缺资本",
+    "actual_thesis": "危机中真正稀缺的不是观点，而是长期信誉、流动性和可以迅速部署的资本。",
+    "hidden_condition": "美国市场允许强资产负债表在恐慌中以优先条款提供资本。",
+    "letter_focus": "重点是衍生品风险、保险承保纪律、现金储备和危机时的资本投放。",
+    "detail": "2003 年 Buffett 线收益为 15.8%，S&P 500 price 为 26.4%，Dow price 为 25.3%。",
+    "world": "9/11、次贷危机和全球金融危机让投资者重新认识杠杆、流动性和信用风险。",
+    "macro": "互联网泡沫破裂、低利率、住房信贷扩张和 2008 年金融危机重塑市场。",
+    "dollar": "美元体系在危机中承压，但也通过全球避险需求继续保持中心地位。",
+    "tailwind": "美国市场允许强资产负债表在恐慌中以优先条款提供资本。",
+    "shock": "9/11、次贷危机和全球金融危机让投资者重新认识杠杆、流动性和信用风险。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2003.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "temptation",
+        "title": "在危机中彻底离场，等媒体确认安全后再回来",
+        "thesis": "等确定性出现时，价格和条款往往已经不再属于长期资本。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 25.3%。",
+        "later": "到 2008 年，Dow price路径约累计 -16.0%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "在泡沫破裂和金融危机中用 Berkshire 资产负债表提供稀缺资本",
+        "thesis": "危机中真正稀缺的不是观点，而是长期信誉、流动性和可以迅速部署的资本。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 15.8%，S&P 500 price 26.4%，落后 10.6 个百分点。",
+        "later": "到 2008 年，Buffett 实际路径约累计 14.5%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 26.4%。",
+        "later": "到 2008 年，S&P 500 price路径约累计 -18.8%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2008 年，Buffett 实际路径约累计 14.5%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 2004,
+    "slug": "2004-decision",
+    "title": "2004：危机资本年度选择",
+    "category": "crisis",
+    "url": "decisions/2004.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 2004 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 4.3%，S&P 500 price 9.0%，落后 4.7 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "在泡沫破裂和金融危机中用 Berkshire 资产负债表提供稀缺资本",
+    "actual_thesis": "危机中真正稀缺的不是观点，而是长期信誉、流动性和可以迅速部署的资本。",
+    "hidden_condition": "美国市场允许强资产负债表在恐慌中以优先条款提供资本。",
+    "letter_focus": "重点是衍生品风险、保险承保纪律、现金储备和危机时的资本投放。",
+    "detail": "2004 年 Buffett 线收益为 4.3%，S&P 500 price 为 9.0%，Dow price 为 3.1%。",
+    "world": "9/11、次贷危机和全球金融危机让投资者重新认识杠杆、流动性和信用风险。",
+    "macro": "互联网泡沫破裂、低利率、住房信贷扩张和 2008 年金融危机重塑市场。",
+    "dollar": "美元体系在危机中承压，但也通过全球避险需求继续保持中心地位。",
+    "tailwind": "美国市场允许强资产负债表在恐慌中以优先条款提供资本。",
+    "shock": "9/11、次贷危机和全球金融危机让投资者重新认识杠杆、流动性和信用风险。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2004.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "actual",
+        "title": "在泡沫破裂和金融危机中用 Berkshire 资产负债表提供稀缺资本",
+        "thesis": "危机中真正稀缺的不是观点，而是长期信誉、流动性和可以迅速部署的资本。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 4.3%，S&P 500 price 9.0%，落后 4.7 个百分点。",
+        "later": "到 2009 年，Buffett 实际路径约累计 12.8%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 9.0%。",
+        "later": "到 2009 年，S&P 500 price路径约累计 -8.0%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2009 年，Buffett 实际路径约累计 12.8%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "在危机中彻底离场，等媒体确认安全后再回来",
+        "thesis": "等确定性出现时，价格和条款往往已经不再属于长期资本。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 3.1%。",
+        "later": "到 2009 年，Dow price路径约累计 -3.3%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 2005,
+    "slug": "2005-decision",
+    "title": "2005：危机资本年度选择",
+    "category": "crisis",
+    "url": "decisions/2005.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 2005 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 0.8%，S&P 500 price 3.0%，落后 2.2 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "在泡沫破裂和金融危机中用 Berkshire 资产负债表提供稀缺资本",
+    "actual_thesis": "危机中真正稀缺的不是观点，而是长期信誉、流动性和可以迅速部署的资本。",
+    "hidden_condition": "美国市场允许强资产负债表在恐慌中以优先条款提供资本。",
+    "letter_focus": "重点是衍生品风险、保险承保纪律、现金储备和危机时的资本投放。",
+    "detail": "2005 年 Buffett 线收益为 0.8%，S&P 500 price 为 3.0%，Dow price 为 -0.6%。",
+    "world": "9/11、次贷危机和全球金融危机让投资者重新认识杠杆、流动性和信用风险。",
+    "macro": "互联网泡沫破裂、低利率、住房信贷扩张和 2008 年金融危机重塑市场。",
+    "dollar": "美元体系在危机中承压，但也通过全球避险需求继续保持中心地位。",
+    "tailwind": "美国市场允许强资产负债表在恐慌中以优先条款提供资本。",
+    "shock": "9/11、次贷危机和全球金融危机让投资者重新认识杠杆、流动性和信用风险。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2005.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 3.0%。",
+        "later": "到 2010 年，S&P 500 price路径约累计 0.7%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2010 年，Buffett 实际路径约累计 35.8%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "在危机中彻底离场，等媒体确认安全后再回来",
+        "thesis": "等确定性出现时，价格和条款往往已经不再属于长期资本。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 -0.6%。",
+        "later": "到 2010 年，Dow price路径约累计 8.0%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "在泡沫破裂和金融危机中用 Berkshire 资产负债表提供稀缺资本",
+        "thesis": "危机中真正稀缺的不是观点，而是长期信誉、流动性和可以迅速部署的资本。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 0.8%，S&P 500 price 3.0%，落后 2.2 个百分点。",
+        "later": "到 2010 年，Buffett 实际路径约累计 35.8%。",
+        "actual": true
+      }
+    ]
+  },
+  {
+    "year": 2006,
+    "slug": "2006-decision",
+    "title": "2006：危机资本年度选择",
+    "category": "crisis",
+    "url": "decisions/2006.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 2006 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 24.1%，S&P 500 price 13.6%，领先 10.5 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "在泡沫破裂和金融危机中用 Berkshire 资产负债表提供稀缺资本",
+    "actual_thesis": "危机中真正稀缺的不是观点，而是长期信誉、流动性和可以迅速部署的资本。",
+    "hidden_condition": "美国市场允许强资产负债表在恐慌中以优先条款提供资本。",
+    "letter_focus": "重点是衍生品风险、保险承保纪律、现金储备和危机时的资本投放。",
+    "detail": "2006 年 Buffett 线收益为 24.1%，S&P 500 price 为 13.6%，Dow price 为 16.3%。",
+    "world": "9/11、次贷危机和全球金融危机让投资者重新认识杠杆、流动性和信用风险。",
+    "macro": "互联网泡沫破裂、低利率、住房信贷扩张和 2008 年金融危机重塑市场。",
+    "dollar": "美元体系在危机中承压，但也通过全球避险需求继续保持中心地位。",
+    "tailwind": "美国市场允许强资产负债表在恐慌中以优先条款提供资本。",
+    "shock": "9/11、次贷危机和全球金融危机让投资者重新认识杠杆、流动性和信用风险。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2006.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2011 年，Buffett 实际路径约累计 4.3%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "在危机中彻底离场，等媒体确认安全后再回来",
+        "thesis": "等确定性出现时，价格和条款往往已经不再属于长期资本。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 16.3%。",
+        "later": "到 2011 年，Dow price路径约累计 -2.0%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "在泡沫破裂和金融危机中用 Berkshire 资产负债表提供稀缺资本",
+        "thesis": "危机中真正稀缺的不是观点，而是长期信誉、流动性和可以迅速部署的资本。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 24.1%，S&P 500 price 13.6%，领先 10.5 个百分点。",
+        "later": "到 2011 年，Buffett 实际路径约累计 4.3%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 13.6%。",
+        "later": "到 2011 年，S&P 500 price路径约累计 -11.3%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 2007,
+    "slug": "2007-decision",
+    "title": "2007：危机资本年度选择",
+    "category": "crisis",
+    "url": "decisions/2007.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「危机资本年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 2007 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 28.7%，S&P 500 price 3.5%，领先 25.2 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "在泡沫破裂和金融危机中用 Berkshire 资产负债表提供稀缺资本",
+    "actual_thesis": "危机中真正稀缺的不是观点，而是长期信誉、流动性和可以迅速部署的资本。",
+    "hidden_condition": "美国市场允许强资产负债表在恐慌中以优先条款提供资本。",
+    "letter_focus": "重点是衍生品风险、保险承保纪律、现金储备和危机时的资本投放。",
+    "detail": "2007 年 Buffett 线收益为 28.7%，S&P 500 price 为 3.5%，Dow price 为 6.4%。",
+    "world": "9/11、次贷危机和全球金融危机让投资者重新认识杠杆、流动性和信用风险。",
+    "macro": "互联网泡沫破裂、低利率、住房信贷扩张和 2008 年金融危机重塑市场。",
+    "dollar": "美元体系在危机中承压，但也通过全球避险需求继续保持中心地位。",
+    "tailwind": "美国市场允许强资产负债表在恐慌中以优先条款提供资本。",
+    "shock": "9/11、次贷危机和全球金融危机让投资者重新认识杠杆、流动性和信用风险。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2007.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "temptation",
+        "title": "在危机中彻底离场，等媒体确认安全后再回来",
+        "thesis": "等确定性出现时，价格和条款往往已经不再属于长期资本。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 6.4%。",
+        "later": "到 2012 年，Dow price路径约累计 -1.2%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "在泡沫破裂和金融危机中用 Berkshire 资产负债表提供稀缺资本",
+        "thesis": "危机中真正稀缺的不是观点，而是长期信誉、流动性和可以迅速部署的资本。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 28.7%，S&P 500 price 3.5%，领先 25.2 个百分点。",
+        "later": "到 2012 年，Buffett 实际路径约累计 -5.4%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 3.5%。",
+        "later": "到 2012 年，S&P 500 price路径约累计 -2.9%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2012 年，Buffett 实际路径约累计 -5.4%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 2008,
+    "slug": "2008-decision",
+    "title": "金融危机中的资本提供者",
+    "category": "crisis",
+    "url": "decisions/2008.html",
+    "key": true,
+    "verdict": "你不是危机里的 Buffett，你只是危机里的价格接受者。",
+    "scene": "全球金融体系冻结，所有人都在抢美元流动性。Berkshire 股价也跌，但它手里有现金、信用和可以被信任的名字。",
+    "reader_prompt": "如果你是 Buffett，你会先保命还是出手提供资本？如果没有永久资本和信用，你是否仍然敢说别人恐惧我贪婪？",
+    "actual_title": "金融危机中的资本提供者",
+    "actual_thesis": "可学的是危机前保留选择权，不是危机中喊口号。",
+    "hidden_condition": "Berkshire 是危机中的资本提供者，拥有现金、信用和交易声誉，可以拿到普通投资者拿不到的条款。",
+    "letter_focus": "保持流动性和信用，才能在别人被迫卖出时行动。",
+    "detail": "2008 年 Berkshire 股价同样大幅下跌，但公司在危机中向优质金融/工业企业提供资本。对长期投资者而言，这一年同时是回撤测试和机会测试。",
+    "world": "全球金融危机冲击银行、信用市场和实体经济。",
+    "macro": "全球金融危机暴露美元信用体系的脆弱性，也显示美联储和美国资产的中心地位。",
+    "dollar": "危机中全世界抢美元流动性，Berkshire 手里的美元现金变成稀缺交易筹码。",
+    "tailwind": "Buffett 能以美国信用和 Berkshire 声誉成为资本提供者，普通投资者只是价格接受者。",
+    "shock": "美国次贷危机变成全球危机，说明美国金融体系的问题会外溢到所有投资者。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2008.pdf",
+    "event": {
+      "year": "2008",
+      "slug": "2008-financial-crisis-capital",
+      "title": "金融危机中的资本提供者",
+      "category": "crisis",
+      "impact": "市场流动性枯竭时，Berkshire 的现金和声誉变成交易优势。",
+      "surface_story": "金融危机说明 Buffett 能在别人恐惧时贪婪。",
+      "hidden_condition": "Berkshire 是危机中的资本提供者，拥有现金、信用和交易声誉，可以拿到普通投资者拿不到的条款。",
+      "mislearning_risk": "把危机买入误学成个人账户盲目抄底，忽略流动性、杠杆和收入风险。",
+      "real_lesson": "可学的是危机前保留选择权，不是危机中喊口号。",
+      "verdict": "你不是危机里的 Buffett，你只是危机里的价格接受者。",
+      "scene_setting": "全球金融体系冻结，所有人都在抢美元流动性。Berkshire 股价也跌，但它手里有现金、信用和可以被信任的名字。",
+      "reader_decision": "如果你是 Buffett，你会先保命还是出手提供资本？如果没有永久资本和信用，你是否仍然敢说别人恐惧我贪婪？",
+      "shu_to_avoid": "把危机买入理解成抄底口号。",
+      "dao_to_learn": "道在位置：危机中重要的不是勇气，而是你到底是资本提供者还是价格接受者。",
+      "macro_regime": "全球金融危机暴露美元信用体系的脆弱性，也显示美联储和美国资产的中心地位。",
+      "dollar_context": "危机中全世界抢美元流动性，Berkshire 手里的美元现金变成稀缺交易筹码。",
+      "america_tailwind": "Buffett 能以美国信用和 Berkshire 声誉成为资本提供者，普通投资者只是价格接受者。",
+      "global_shock": "美国次贷危机变成全球危机，说明美国金融体系的问题会外溢到所有投资者。",
+      "letter_focus": "保持流动性和信用，才能在别人被迫卖出时行动。",
+      "detail": "2008 年 Berkshire 股价同样大幅下跌，但公司在危机中向优质金融/工业企业提供资本。对长期投资者而言，这一年同时是回撤测试和机会测试。",
+      "world": "全球金融危机冲击银行、信用市场和实体经济。",
+      "source_ids": "berkshire_2024_annual_report",
+      "source_urls": "https://www.berkshirehathaway.com/2024ar/2024ar.pdf"
+    },
+    "options": [
+      {
+        "id": "actual",
+        "title": "金融危机中的资本提供者",
+        "thesis": "可学的是危机前保留选择权，不是危机中喊口号。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 -31.8%，S&P 500 price -38.5%，领先 6.7 个百分点。",
+        "later": "到 2013 年，Buffett 实际路径约累计 84.2%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 -38.5%。",
+        "later": "到 2013 年，S&P 500 price路径约累计 104.6%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2013 年，Buffett 实际路径约累计 84.2%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "在危机中彻底离场，等媒体确认安全后再回来",
+        "thesis": "等确定性出现时，价格和条款往往已经不再属于长期资本。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 -33.8%。",
+        "later": "到 2013 年，Dow price路径约累计 88.9%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 2009,
+    "slug": "2009-decision",
+    "title": "宣布收购 BNSF",
+    "category": "acquisition",
+    "url": "decisions/2009.html",
+    "key": true,
+    "verdict": "Buffett 押注美国时买下基础设施，你押注美国时只是买入波动。",
+    "scene": "金融危机刚过，美国经济还没有恢复信心。BNSF 代表铁路、物流、能源、农业和美国实体经济底盘。",
+    "reader_prompt": "如果你是 Buffett，你会等待宏观数据好看，还是在恐惧未散时买下美国经济的基础设施？你能承受这笔长期押注吗？",
+    "actual_title": "宣布收购 BNSF",
+    "actual_thesis": "可学的是把投资和真实经济现金流连接起来，不是用宏大叙事替代估值。",
+    "hidden_condition": "Berkshire 能买下整家公司，用全资企业现金流承接长期资本，不是买几股铁路股。",
+    "letter_focus": "在美国经济长期增长上押注，用全资企业承接长期资本。",
+    "detail": "2009 年 Berkshire 宣布收购 BNSF，2010 年完成交易。铁路业务让 Berkshire 的收益来源更接近美国实体经济的长期货运网络。",
+    "world": "金融危机后，美国进入低利率和复苏周期。",
+    "macro": "金融危机后美国进入低利率、量化宽松和缓慢复苏时代。",
+    "dollar": "低利率降低长期资产折现率，也让拥有稳定现金流的实体资产更稀缺。",
+    "tailwind": "BNSF 是美国货运、能源、农业和消费供应链的基础设施，直接绑定美国经济底盘。",
+    "shock": "危机后的政策托底改变资产价格路径，长期资本能买到被恐慌压低的基础设施资产。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2009.pdf",
+    "event": {
+      "year": "2009",
+      "slug": "2009-bnsf",
+      "title": "宣布收购 BNSF",
+      "category": "acquisition",
+      "impact": "Berkshire 从证券投资进一步扩展到美国基础设施和铁路现金流。",
+      "surface_story": "BNSF 是 Buffett 对美国长期经济的重下注。",
+      "hidden_condition": "Berkshire 能买下整家公司，用全资企业现金流承接长期资本，不是买几股铁路股。",
+      "mislearning_risk": "把宏观信念当成投资理由，忽略自己没有控制权和现金流再配置权。",
+      "real_lesson": "可学的是把投资和真实经济现金流连接起来，不是用宏大叙事替代估值。",
+      "verdict": "Buffett 押注美国时买下基础设施，你押注美国时只是买入波动。",
+      "scene_setting": "金融危机刚过，美国经济还没有恢复信心。BNSF 代表铁路、物流、能源、农业和美国实体经济底盘。",
+      "reader_decision": "如果你是 Buffett，你会等待宏观数据好看，还是在恐惧未散时买下美国经济的基础设施？你能承受这笔长期押注吗？",
+      "shu_to_avoid": "用宏大叙事替代估值和现金流。",
+      "dao_to_learn": "道在连接：伟大投资不是喊相信未来，而是把未来落实到可拥有、可计价的现金流资产。",
+      "macro_regime": "金融危机后美国进入低利率、量化宽松和缓慢复苏时代。",
+      "dollar_context": "低利率降低长期资产折现率，也让拥有稳定现金流的实体资产更稀缺。",
+      "america_tailwind": "BNSF 是美国货运、能源、农业和消费供应链的基础设施，直接绑定美国经济底盘。",
+      "global_shock": "危机后的政策托底改变资产价格路径，长期资本能买到被恐慌压低的基础设施资产。",
+      "letter_focus": "在美国经济长期增长上押注，用全资企业承接长期资本。",
+      "detail": "2009 年 Berkshire 宣布收购 BNSF，2010 年完成交易。铁路业务让 Berkshire 的收益来源更接近美国实体经济的长期货运网络。",
+      "world": "金融危机后，美国进入低利率和复苏周期。",
+      "source_ids": "britannica_berkshire",
+      "source_urls": "https://www.britannica.com/money/Berkshire-Hathaway"
+    },
+    "options": [
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 23.5%。",
+        "later": "到 2014 年，S&P 500 price路径约累计 84.6%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2014 年，Buffett 实际路径约累计 127.7%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "在危机中彻底离场，等媒体确认安全后再回来",
+        "thesis": "等确定性出现时，价格和条款往往已经不再属于长期资本。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 18.8%。",
+        "later": "到 2014 年，Dow price路径约累计 70.9%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "宣布收购 BNSF",
+        "thesis": "可学的是把投资和真实经济现金流连接起来，不是用宏大叙事替代估值。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 2.7%，S&P 500 price 23.5%，落后 20.8 个百分点。",
+        "later": "到 2014 年，Buffett 实际路径约累计 127.7%。",
+        "actual": true
+      }
+    ]
+  },
+  {
+    "year": 2010,
+    "slug": "2010-decision",
+    "title": "2010：规模约束年度选择",
+    "category": "scale",
+    "url": "decisions/2010.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 2010 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 21.4%，S&P 500 price 12.8%，领先 8.6 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "承认规模约束，把全资业务、回购和平台型现金流纳入资本配置工具箱",
+    "actual_thesis": "当资本规模变大，能不能复制早期收益不是核心；核心是如何在更少机会中避免坏交易。",
+    "hidden_condition": "美国平台公司、消费品牌和资本市场机制把全球利润集中到少数企业。",
+    "letter_focus": "重点是规模、现金、回购、全资业务，以及 Apple 这类成熟平台型公司的能力圈边界。",
+    "detail": "2010 年 Buffett 线收益为 21.4%，S&P 500 price 为 12.8%，Dow price 为 11.0%。",
+    "world": "欧债危机、贸易摩擦和平台监管压力不断测试全球化利润池。",
+    "macro": "低利率、科技平台崛起和全球化成熟，让优质现金流资产估值持续抬升。",
+    "dollar": "美元低利率和全球资本回流支撑大型美国企业融资、回购和估值。",
+    "tailwind": "美国平台公司、消费品牌和资本市场机制把全球利润集中到少数企业。",
+    "shock": "欧债危机、贸易摩擦和平台监管压力不断测试全球化利润池。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2010.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2015 年，Buffett 实际路径约累计 64.1%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "为了证明仍然灵活，追逐所有新经济热点",
+        "thesis": "规模越大，错误越贵；扩展能力圈必须来自商业理解，而不是行业焦虑。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 11.0%。",
+        "later": "到 2015 年，Dow price路径约累计 50.5%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "承认规模约束，把全资业务、回购和平台型现金流纳入资本配置工具箱",
+        "thesis": "当资本规模变大，能不能复制早期收益不是核心；核心是如何在更少机会中避免坏交易。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 21.4%，S&P 500 price 12.8%，领先 8.6 个百分点。",
+        "later": "到 2015 年，Buffett 实际路径约累计 64.1%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 12.8%。",
+        "later": "到 2015 年，S&P 500 price路径约累计 62.5%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 2011,
+    "slug": "2011-decision",
+    "title": "2011：规模约束年度选择",
+    "category": "scale",
+    "url": "decisions/2011.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 2011 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 -4.7%，S&P 500 price -0.0%，落后 4.7 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "承认规模约束，把全资业务、回购和平台型现金流纳入资本配置工具箱",
+    "actual_thesis": "当资本规模变大，能不能复制早期收益不是核心；核心是如何在更少机会中避免坏交易。",
+    "hidden_condition": "美国平台公司、消费品牌和资本市场机制把全球利润集中到少数企业。",
+    "letter_focus": "重点是规模、现金、回购、全资业务，以及 Apple 这类成熟平台型公司的能力圈边界。",
+    "detail": "2011 年 Buffett 线收益为 -4.7%，S&P 500 price 为 -0.0%，Dow price 为 5.5%。",
+    "world": "欧债危机、贸易摩擦和平台监管压力不断测试全球化利润池。",
+    "macro": "低利率、科技平台崛起和全球化成熟，让优质现金流资产估值持续抬升。",
+    "dollar": "美元低利率和全球资本回流支撑大型美国企业融资、回购和估值。",
+    "tailwind": "美国平台公司、消费品牌和资本市场机制把全球利润集中到少数企业。",
+    "shock": "欧债危机、贸易摩擦和平台监管压力不断测试全球化利润池。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2011.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "temptation",
+        "title": "为了证明仍然灵活，追逐所有新经济热点",
+        "thesis": "规模越大，错误越贵；扩展能力圈必须来自商业理解，而不是行业焦虑。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 5.5%。",
+        "later": "到 2016 年，Dow price路径约累计 61.8%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "承认规模约束，把全资业务、回购和平台型现金流纳入资本配置工具箱",
+        "thesis": "当资本规模变大，能不能复制早期收益不是核心；核心是如何在更少机会中避免坏交易。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 -4.7%，S&P 500 price -0.0%，落后 4.7 个百分点。",
+        "later": "到 2016 年，Buffett 实际路径约累计 112.5%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 -0.0%。",
+        "later": "到 2016 年，S&P 500 price路径约累计 78.0%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2016 年，Buffett 实际路径约累计 112.5%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 2012,
+    "slug": "2012-decision",
+    "title": "2012：规模约束年度选择",
+    "category": "scale",
+    "url": "decisions/2012.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 2012 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 16.8%，S&P 500 price 13.4%，领先 3.4 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "承认规模约束，把全资业务、回购和平台型现金流纳入资本配置工具箱",
+    "actual_thesis": "当资本规模变大，能不能复制早期收益不是核心；核心是如何在更少机会中避免坏交易。",
+    "hidden_condition": "美国平台公司、消费品牌和资本市场机制把全球利润集中到少数企业。",
+    "letter_focus": "重点是规模、现金、回购、全资业务，以及 Apple 这类成熟平台型公司的能力圈边界。",
+    "detail": "2012 年 Buffett 线收益为 16.8%，S&P 500 price 为 13.4%，Dow price 为 7.3%。",
+    "world": "欧债危机、贸易摩擦和平台监管压力不断测试全球化利润池。",
+    "macro": "低利率、科技平台崛起和全球化成熟，让优质现金流资产估值持续抬升。",
+    "dollar": "美元低利率和全球资本回流支撑大型美国企业融资、回购和估值。",
+    "tailwind": "美国平台公司、消费品牌和资本市场机制把全球利润集中到少数企业。",
+    "shock": "欧债危机、贸易摩擦和平台监管压力不断测试全球化利润池。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2012.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "actual",
+        "title": "承认规模约束，把全资业务、回购和平台型现金流纳入资本配置工具箱",
+        "thesis": "当资本规模变大，能不能复制早期收益不是核心；核心是如何在更少机会中避免坏交易。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 16.8%，S&P 500 price 13.4%，领先 3.4 个百分点。",
+        "later": "到 2017 年，Buffett 实际路径约累计 121.8%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 13.4%。",
+        "later": "到 2017 年，S&P 500 price路径约累计 87.5%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2017 年，Buffett 实际路径约累计 121.8%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "为了证明仍然灵活，追逐所有新经济热点",
+        "thesis": "规模越大，错误越贵；扩展能力圈必须来自商业理解，而不是行业焦虑。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 7.3%。",
+        "later": "到 2017 年，Dow price路径约累计 88.6%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 2013,
+    "slug": "2013-decision",
+    "title": "2013：规模约束年度选择",
+    "category": "scale",
+    "url": "decisions/2013.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 2013 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 32.7%，S&P 500 price 29.6%，领先 3.1 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "承认规模约束，把全资业务、回购和平台型现金流纳入资本配置工具箱",
+    "actual_thesis": "当资本规模变大，能不能复制早期收益不是核心；核心是如何在更少机会中避免坏交易。",
+    "hidden_condition": "美国平台公司、消费品牌和资本市场机制把全球利润集中到少数企业。",
+    "letter_focus": "重点是规模、现金、回购、全资业务，以及 Apple 这类成熟平台型公司的能力圈边界。",
+    "detail": "2013 年 Buffett 线收益为 32.7%，S&P 500 price 为 29.6%，Dow price 为 26.5%。",
+    "world": "欧债危机、贸易摩擦和平台监管压力不断测试全球化利润池。",
+    "macro": "低利率、科技平台崛起和全球化成熟，让优质现金流资产估值持续抬升。",
+    "dollar": "美元低利率和全球资本回流支撑大型美国企业融资、回购和估值。",
+    "tailwind": "美国平台公司、消费品牌和资本市场机制把全球利润集中到少数企业。",
+    "shock": "欧债危机、贸易摩擦和平台监管压力不断测试全球化利润池。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2013.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 29.6%。",
+        "later": "到 2018 年，S&P 500 price路径约累计 35.6%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2018 年，Buffett 实际路径约累计 71.8%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "为了证明仍然灵活，追逐所有新经济热点",
+        "thesis": "规模越大，错误越贵；扩展能力圈必须来自商业理解，而不是行业焦虑。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 26.5%。",
+        "later": "到 2018 年，Dow price路径约累计 40.7%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "承认规模约束，把全资业务、回购和平台型现金流纳入资本配置工具箱",
+        "thesis": "当资本规模变大，能不能复制早期收益不是核心；核心是如何在更少机会中避免坏交易。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 32.7%，S&P 500 price 29.6%，领先 3.1 个百分点。",
+        "later": "到 2018 年，Buffett 实际路径约累计 71.8%。",
+        "actual": true
+      }
+    ]
+  },
+  {
+    "year": 2014,
+    "slug": "2014-decision",
+    "title": "2014：规模约束年度选择",
+    "category": "scale",
+    "url": "decisions/2014.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 2014 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 27.0%，S&P 500 price 11.4%，领先 15.6 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "承认规模约束，把全资业务、回购和平台型现金流纳入资本配置工具箱",
+    "actual_thesis": "当资本规模变大，能不能复制早期收益不是核心；核心是如何在更少机会中避免坏交易。",
+    "hidden_condition": "美国平台公司、消费品牌和资本市场机制把全球利润集中到少数企业。",
+    "letter_focus": "重点是规模、现金、回购、全资业务，以及 Apple 这类成熟平台型公司的能力圈边界。",
+    "detail": "2014 年 Buffett 线收益为 27.0%，S&P 500 price 为 11.4%，Dow price 为 7.5%。",
+    "world": "欧债危机、贸易摩擦和平台监管压力不断测试全球化利润池。",
+    "macro": "低利率、科技平台崛起和全球化成熟，让优质现金流资产估值持续抬升。",
+    "dollar": "美元低利率和全球资本回流支撑大型美国企业融资、回购和估值。",
+    "tailwind": "美国平台公司、消费品牌和资本市场机制把全球利润集中到少数企业。",
+    "shock": "欧债危机、贸易摩擦和平台监管压力不断测试全球化利润池。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2014.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2019 年，Buffett 实际路径约累计 50.2%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "为了证明仍然灵活，追逐所有新经济热点",
+        "thesis": "规模越大，错误越贵；扩展能力圈必须来自商业理解，而不是行业焦虑。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 7.5%。",
+        "later": "到 2019 年，Dow price路径约累计 60.1%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "承认规模约束，把全资业务、回购和平台型现金流纳入资本配置工具箱",
+        "thesis": "当资本规模变大，能不能复制早期收益不是核心；核心是如何在更少机会中避免坏交易。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 27.0%，S&P 500 price 11.4%，领先 15.6 个百分点。",
+        "later": "到 2019 年，Buffett 实际路径约累计 50.2%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 11.4%。",
+        "later": "到 2019 年，S&P 500 price路径约累计 56.9%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 2015,
+    "slug": "2015-decision",
+    "title": "2015：规模约束年度选择",
+    "category": "scale",
+    "url": "decisions/2015.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 2015 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 -12.5%，S&P 500 price -0.7%，落后 11.8 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "承认规模约束，把全资业务、回购和平台型现金流纳入资本配置工具箱",
+    "actual_thesis": "当资本规模变大，能不能复制早期收益不是核心；核心是如何在更少机会中避免坏交易。",
+    "hidden_condition": "美国平台公司、消费品牌和资本市场机制把全球利润集中到少数企业。",
+    "letter_focus": "重点是规模、现金、回购、全资业务，以及 Apple 这类成熟平台型公司的能力圈边界。",
+    "detail": "2015 年 Buffett 线收益为 -12.5%，S&P 500 price 为 -0.7%，Dow price 为 -2.2%。",
+    "world": "欧债危机、贸易摩擦和平台监管压力不断测试全球化利润池。",
+    "macro": "低利率、科技平台崛起和全球化成熟，让优质现金流资产估值持续抬升。",
+    "dollar": "美元低利率和全球资本回流支撑大型美国企业融资、回购和估值。",
+    "tailwind": "美国平台公司、消费品牌和资本市场机制把全球利润集中到少数企业。",
+    "shock": "欧债危机、贸易摩擦和平台监管压力不断测试全球化利润池。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2015.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "temptation",
+        "title": "为了证明仍然灵活，追逐所有新经济热点",
+        "thesis": "规模越大，错误越贵；扩展能力圈必须来自商业理解，而不是行业焦虑。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 -2.2%。",
+        "later": "到 2020 年，Dow price路径约累计 75.6%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "承认规模约束，把全资业务、回购和平台型现金流纳入资本配置工具箱",
+        "thesis": "当资本规模变大，能不能复制早期收益不是核心；核心是如何在更少机会中避免坏交易。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 -12.5%，S&P 500 price -0.7%，落后 11.8 个百分点。",
+        "later": "到 2020 年，Buffett 实际路径约累计 75.8%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 -0.7%。",
+        "later": "到 2020 年，S&P 500 price路径约累计 83.8%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2020 年，Buffett 实际路径约累计 75.8%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 2016,
+    "slug": "2016-decision",
+    "title": "Apple 成为公开股权核心仓位",
+    "category": "public_equity",
+    "url": "decisions/2016.html",
+    "key": true,
+    "verdict": "Buffett 买 Apple 不是追科技，是买消费垄断和现金流。",
+    "scene": "Apple 已经不是早期科技创业公司，而是成熟平台、消费品牌、现金流机器和回购机器。Buffett 的能力圈开始改变边界。",
+    "reader_prompt": "如果你是 Buffett，你会因为科技标签拒绝它，还是重新判断它是不是一个消费者生意？你能否说清楚自己懂的到底是什么？",
+    "actual_title": "Apple 成为公开股权核心仓位",
+    "actual_thesis": "可学的是能力圈按商业理解扩展，不是按行业标签扩展。",
+    "hidden_condition": "他买的是成熟平台、消费者黏性、现金流和回购能力，不是追逐热门科技叙事。",
+    "letter_focus": "能力圈不是行业标签，而是能否理解消费者黏性和长期现金流。",
+    "detail": "2016 年 Berkshire 开始买入 Apple，后来 Apple 成为公开股票组合中最重要的仓位之一。这也是 Buffett 投资框架继续演化的标志。",
+    "world": "移动互联网进入成熟期，平台型公司现金流能力凸显。",
+    "macro": "移动互联网成熟，美国平台公司成为全球利润池的中心。",
+    "dollar": "低利率和全球美元利润回流支撑大型科技公司的回购、现金流和估值。",
+    "tailwind": "Apple 把全球消费力、美国品牌、软件生态和资本回报机制集中到一家企业。",
+    "shock": "全球化供应链和智能手机普及让美国平台公司赚取全球消费者和开发者的利润。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2016.pdf",
+    "event": {
+      "year": "2016",
+      "slug": "2016-apple",
+      "title": "Apple 成为公开股权核心仓位",
+      "category": "public_equity",
+      "impact": "Berkshire 对消费品牌、生态系统和资本回报的理解延伸到科技巨头。",
+      "surface_story": "Apple 说明 Buffett 的能力圈也能进化到科技公司。",
+      "hidden_condition": "他买的是成熟平台、消费者黏性、现金流和回购能力，不是追逐热门科技叙事。",
+      "mislearning_risk": "用 Buffett 买 Apple 证明自己可以买任何科技股，把能力圈扩展误解成追热点。",
+      "real_lesson": "可学的是能力圈按商业理解扩展，不是按行业标签扩展。",
+      "verdict": "Buffett 买 Apple 不是追科技，是买消费垄断和现金流。",
+      "scene_setting": "Apple 已经不是早期科技创业公司，而是成熟平台、消费品牌、现金流机器和回购机器。Buffett 的能力圈开始改变边界。",
+      "reader_decision": "如果你是 Buffett，你会因为科技标签拒绝它，还是重新判断它是不是一个消费者生意？你能否说清楚自己懂的到底是什么？",
+      "shu_to_avoid": "用 Buffett 买 Apple 证明自己可以追任何科技热点。",
+      "dao_to_learn": "道在重新定义：能力圈不是行业标签，而是你能否理解现金流和用户黏性。",
+      "macro_regime": "移动互联网成熟，美国平台公司成为全球利润池的中心。",
+      "dollar_context": "低利率和全球美元利润回流支撑大型科技公司的回购、现金流和估值。",
+      "america_tailwind": "Apple 把全球消费力、美国品牌、软件生态和资本回报机制集中到一家企业。",
+      "global_shock": "全球化供应链和智能手机普及让美国平台公司赚取全球消费者和开发者的利润。",
+      "letter_focus": "能力圈不是行业标签，而是能否理解消费者黏性和长期现金流。",
+      "detail": "2016 年 Berkshire 开始买入 Apple，后来 Apple 成为公开股票组合中最重要的仓位之一。这也是 Buffett 投资框架继续演化的标志。",
+      "world": "移动互联网进入成熟期，平台型公司现金流能力凸显。",
+      "source_ids": "britannica_berkshire",
+      "source_urls": "https://www.britannica.com/money/Berkshire-Hathaway"
+    },
+    "options": [
+      {
+        "id": "actual",
+        "title": "Apple 成为公开股权核心仓位",
+        "thesis": "可学的是能力圈按商业理解扩展，不是按行业标签扩展。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 23.4%，S&P 500 price 9.5%，领先 13.9 个百分点。",
+        "later": "到 2021 年，Buffett 实际路径约累计 84.6%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 9.5%。",
+        "later": "到 2021 年，S&P 500 price路径约累计 112.9%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2021 年，Buffett 实际路径约累计 84.6%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "为了证明仍然灵活，追逐所有新经济热点",
+        "thesis": "规模越大，错误越贵；扩展能力圈必须来自商业理解，而不是行业焦虑。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 13.4%。",
+        "later": "到 2021 年，Dow price路径约累计 83.9%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 2017,
+    "slug": "2017-decision",
+    "title": "2017：规模约束年度选择",
+    "category": "scale",
+    "url": "decisions/2017.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 2017 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 21.9%，S&P 500 price 19.4%，领先 2.5 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "承认规模约束，把全资业务、回购和平台型现金流纳入资本配置工具箱",
+    "actual_thesis": "当资本规模变大，能不能复制早期收益不是核心；核心是如何在更少机会中避免坏交易。",
+    "hidden_condition": "美国平台公司、消费品牌和资本市场机制把全球利润集中到少数企业。",
+    "letter_focus": "重点是规模、现金、回购、全资业务，以及 Apple 这类成熟平台型公司的能力圈边界。",
+    "detail": "2017 年 Buffett 线收益为 21.9%，S&P 500 price 为 19.4%，Dow price 为 25.1%。",
+    "world": "欧债危机、贸易摩擦和平台监管压力不断测试全球化利润池。",
+    "macro": "低利率、科技平台崛起和全球化成熟，让优质现金流资产估值持续抬升。",
+    "dollar": "美元低利率和全球资本回流支撑大型美国企业融资、回购和估值。",
+    "tailwind": "美国平台公司、消费品牌和资本市场机制把全球利润集中到少数企业。",
+    "shock": "欧债危机、贸易摩擦和平台监管压力不断测试全球化利润池。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2017.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 19.4%。",
+        "later": "到 2022 年，S&P 500 price路径约累计 43.6%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2022 年，Buffett 实际路径约累计 57.5%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "为了证明仍然灵活，追逐所有新经济热点",
+        "thesis": "规模越大，错误越贵；扩展能力圈必须来自商业理解，而不是行业焦虑。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 25.1%。",
+        "later": "到 2022 年，Dow price路径约累计 34.1%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "承认规模约束，把全资业务、回购和平台型现金流纳入资本配置工具箱",
+        "thesis": "当资本规模变大，能不能复制早期收益不是核心；核心是如何在更少机会中避免坏交易。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 21.9%，S&P 500 price 19.4%，领先 2.5 个百分点。",
+        "later": "到 2022 年，Buffett 实际路径约累计 57.5%。",
+        "actual": true
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "slug": "2018-decision",
+    "title": "2018：规模约束年度选择",
+    "category": "scale",
+    "url": "decisions/2018.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 2018 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 2.8%，S&P 500 price -6.2%，领先 9.0 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "承认规模约束，把全资业务、回购和平台型现金流纳入资本配置工具箱",
+    "actual_thesis": "当资本规模变大，能不能复制早期收益不是核心；核心是如何在更少机会中避免坏交易。",
+    "hidden_condition": "美国平台公司、消费品牌和资本市场机制把全球利润集中到少数企业。",
+    "letter_focus": "重点是规模、现金、回购、全资业务，以及 Apple 这类成熟平台型公司的能力圈边界。",
+    "detail": "2018 年 Buffett 线收益为 2.8%，S&P 500 price 为 -6.2%，Dow price 为 -5.6%。",
+    "world": "欧债危机、贸易摩擦和平台监管压力不断测试全球化利润池。",
+    "macro": "低利率、科技平台崛起和全球化成熟，让优质现金流资产估值持续抬升。",
+    "dollar": "美元低利率和全球资本回流支撑大型美国企业融资、回购和估值。",
+    "tailwind": "美国平台公司、消费品牌和资本市场机制把全球利润集中到少数企业。",
+    "shock": "欧债危机、贸易摩擦和平台监管压力不断测试全球化利润池。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2018.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2023 年，Buffett 实际路径约累计 77.4%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "为了证明仍然灵活，追逐所有新经济热点",
+        "thesis": "规模越大，错误越贵；扩展能力圈必须来自商业理解，而不是行业焦虑。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 -5.6%。",
+        "later": "到 2023 年，Dow price路径约累计 61.6%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "承认规模约束，把全资业务、回购和平台型现金流纳入资本配置工具箱",
+        "thesis": "当资本规模变大，能不能复制早期收益不是核心；核心是如何在更少机会中避免坏交易。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 2.8%，S&P 500 price -6.2%，领先 9.0 个百分点。",
+        "later": "到 2023 年，Buffett 实际路径约累计 77.4%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 -6.2%。",
+        "later": "到 2023 年，S&P 500 price路径约累计 90.3%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "slug": "2019-decision",
+    "title": "2019：规模约束年度选择",
+    "category": "scale",
+    "url": "decisions/2019.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「规模约束年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 2019 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 11.0%，S&P 500 price 28.9%，落后 17.9 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "承认规模约束，把全资业务、回购和平台型现金流纳入资本配置工具箱",
+    "actual_thesis": "当资本规模变大，能不能复制早期收益不是核心；核心是如何在更少机会中避免坏交易。",
+    "hidden_condition": "美国平台公司、消费品牌和资本市场机制把全球利润集中到少数企业。",
+    "letter_focus": "重点是规模、现金、回购、全资业务，以及 Apple 这类成熟平台型公司的能力圈边界。",
+    "detail": "2019 年 Buffett 线收益为 11.0%，S&P 500 price 为 28.9%，Dow price 为 22.3%。",
+    "world": "欧债危机、贸易摩擦和平台监管压力不断测试全球化利润池。",
+    "macro": "低利率、科技平台崛起和全球化成熟，让优质现金流资产估值持续抬升。",
+    "dollar": "美元低利率和全球资本回流支撑大型美国企业融资、回购和估值。",
+    "tailwind": "美国平台公司、消费品牌和资本市场机制把全球利润集中到少数企业。",
+    "shock": "欧债危机、贸易摩擦和平台监管压力不断测试全球化利润池。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2019.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "temptation",
+        "title": "为了证明仍然灵活，追逐所有新经济热点",
+        "thesis": "规模越大，错误越贵；扩展能力圈必须来自商业理解，而不是行业焦虑。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 22.3%。",
+        "later": "到 2024 年，Dow price路径约累计 49.1%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "承认规模约束，把全资业务、回购和平台型现金流纳入资本配置工具箱",
+        "thesis": "当资本规模变大，能不能复制早期收益不是核心；核心是如何在更少机会中避免坏交易。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 11.0%，S&P 500 price 28.9%，落后 17.9 个百分点。",
+        "later": "到 2024 年，Buffett 实际路径约累计 100.6%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 28.9%。",
+        "later": "到 2024 年，S&P 500 price路径约累计 82.0%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2024 年，Buffett 实际路径约累计 100.6%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "slug": "2020-decision",
+    "title": "疫情冲击与保守资产负债表",
+    "category": "risk",
+    "url": "decisions/2020.html",
+    "key": true,
+    "verdict": "现金不是仓位，是身份。Berkshire 的现金和你的现金不是同一种资产。",
+    "scene": "疫情让市场暴跌又快速反弹。Berkshire 没有像很多人期待那样大举抄底，保守资产负债表显得不够刺激。",
+    "reader_prompt": "如果你是 Buffett，你会为了证明自己还敢出手而行动，还是承认极端不确定性下现金本身就是选择权？",
+    "actual_title": "疫情冲击与保守资产负债表",
+    "actual_thesis": "可学的是现金的期权价值，不是把现金当作情绪避难所。",
+    "hidden_condition": "Berkshire 的现金是公司级选择权，背后有保险、全资企业和公开股票组合共同支撑。",
+    "letter_focus": "现金不是拖累，而是在不确定性爆发时保持选择权的资产。",
+    "detail": "2020 年市场经历疫情暴跌和快速反弹。Berkshire 当年每股市值上涨 2.4%，低于 S&P 500 含股息 18.4%，但资产负债表保持了充足防御能力。",
+    "world": "COVID-19 改变全球经济活动和货币政策路径。",
+    "macro": "疫情冲击后，美国用财政和货币扩张托底资产和消费。",
+    "dollar": "美元体系先经历流动性挤兑，再经历大规模宽松，现金既是防御也是等待再定价的选择权。",
+    "tailwind": "美国政策能力、资本市场深度和大型企业利润恢复速度，让长期资产迅速重新定价。",
+    "shock": "COVID-19 同时冲击供应链、消费和货币政策，把宏观风险直接推到每个投资者面前。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2020.pdf",
+    "event": {
+      "year": "2020",
+      "slug": "2020-covid-balance-sheet",
+      "title": "疫情冲击与保守资产负债表",
+      "category": "risk",
+      "impact": "疫情冲击验证了 Berkshire 对流动性和极端风险的长期偏好。",
+      "surface_story": "疫情中 Berkshire 保守，说明现金会拖累收益但能防风险。",
+      "hidden_condition": "Berkshire 的现金是公司级选择权，背后有保险、全资企业和公开股票组合共同支撑。",
+      "mislearning_risk": "把现金管理简化成择时，要么永远满仓，要么永远恐惧。",
+      "real_lesson": "可学的是现金的期权价值，不是把现金当作情绪避难所。",
+      "verdict": "现金不是仓位，是身份。Berkshire 的现金和你的现金不是同一种资产。",
+      "scene_setting": "疫情让市场暴跌又快速反弹。Berkshire 没有像很多人期待那样大举抄底，保守资产负债表显得不够刺激。",
+      "reader_decision": "如果你是 Buffett，你会为了证明自己还敢出手而行动，还是承认极端不确定性下现金本身就是选择权？",
+      "shu_to_avoid": "把现金管理变成情绪择时。",
+      "dao_to_learn": "道在选择权：有些时候不行动不是怯懦，而是保留未来行动的权利。",
+      "macro_regime": "疫情冲击后，美国用财政和货币扩张托底资产和消费。",
+      "dollar_context": "美元体系先经历流动性挤兑，再经历大规模宽松，现金既是防御也是等待再定价的选择权。",
+      "america_tailwind": "美国政策能力、资本市场深度和大型企业利润恢复速度，让长期资产迅速重新定价。",
+      "global_shock": "COVID-19 同时冲击供应链、消费和货币政策，把宏观风险直接推到每个投资者面前。",
+      "letter_focus": "现金不是拖累，而是在不确定性爆发时保持选择权的资产。",
+      "detail": "2020 年市场经历疫情暴跌和快速反弹。Berkshire 当年每股市值上涨 2.4%，低于 S&P 500 含股息 18.4%，但资产负债表保持了充足防御能力。",
+      "world": "COVID-19 改变全球经济活动和货币政策路径。",
+      "source_ids": "berkshire_2024_annual_report",
+      "source_urls": "https://www.berkshirehathaway.com/2024ar/2024ar.pdf"
+    },
+    "options": [
+      {
+        "id": "actual",
+        "title": "疫情冲击与保守资产负债表",
+        "thesis": "可学的是现金的期权价值，不是把现金当作情绪避难所。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 2.4%，S&P 500 price 16.3%，落后 13.9 个百分点。",
+        "later": "到 2024 年，Buffett 实际路径约累计 95.9%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 16.3%。",
+        "later": "到 2024 年，S&P 500 price路径约累计 56.6%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2024 年，Buffett 实际路径约累计 95.9%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "在极端行情中用全部现金押注单一宏观方向",
+        "thesis": "宏观判断即使方向正确，也可能因为时点、杠杆和流动性而失败。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 7.2%。",
+        "later": "到 2024 年，Dow price路径约累计 39.0%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "slug": "2021-decision",
+    "title": "2021：韧性与传承年度选择",
+    "category": "resilience",
+    "url": "decisions/2021.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「韧性与传承年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 2021 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 29.6%，S&P 500 price 26.9%，领先 2.7 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "在疫情、通胀和传承阶段优先资产负债表韧性、现金和资本纪律",
+    "actual_thesis": "当世界变化速度超过判断速度，保持可选择性本身就是资本配置的一部分。",
+    "hidden_condition": "美国企业盈利能力、能源安全、平台现金流和资本市场深度仍是 Berkshire 的主要土壤。",
+    "letter_focus": "重点是现金、回购、能源、日本商社、Apple 仓位、Munger 遗产和接班结构。",
+    "detail": "2021 年 Buffett 线收益为 29.6%，S&P 500 price 为 26.9%，Dow price 为 18.7%。",
+    "world": "疫情、供应链重组、地缘冲突和利率急升让投资者重新审视韧性。",
+    "macro": "疫情冲击、财政刺激、通胀回归和高利率改变了资产估值基础。",
+    "dollar": "美元在全球冲击中继续承担避险和结算中心角色，但通胀削弱现金购买力。",
+    "tailwind": "美国企业盈利能力、能源安全、平台现金流和资本市场深度仍是 Berkshire 的主要土壤。",
+    "shock": "疫情、供应链重组、地缘冲突和利率急升让投资者重新审视韧性。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2021.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 26.9%。",
+        "later": "到 2024 年，S&P 500 price路径约累计 23.4%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2024 年，Buffett 实际路径约累计 51.1%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "在极端行情中用全部现金押注单一宏观方向",
+        "thesis": "宏观判断即使方向正确，也可能因为时点、杠杆和流动性而失败。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 18.7%。",
+        "later": "到 2024 年，Dow price路径约累计 17.1%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "在疫情、通胀和传承阶段优先资产负债表韧性、现金和资本纪律",
+        "thesis": "当世界变化速度超过判断速度，保持可选择性本身就是资本配置的一部分。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 29.6%，S&P 500 price 26.9%，领先 2.7 个百分点。",
+        "later": "到 2024 年，Buffett 实际路径约累计 51.1%。",
+        "actual": true
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "slug": "2022-decision",
+    "title": "2022：韧性与传承年度选择",
+    "category": "resilience",
+    "url": "decisions/2022.html",
+    "key": false,
+    "verdict": "这一年的核心不是照抄动作，而是在「韧性与传承年度选择」中重新判断资本、价格和能力圈。",
+    "scene": "你站在 2022 年末，只能看到当年的年报、市场价格和宏观压力，不知道后面几年会发生什么。Buffett 当年 4.0%，S&P 500 price -19.4%，领先 23.4 个百分点。",
+    "reader_prompt": "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，还是继续按可解释的企业价值配置资本？",
+    "actual_title": "在疫情、通胀和传承阶段优先资产负债表韧性、现金和资本纪律",
+    "actual_thesis": "当世界变化速度超过判断速度，保持可选择性本身就是资本配置的一部分。",
+    "hidden_condition": "美国企业盈利能力、能源安全、平台现金流和资本市场深度仍是 Berkshire 的主要土壤。",
+    "letter_focus": "重点是现金、回购、能源、日本商社、Apple 仓位、Munger 遗产和接班结构。",
+    "detail": "2022 年 Buffett 线收益为 4.0%，S&P 500 price 为 -19.4%，Dow price 为 -8.8%。",
+    "world": "疫情、供应链重组、地缘冲突和利率急升让投资者重新审视韧性。",
+    "macro": "疫情冲击、财政刺激、通胀回归和高利率改变了资产估值基础。",
+    "dollar": "美元在全球冲击中继续承担避险和结算中心角色，但通胀削弱现金购买力。",
+    "tailwind": "美国企业盈利能力、能源安全、平台现金流和资本市场深度仍是 Berkshire 的主要土壤。",
+    "shock": "疫情、供应链重组、地缘冲突和利率急升让投资者重新审视韧性。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2022.pdf",
+    "event": null,
+    "options": [
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2024 年，Buffett 实际路径约累计 45.3%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "在极端行情中用全部现金押注单一宏观方向",
+        "thesis": "宏观判断即使方向正确，也可能因为时点、杠杆和流动性而失败。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 -8.8%。",
+        "later": "到 2024 年，Dow price路径约累计 28.3%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "在疫情、通胀和传承阶段优先资产负债表韧性、现金和资本纪律",
+        "thesis": "当世界变化速度超过判断速度，保持可选择性本身就是资本配置的一部分。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 4.0%，S&P 500 price -19.4%，领先 23.4 个百分点。",
+        "later": "到 2024 年，Buffett 实际路径约累计 45.3%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 -19.4%。",
+        "later": "到 2024 年，S&P 500 price路径约累计 53.2%。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "slug": "2023-decision",
+    "title": "Charlie Munger 去世",
+    "category": "people",
+    "url": "decisions/2023.html",
+    "key": true,
+    "verdict": "你能背 Munger，未必能拥有一个 Munger。",
+    "scene": "Munger 去世，市场开始回顾“好公司合理价”的思想遗产。但真正的问题是：这些思想如何从金句变成决策系统。",
+    "reader_prompt": "如果你是 Buffett，你如何在失去最重要的思维搭档后继续保持判断质量？你有自己的反愚蠢机制吗？",
+    "actual_title": "Charlie Munger 去世",
+    "actual_thesis": "可学的是思维搭档、反证习惯和减少愚蠢，不是收藏格言。",
+    "hidden_condition": "Munger 不是一句“买好公司”的名言，而是几十年反愚蠢、商业判断和人格互补。",
+    "letter_focus": "理性、耐心、反愚蠢，比公式更重要。",
+    "detail": "Charlie Munger 于 2023 年去世。对 Berkshire 和全球价值投资者而言，这不只是人物事件，也是投资思想从第一代搭档向下一代管理层传承的节点。",
+    "world": "高利率环境重新定价长期资产，市场关注大型科技公司集中度。",
+    "macro": "高利率、AI 热潮和地缘摩擦并存，美国资产重新按资本成本和技术垄断定价。",
+    "dollar": "高利率强化美元吸引力，也提高普通投资者犯错的机会成本。",
+    "tailwind": "Berkshire 继续持有大量美元现金和美国企业权益，仍站在美国资产体系内部。",
+    "shock": "俄乌战争后能源、供应链和地缘安全重估，全球资本更关注安全资产和定价权。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2023.pdf",
+    "event": {
+      "year": "2023",
+      "slug": "2023-munger",
+      "title": "Charlie Munger 去世",
+      "category": "people",
+      "impact": "Berkshire 的投资文化进入传承阶段，Munger 对“好公司合理价”的影响成为核心遗产。",
+      "surface_story": "Munger 去世，Buffett 投资思想进入传承阶段。",
+      "hidden_condition": "Munger 不是一句“买好公司”的名言，而是几十年反愚蠢、商业判断和人格互补。",
+      "mislearning_risk": "摘录 Munger 金句，却没有建立反思错误和避免愚蠢的系统。",
+      "real_lesson": "可学的是思维搭档、反证习惯和减少愚蠢，不是收藏格言。",
+      "verdict": "你能背 Munger，未必能拥有一个 Munger。",
+      "scene_setting": "Munger 去世，市场开始回顾“好公司合理价”的思想遗产。但真正的问题是：这些思想如何从金句变成决策系统。",
+      "reader_decision": "如果你是 Buffett，你如何在失去最重要的思维搭档后继续保持判断质量？你有自己的反愚蠢机制吗？",
+      "shu_to_avoid": "背诵 Munger 金句，把智慧变成社交平台语录。",
+      "dao_to_learn": "道在反愚蠢：减少大错，比追求每次聪明更重要。",
+      "macro_regime": "高利率、AI 热潮和地缘摩擦并存，美国资产重新按资本成本和技术垄断定价。",
+      "dollar_context": "高利率强化美元吸引力，也提高普通投资者犯错的机会成本。",
+      "america_tailwind": "Berkshire 继续持有大量美元现金和美国企业权益，仍站在美国资产体系内部。",
+      "global_shock": "俄乌战争后能源、供应链和地缘安全重估，全球资本更关注安全资产和定价权。",
+      "letter_focus": "理性、耐心、反愚蠢，比公式更重要。",
+      "detail": "Charlie Munger 于 2023 年去世。对 Berkshire 和全球价值投资者而言，这不只是人物事件，也是投资思想从第一代搭档向下一代管理层传承的节点。",
+      "world": "高利率环境重新定价长期资产，市场关注大型科技公司集中度。",
+      "source_ids": "warren_buffett_letters,britannica_berkshire",
+      "source_urls": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters | https://www.britannica.com/money/Berkshire-Hathaway"
+    },
+    "options": [
+      {
+        "id": "temptation",
+        "title": "在极端行情中用全部现金押注单一宏观方向",
+        "thesis": "宏观判断即使方向正确，也可能因为时点、杠杆和流动性而失败。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 13.7%。",
+        "later": "到 2024 年，Dow price路径约累计 12.9%。",
+        "actual": false
+      },
+      {
+        "id": "actual",
+        "title": "Charlie Munger 去世",
+        "thesis": "可学的是思维搭档、反证习惯和减少愚蠢，不是收藏格言。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 15.8%，S&P 500 price 24.2%，落后 8.4 个百分点。",
+        "later": "到 2024 年，Buffett 实际路径约累计 25.5%。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 24.2%。",
+        "later": "到 2024 年，S&P 500 price路径约累计 23.3%。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，到 2024 年，Buffett 实际路径约累计 25.5%。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "slug": "2024-decision",
+    "title": "60 年成绩单：5,502,284%",
+    "category": "scorecard",
+    "url": "decisions/2024.html",
+    "key": true,
+    "verdict": "你看到的是复利，没看到的是机器。",
+    "scene": "60 年成绩单摆在面前：Berkshire 复利惊人。但这条曲线背后不只有耐心，还有美国、美元、保险、控制权、税务、声誉和寿命。",
+    "reader_prompt": "如果你是 Buffett，你能不能在 60 年里反复做少数正确决定，并让结构保护这些决定？如果不能，你到底应该学什么？",
+    "actual_title": "60 年成绩单：5,502,284%",
+    "actual_thesis": "可学的是复利需要结构承载，不是时间本身会自动奖励所有人。",
+    "hidden_condition": "这个结果叠加了美国战后增长、保险浮存金、税务递延、控股平台、声誉交易流和极长寿命。",
+    "letter_focus": "复利来自长期资本配置、留存收益、保险浮存金和美国经济。",
+    "detail": "2024 年报列示，Berkshire 1965-2024 年复合年增长 19.9%，S&P 500 含股息为 10.4%；总收益分别为 5,502,284% 和 39,054%。这一页的主图就是把这个结果放回 1957 年的起点，并叠加关键年份。",
+    "world": "AI 热潮和高利率并存，Berkshire 继续持有大量现金和美国企业权益。",
+    "macro": "美国进入高利率与 AI 资本开支并行阶段，少数大公司主导指数收益。",
+    "dollar": "美元购买力长期被通胀侵蚀，但美元资产和全球储备货币地位仍支撑美国资本市场深度。",
+    "tailwind": "60 年成绩单背后是美国消费、股东制度、企业利润、美元资产和资本市场共同提供的顺风。",
+    "shock": "去全球化、地缘冲突和高利率没有终结美国资产中心地位，反而让安全资产溢价更明显。",
+    "letter_url": "https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters/2024.pdf",
+    "event": {
+      "year": "2024",
+      "slug": "2024-sixty-year-scorecard",
+      "title": "60 年成绩单：5,502,284%",
+      "category": "scorecard",
+      "impact": "1965-2024 年 Berkshire 总收益 5,502,284%，S&P 500 含股息 39,054%。",
+      "surface_story": "60 年 5,502,284% 的成绩单证明复利和长期主义的力量。",
+      "hidden_condition": "这个结果叠加了美国战后增长、保险浮存金、税务递延、控股平台、声誉交易流和极长寿命。",
+      "mislearning_risk": "看到最终复利曲线，忽略支撑曲线的资本机器，然后把长期持有当作万能答案。",
+      "real_lesson": "可学的是复利需要结构承载，不是时间本身会自动奖励所有人。",
+      "verdict": "你看到的是复利，没看到的是机器。",
+      "scene_setting": "60 年成绩单摆在面前：Berkshire 复利惊人。但这条曲线背后不只有耐心，还有美国、美元、保险、控制权、税务、声誉和寿命。",
+      "reader_decision": "如果你是 Buffett，你能不能在 60 年里反复做少数正确决定，并让结构保护这些决定？如果不能，你到底应该学什么？",
+      "shu_to_avoid": "只看最终曲线，把长期持有当作万能答案。",
+      "dao_to_learn": "道在系统：复利不是时间自动给的奖励，而是正确判断被正确结构长期承载的结果。",
+      "macro_regime": "美国进入高利率与 AI 资本开支并行阶段，少数大公司主导指数收益。",
+      "dollar_context": "美元购买力长期被通胀侵蚀，但美元资产和全球储备货币地位仍支撑美国资本市场深度。",
+      "america_tailwind": "60 年成绩单背后是美国消费、股东制度、企业利润、美元资产和资本市场共同提供的顺风。",
+      "global_shock": "去全球化、地缘冲突和高利率没有终结美国资产中心地位，反而让安全资产溢价更明显。",
+      "letter_focus": "复利来自长期资本配置、留存收益、保险浮存金和美国经济。",
+      "detail": "2024 年报列示，Berkshire 1965-2024 年复合年增长 19.9%，S&P 500 含股息为 10.4%；总收益分别为 5,502,284% 和 39,054%。这一页的主图就是把这个结果放回 1957 年的起点，并叠加关键年份。",
+      "world": "AI 热潮和高利率并存，Berkshire 继续持有大量现金和美国企业权益。",
+      "source_ids": "berkshire_2024_annual_report,warren_buffett_letters",
+      "source_urls": "https://www.berkshirehathaway.com/2024ar/2024ar.pdf | https://github.com/zihaomu/dont-learn-buffett/tree/main/raw_data/primary/warren_buffett_letters"
+    },
+    "options": [
+      {
+        "id": "actual",
+        "title": "60 年成绩单：5,502,284%",
+        "thesis": "可学的是复利需要结构承载，不是时间本身会自动奖励所有人。",
+        "immediate": "后验看，当年实际路径的结果是：Buffett 当年 25.5%，S&P 500 price 23.3%，领先 2.2 个百分点。",
+        "later": "Buffett 实际的长期后验仍要等后续年报确认。",
+        "actual": true
+      },
+      {
+        "id": "sp500",
+        "title": "直接买入 S&P 500，放弃主动判断",
+        "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+        "immediate": "当年 S&P 500 price 收益为 23.3%。",
+        "later": "S&P 500 price的长期后验仍要等后续年报确认。",
+        "actual": false
+      },
+      {
+        "id": "cash",
+        "title": "退回现金，等待更清晰的信号",
+        "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+        "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+        "later": "对照后验，Buffett 实际的长期后验仍要等后续年报确认。 现金路径的机会成本取决于你能否在之后重新进入市场。",
+        "actual": false
+      },
+      {
+        "id": "temptation",
+        "title": "在极端行情中用全部现金押注单一宏观方向",
+        "thesis": "宏观判断即使方向正确，也可能因为时点、杠杆和流动性而失败。",
+        "immediate": "这条路短期可能更接近市场情绪；同年 Dow price 收益为 12.9%。",
+        "later": "Dow price的长期后验仍要等后续年报确认。",
+        "actual": false
+      }
+    ]
+  }
+]

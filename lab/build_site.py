@@ -58,7 +58,264 @@ def rel(path: Path) -> str:
     return str(path.relative_to(ROOT))
 
 
+DECISION_PROFILES = [
+    {
+        "start": 1957,
+        "end": 1964,
+        "category": "partnership",
+        "title": "合伙企业年度选择",
+        "actual": "用相对收益和长期评价体系管理合伙资本",
+        "thesis": "先定义什么叫正确表现，再让仓位、回撤和机会成本服从这个评价体系。",
+        "temptation": "把短期战胜市场当成唯一目标",
+        "temptation_risk": "短期排名会诱导更高换手和更高杠杆，反而破坏长期评价体系。",
+        "macro": "战后美国扩张早期，消费社会、制造业利润和证券市场仍在重新定价。",
+        "dollar": "布雷顿森林体系下美元仍锚定黄金，美元资产是战后资本秩序中心。",
+        "tailwind": "美国本土企业、分散市场和信息效率不足，给小规模合伙资本留下了可挖掘空间。",
+        "shock": "冷战、衰退和市场下跌让投资者持续面对周期风险。",
+        "letter": "重点不是预测指数，而是用多年周期衡量相对表现、work-outs 和低估证券。",
+    },
+    {
+        "start": 1965,
+        "end": 1969,
+        "category": "structure",
+        "title": "载体与退出年度选择",
+        "actual": "把资本载体从合伙企业推向 Berkshire，并在机会变少时收紧甚至退出",
+        "thesis": "当环境不再适合原策略，真正重要的不是硬做，而是改变资本结构和机会标准。",
+        "temptation": "为了维持过往收益继续扩大合伙企业",
+        "temptation_risk": "资金规模和市场估值会吞掉早期优势，继续扩张反而会稀释判断质量。",
+        "macro": "美国市场经历战后繁荣后估值上升，越战和通胀压力开始抬头。",
+        "dollar": "布雷顿森林体系仍在，但美元外部约束和黄金兑换压力越来越明显。",
+        "tailwind": "美国资本市场深度继续扩大，Berkshire 这样的公司载体开始承接长期资本配置。",
+        "shock": "越战、财政压力和市场投机让长期资本开始面对更复杂的宏观环境。",
+        "letter": "重点转向资本结构、机会稀缺、控制型投资和是否继续接受外部资金。",
+    },
+    {
+        "start": 1970,
+        "end": 1979,
+        "category": "float",
+        "title": "通胀与浮存金年度选择",
+        "actual": "把重心从纺织和普通股票选择，转向保险浮存金、低估证券和资本再配置",
+        "thesis": "通胀和熊市不是简单的买入信号，关键是能否拥有低成本、长期、可再配置的资金。",
+        "temptation": "因为通胀恐惧追逐硬资产和热门宏观交易",
+        "temptation_risk": "宏观交易看似解释一切，却很容易让投资者用价格波动代替企业价值判断。",
+        "macro": "高通胀、石油冲击和熊市让美国投资者重新审视股票、债券和现金的真实购买力。",
+        "dollar": "1971 年美元停止兑换黄金后，美元信用进入法币时代，通胀成为投资核心变量。",
+        "tailwind": "美国仍拥有深厚资本市场和可收购企业，危机中低估资产开始出现。",
+        "shock": "石油冲击、布雷顿森林瓦解和滞胀改变了投资者对安全资产的理解。",
+        "letter": "重点是保险浮存金、低估证券、纺织业务困境和通胀对企业经济性的侵蚀。",
+    },
+    {
+        "start": 1980,
+        "end": 1989,
+        "category": "franchise",
+        "title": "品牌与特许经营年度选择",
+        "actual": "用保险资金买入更持久的消费、媒体和金融特许经营权",
+        "thesis": "从便宜资产进化到好生意合理价，核心是企业能否在通胀和竞争后仍保持定价权。",
+        "temptation": "只按低市净率继续寻找烟蒂股",
+        "temptation_risk": "便宜但衰退的资产可能长期吞噬资本，账面便宜不等于真实复利。",
+        "macro": "Volcker 高利率压住通胀后，美国进入新一轮资本市场扩张。",
+        "dollar": "强美元和全球资本回流强化了美国金融资产的中心地位。",
+        "tailwind": "美国消费品牌、媒体网络和金融市场给高质量企业提供更长的复利跑道。",
+        "shock": "高利率、1987 年股灾和全球资本流动让投资者反复面对估值与流动性冲击。",
+        "letter": "重点是内在价值、特许经营权、保险浮存金成本，以及从烟蒂股向好公司的转变。",
+    },
+    {
+        "start": 1990,
+        "end": 1999,
+        "category": "discipline",
+        "title": "全球化与泡沫年度选择",
+        "actual": "在全球化和科技泡沫中坚持能力圈，承认看不懂的高增长也可以不买",
+        "thesis": "能力圈不是行业标签，而是能否解释现金流、竞争优势和价格之间的关系。",
+        "temptation": "为了不落后纳斯达克而追逐科技叙事",
+        "temptation_risk": "相对落后会制造强烈心理压力，但为了跟上泡沫而买入看不懂资产，可能破坏整个体系。",
+        "macro": "冷战结束、全球化加速和互联网兴起改变了利润池和市场叙事。",
+        "dollar": "美元资产在全球化中继续吸收资本，美国资本市场成为全球风险资产定价中心。",
+        "tailwind": "美国企业开始从全球消费者、供应链和金融市场中获取更大范围的利润。",
+        "shock": "日本泡沫破裂、亚洲金融危机和互联网泡沫让全球资本快速轮动。",
+        "letter": "重点是能力圈、保险风险、并购纪律，以及在科技泡沫中承受相对落后的压力。",
+    },
+    {
+        "start": 2000,
+        "end": 2009,
+        "category": "crisis",
+        "title": "危机资本年度选择",
+        "actual": "在泡沫破裂和金融危机中用 Berkshire 资产负债表提供稀缺资本",
+        "thesis": "危机中真正稀缺的不是观点，而是长期信誉、流动性和可以迅速部署的资本。",
+        "temptation": "在危机中彻底离场，等媒体确认安全后再回来",
+        "temptation_risk": "等确定性出现时，价格和条款往往已经不再属于长期资本。",
+        "macro": "互联网泡沫破裂、低利率、住房信贷扩张和 2008 年金融危机重塑市场。",
+        "dollar": "美元体系在危机中承压，但也通过全球避险需求继续保持中心地位。",
+        "tailwind": "美国市场允许强资产负债表在恐慌中以优先条款提供资本。",
+        "shock": "9/11、次贷危机和全球金融危机让投资者重新认识杠杆、流动性和信用风险。",
+        "letter": "重点是衍生品风险、保险承保纪律、现金储备和危机时的资本投放。",
+    },
+    {
+        "start": 2010,
+        "end": 2019,
+        "category": "scale",
+        "title": "规模约束年度选择",
+        "actual": "承认规模约束，把全资业务、回购和平台型现金流纳入资本配置工具箱",
+        "thesis": "当资本规模变大，能不能复制早期收益不是核心；核心是如何在更少机会中避免坏交易。",
+        "temptation": "为了证明仍然灵活，追逐所有新经济热点",
+        "temptation_risk": "规模越大，错误越贵；扩展能力圈必须来自商业理解，而不是行业焦虑。",
+        "macro": "低利率、科技平台崛起和全球化成熟，让优质现金流资产估值持续抬升。",
+        "dollar": "美元低利率和全球资本回流支撑大型美国企业融资、回购和估值。",
+        "tailwind": "美国平台公司、消费品牌和资本市场机制把全球利润集中到少数企业。",
+        "shock": "欧债危机、贸易摩擦和平台监管压力不断测试全球化利润池。",
+        "letter": "重点是规模、现金、回购、全资业务，以及 Apple 这类成熟平台型公司的能力圈边界。",
+    },
+    {
+        "start": 2020,
+        "end": 2024,
+        "category": "resilience",
+        "title": "韧性与传承年度选择",
+        "actual": "在疫情、通胀和传承阶段优先资产负债表韧性、现金和资本纪律",
+        "thesis": "当世界变化速度超过判断速度，保持可选择性本身就是资本配置的一部分。",
+        "temptation": "在极端行情中用全部现金押注单一宏观方向",
+        "temptation_risk": "宏观判断即使方向正确，也可能因为时点、杠杆和流动性而失败。",
+        "macro": "疫情冲击、财政刺激、通胀回归和高利率改变了资产估值基础。",
+        "dollar": "美元在全球冲击中继续承担避险和结算中心角色，但通胀削弱现金购买力。",
+        "tailwind": "美国企业盈利能力、能源安全、平台现金流和资本市场深度仍是 Berkshire 的主要土壤。",
+        "shock": "疫情、供应链重组、地缘冲突和利率急升让投资者重新审视韧性。",
+        "letter": "重点是现金、回购、能源、日本商社、Apple 仓位、Munger 遗产和接班结构。",
+    },
+]
+
+
+def profile_for_year(year: int) -> dict:
+    for profile in DECISION_PROFILES:
+        if profile["start"] <= year <= profile["end"]:
+            return profile
+    return DECISION_PROFILES[-1]
+
+
+def letter_pdf_url(year: int) -> str:
+    return f"{RAW_DATA_GITHUB_URL}/primary/warren_buffett_letters/{year}.pdf"
+
+
+def years_forward_summary(rows_by_year: dict[int, dict], year: int, key: str, label: str, horizon: int = 5) -> str:
+    current = rows_by_year[year]
+    end_year = min(year + horizon, max(rows_by_year))
+    if end_year == year:
+        return f"{label}的长期后验仍要等后续年报确认。"
+    start_value = number(current[key])
+    end_value = number(rows_by_year[end_year][key])
+    if not start_value or not end_value:
+        return f"{label}在 {year}-{end_year} 的可比数据不足。"
+    gain = (end_value / start_value - 1) * 100
+    return f"到 {end_year} 年，{label}路径约累计 {gain:.1f}%。"
+
+
+def relative_sentence(row: dict) -> str:
+    buffett = number(row["buffett_return_pct"])
+    sp500 = number(row["sp500_price_return_pct"])
+    if buffett is None or sp500 is None:
+        return "相对收益没有完整可比数据。"
+    diff = buffett - sp500
+    direction = "领先" if diff >= 0 else "落后"
+    return f"Buffett 当年 {pct(buffett)}，S&P 500 price {pct(sp500)}，{direction} {abs(diff):.1f} 个百分点。"
+
+
+def build_annual_decisions(rows: list[dict], events: list[dict]) -> list[dict]:
+    events_by_year = {int(event["year"]): event for event in events}
+    rows_by_year = {int(row["year"]): row for row in rows}
+    decisions = []
+    for row in rows:
+        year = int(row["year"])
+        event = events_by_year.get(year)
+        profile = profile_for_year(year)
+        title = event["title"] if event else f"{year}：{profile['title']}"
+        category = event["category"] if event else profile["category"]
+        actual_title = event["title"] if event else profile["actual"]
+        actual_thesis = event["real_lesson"] if event else profile["thesis"]
+        verdict = event["verdict"] if event else f"这一年的核心不是照抄动作，而是在「{profile['title']}」中重新判断资本、价格和能力圈。"
+        scene = event["scene_setting"] if event else (
+            f"你站在 {year} 年末，只能看到当年的年报、市场价格和宏观压力，"
+            f"不知道后面几年会发生什么。{relative_sentence(row)}"
+        )
+        reader_prompt = event["reader_decision"] if event else (
+            "如果你负责 Berkshire 或一笔长期资本，你会追随市场、退回现金，"
+            "还是继续按可解释的企业价值配置资本？"
+        )
+        hidden_condition = event["hidden_condition"] if event else profile["tailwind"]
+        letter_focus = event["letter_focus"] if event else profile["letter"]
+        world = event["world"] if event else profile["shock"]
+        detail = event["detail"] if event else (
+            f"{year} 年 Buffett 线收益为 {pct(row['buffett_return_pct'])}，"
+            f"S&P 500 price 为 {pct(row['sp500_price_return_pct'])}，"
+            f"Dow price 为 {pct(row['dow_price_return_pct'])}。"
+        )
+        actual_immediate = f"后验看，当年实际路径的结果是：{relative_sentence(row)}"
+        actual_later = years_forward_summary(rows_by_year, year, "buffett_cumulative", "Buffett 实际")
+        sp500_later = years_forward_summary(rows_by_year, year, "sp500_price_cumulative", "S&P 500 price")
+        dow_later = years_forward_summary(rows_by_year, year, "dow_price_cumulative", "Dow price")
+        options = [
+            {
+                "id": "actual",
+                "title": actual_title,
+                "thesis": actual_thesis,
+                "immediate": actual_immediate,
+                "later": actual_later,
+                "actual": True,
+            },
+            {
+                "id": "sp500",
+                "title": "直接买入 S&P 500，放弃主动判断",
+                "thesis": "这是一条普通人最容易执行的路线：承认自己无法复制 Buffett，把美国大盘作为默认选择。",
+                "immediate": f"当年 S&P 500 price 收益为 {pct(row['sp500_price_return_pct'])}。",
+                "later": sp500_later,
+                "actual": False,
+            },
+            {
+                "id": "cash",
+                "title": "退回现金，等待更清晰的信号",
+                "thesis": "当市场和宏观都不确定时，现金看起来最安全，但它也会持续暴露在通胀和机会成本下。",
+                "immediate": "当年现金路径大致避免了股票波动，但也放弃了企业价值变化带来的收益。",
+                "later": f"对照后验，{actual_later} 现金路径的机会成本取决于你能否在之后重新进入市场。",
+                "actual": False,
+            },
+            {
+                "id": "temptation",
+                "title": profile["temptation"],
+                "thesis": profile["temptation_risk"],
+                "immediate": f"这条路短期可能更接近市场情绪；同年 Dow price 收益为 {pct(row['dow_price_return_pct'])}。",
+                "later": dow_later,
+                "actual": False,
+            },
+        ]
+        rotate = year % len(options)
+        options = options[rotate:] + options[:rotate]
+        decisions.append(
+            {
+                "year": year,
+                "slug": f"{year}-decision",
+                "title": title,
+                "category": category,
+                "url": f"decisions/{year}.html",
+                "key": bool(event),
+                "verdict": verdict,
+                "scene": scene,
+                "reader_prompt": reader_prompt,
+                "actual_title": actual_title,
+                "actual_thesis": actual_thesis,
+                "hidden_condition": hidden_condition,
+                "letter_focus": letter_focus,
+                "detail": detail,
+                "world": world,
+                "macro": event["macro_regime"] if event else profile["macro"],
+                "dollar": event["dollar_context"] if event else profile["dollar"],
+                "tailwind": event["america_tailwind"] if event else profile["tailwind"],
+                "shock": event["global_shock"] if event else profile["shock"],
+                "letter_url": letter_pdf_url(year),
+                "event": event,
+                "options": options,
+            }
+        )
+    return decisions
+
+
 def build_index(rows: list[dict], events: list[dict], manifest: dict) -> str:
+    decisions = build_annual_decisions(rows, events)
     clean_rows = []
     for row in rows:
         clean_rows.append(
@@ -73,31 +330,17 @@ def build_index(rows: list[dict], events: list[dict], manifest: dict) -> str:
                 "buffettSource": row["buffett_source"],
             }
         )
-    clean_events = []
-    for event in events:
-        clean_events.append(
+    clean_decisions = []
+    for decision in decisions:
+        clean_decisions.append(
             {
-                "year": int(event["year"]),
-                "slug": event["slug"],
-                "title": event["title"],
-                "category": event["category"],
-                "impact": event["impact"],
-                "surfaceStory": event["surface_story"],
-                "hiddenCondition": event["hidden_condition"],
-                "mislearningRisk": event["mislearning_risk"],
-                "realLesson": event["real_lesson"],
-                "verdict": event["verdict"],
-                "sceneSetting": event["scene_setting"],
-                "readerDecision": event["reader_decision"],
-                "shuToAvoid": event["shu_to_avoid"],
-                "daoToLearn": event["dao_to_learn"],
-                "macroRegime": event["macro_regime"],
-                "dollarContext": event["dollar_context"],
-                "americaTailwind": event["america_tailwind"],
-                "globalShock": event["global_shock"],
-                "letterFocus": event["letter_focus"],
-                "world": event["world"],
-                "url": f"events/{event['slug']}.html",
+                "year": decision["year"],
+                "slug": decision["slug"],
+                "title": decision["title"],
+                "category": decision["category"],
+                "verdict": decision["verdict"],
+                "url": decision["url"],
+                "key": decision["key"],
             }
         )
 
@@ -106,7 +349,7 @@ def build_index(rows: list[dict], events: list[dict], manifest: dict) -> str:
     biggest_drawdown = min(clean_rows, key=lambda row: row["buffettReturn"] or 0)
     source_links = source_links_html(manifest)
     data_json = json.dumps(clean_rows, ensure_ascii=False)
-    events_json = json.dumps(clean_events, ensure_ascii=False)
+    decisions_json = json.dumps(clean_decisions, ensure_ascii=False)
 
     return f"""<!doctype html>
 <html lang="zh-CN">
@@ -137,10 +380,10 @@ def build_index(rows: list[dict], events: list[dict], manifest: dict) -> str:
     <section class="workbench" id="chart" aria-labelledby="chart-title">
       <div class="chart-head">
         <div>
-          <p class="eyebrow">1957-2024 / Data, code, letters</p>
+        <p class="eyebrow">1957-2024 / Data, code, letters</p>
           <h1 id="chart-title">{SITE_NAME}</h1>
           <p class="lede">{SITE_TAGLINE}</p>
-          <p class="hero-claim">这不是一份研究报表，而是一本活的书。每一章把你带回当时的市场，让你先做判断，再看 Buffett 为什么能做出那个决断。</p>
+        <p class="hero-claim">这不是一份研究报表，而是一本活的书。每一年都把你带回当时的市场，让你先做选择，再看 Buffett 当时实际怎么做。</p>
         </div>
         <div class="controls" aria-label="图表控制">
           <button type="button" id="resetZoom">重置</button>
@@ -235,11 +478,11 @@ def build_index(rows: list[dict], events: list[dict], manifest: dict) -> str:
 
     <section class="event-section" id="events" aria-labelledby="events-title">
       <div class="section-head">
-        <p class="eyebrow">Living chapters</p>
-        <h2 id="events-title">历史章节</h2>
+        <p class="eyebrow">Decision rooms</p>
+        <h2 id="events-title">年度决策现场</h2>
       </div>
       <div class="event-list">
-        {events_list_html(events)}
+        {events_list_html(decisions)}
       </div>
     </section>
 
@@ -251,7 +494,7 @@ def build_index(rows: list[dict], events: list[dict], manifest: dict) -> str:
 
   <script>
     const DATA = {data_json};
-    const EVENTS = {events_json};
+    const EVENTS = {decisions_json};
 {chart_js()}
   </script>
 </body>
@@ -262,14 +505,15 @@ def build_index(rows: list[dict], events: list[dict], manifest: dict) -> str:
 def events_list_html(events: list[dict]) -> str:
     parts = []
     for event in events:
+        marker = "重点年份" if event.get("key") else "年度现场"
         parts.append(
-            f"""<a class="event-row" href="events/{html.escape(event['slug'])}.html" id="year-{event['year']}">
+            f"""<a class="event-row" href="{html.escape(event['url'])}" id="year-{event['year']}">
   <span class="event-year">{event['year']}</span>
   <span class="event-copy">
     <strong>{html.escape(event['title'])}</strong>
     <small>{html.escape(event['verdict'])}</small>
   </span>
-  <span class="event-category">{html.escape(event['category'])}</span>
+  <span class="event-category">{html.escape(marker)} / {html.escape(event['category'])}</span>
 </a>"""
         )
     return "\n".join(parts)
@@ -417,6 +661,138 @@ def build_event_page(event: dict, rows: list[dict], manifest: dict) -> str:
 """
 
 
+def decision_source_links(decision: dict, manifest: dict) -> str:
+    links = [
+        f"""<a href="{html.escape(decision['letter_url'])}" target="_blank" rel="noreferrer">{decision['year']} shareholder letter PDF</a>""",
+        f"""<a href="{RAW_DATA_GITHUB_URL}" target="_blank" rel="noreferrer">完整 raw_data 原始资料库</a>""",
+    ]
+    event = decision.get("event")
+    if event:
+        source_map = {source["id"]: source for source in manifest["sources"]}
+        for source_id in event["source_ids"].split(","):
+            source_id = source_id.strip()
+            if source_id and source_id in source_map:
+                source = source_map[source_id]
+                links.append(f"""<a href="{html.escape(source['url'])}" target="_blank" rel="noreferrer">{html.escape(source['title'])}</a>""")
+    return "\n".join(links)
+
+
+def choice_cards_html(options: list[dict]) -> str:
+    cards = []
+    labels = ["A", "B", "C", "D"]
+    for label, option in zip(labels, options):
+        actual = "true" if option["actual"] else "false"
+        badge = '<span class="choice-badge">Buffett 实际选择</span>' if option["actual"] else '<span class="choice-badge muted">未选择路径</span>'
+        cards.append(
+            f"""<button class="choice-card" type="button" data-choice="{html.escape(option['id'])}" data-actual="{actual}" aria-pressed="false">
+  <span class="choice-label">Option {label}</span>
+  <strong>{html.escape(option['title'])}</strong>
+  <p>{html.escape(option['thesis'])}</p>
+  {badge}
+  <span class="choice-result">
+    <em>一年视角</em>{html.escape(option['immediate'])}
+    <em>多年后验</em>{html.escape(option['later'])}
+  </span>
+</button>"""
+        )
+    return "\n".join(cards)
+
+
+def phrase_spans(text: str) -> str:
+    parts = []
+    current = ""
+    for char in text:
+        current += char
+        if char in "，。！？；":
+            parts.append(current)
+            current = ""
+    if current:
+        parts.append(current)
+    return "".join(f"<span>{html.escape(part)}</span>" for part in parts)
+
+
+def build_decision_page(decision: dict, row: dict, manifest: dict) -> str:
+    source_links = decision_source_links(decision, manifest)
+    option_cards = choice_cards_html(decision["options"])
+    selected_note = "先选择一个方案。页面不会立即告诉你 Buffett 做了什么。"
+    return f"""<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{decision['year']} / {html.escape(decision['title'])} / {SITE_NAME}</title>
+  <style>
+{base_css()}
+  </style>
+</head>
+<body class="decision-page">
+  <header class="topbar">
+    <a class="brand" href="../index.html#year-{decision['year']}">
+      <span class="brand-mark"></span>
+      <span>{SITE_NAME}</span>
+    </a>
+    <nav class="nav">
+      <a href="../index.html#events">年度现场</a>
+      <a href="../sources.html">资料来源</a>
+      {github_link()}
+    </nav>
+  </header>
+  <main class="decision-main">
+    <section class="decision-hero">
+      <p class="eyebrow">{html.escape(decision['category'])} / {decision['year']}</p>
+      <h1>{html.escape(decision['title'])}</h1>
+      <p class="event-impact">{phrase_spans(decision['scene'])}</p>
+      <div class="event-stats">
+        <div><span>Buffett 当年</span><strong>{pct(row['buffett_return_pct'])}</strong></div>
+        <div><span>S&P 500 price</span><strong>{pct(row['sp500_price_return_pct'])}</strong></div>
+        <div><span>Dow price</span><strong>{pct(row['dow_price_return_pct'])}</strong></div>
+        <div><span>累计倍数</span><strong>{format_multiple(float(row['buffett_cumulative']))}</strong></div>
+      </div>
+    </section>
+    <section class="decision-workspace" aria-labelledby="decision-title">
+      <aside class="factor-panel">
+        <p class="eyebrow">Known then</p>
+        <h2>当时你能看到的因素</h2>
+        <div class="factor-list">
+          <div><span>宏观时代</span><p>{html.escape(decision['macro'])}</p></div>
+          <div><span>美元背景</span><p>{html.escape(decision['dollar'])}</p></div>
+          <div><span>美国红利</span><p>{html.escape(decision['tailwind'])}</p></div>
+          <div><span>国际冲击</span><p>{html.escape(decision['shock'])}</p></div>
+          <div><span>信件主线</span><p>{html.escape(decision['letter_focus'])}</p></div>
+        </div>
+        <div class="source-links decision-sources">{source_links}</div>
+      </aside>
+      <section class="choice-panel">
+        <p class="eyebrow">Your move</p>
+        <h2 id="decision-title">如果你站在 {decision['year']} 年，你会怎么选？</h2>
+        <p class="choice-prompt">{html.escape(decision['reader_prompt'])}</p>
+        <p class="choice-status" id="choiceStatus">{html.escape(selected_note)}</p>
+        <div class="choice-grid">
+          {option_cards}
+        </div>
+        <section class="reveal-panel" id="actualReveal" hidden>
+          <p class="eyebrow">After your choice</p>
+          <h2>Buffett 当时实际选择</h2>
+          <strong>{html.escape(decision['actual_title'])}</strong>
+          <p>{html.escape(decision['actual_thesis'])}</p>
+          <h3>被隐藏的条件</h3>
+          <p>{html.escape(decision['hidden_condition'])}</p>
+          <h3>后验事实</h3>
+          <p>{html.escape(decision['detail'])}</p>
+          <h3>世界没有站在原地</h3>
+          <p>{html.escape(decision['world'])}</p>
+        </section>
+      </section>
+    </section>
+  </main>
+  <script>
+{decision_js()}
+  </script>
+</body>
+</html>
+"""
+
+
 def build_sources_page(manifest: dict) -> str:
     source_items = []
     for source in manifest["sources"]:
@@ -508,6 +884,7 @@ body {
     var(--paper);
   color: var(--ink);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  overflow-x: hidden;
 }
 a { color: inherit; }
 .topbar {
@@ -591,6 +968,7 @@ h1, h2 {
   margin: 0;
   line-height: 1.05;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 h1 { font-size: clamp(32px, 6vw, 82px); max-width: 1120px; }
 h2 { font-size: clamp(24px, 3vw, 42px); }
@@ -607,6 +985,7 @@ h2 { font-size: clamp(24px, 3vw, 42px); }
   color: var(--muted);
   font-size: clamp(17px, 2vw, 24px);
   line-height: 1.42;
+  overflow-wrap: anywhere;
 }
 .hero-claim.strong {
   color: var(--rust);
@@ -689,8 +1068,9 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
 .series.buffett { stroke: var(--green); stroke-width: 4; }
 .series.sp500 { stroke: var(--blue); }
 .series.dow { stroke: var(--rust); }
-.event-dot { fill: #111; stroke: #ffffff; stroke-width: 2; cursor: pointer; }
-.event-dot:hover, .event-dot:focus { stroke: var(--gold); stroke-width: 4; outline: none; }
+.event-dot { fill: #111; stroke: #ffffff; stroke-width: 2; cursor: pointer; opacity: .78; }
+.event-dot.key { fill: var(--rust); opacity: 1; }
+.event-dot:hover, .event-dot:focus { stroke: var(--gold); stroke-width: 4; opacity: 1; outline: none; }
 .tooltip {
   position: absolute;
   width: min(320px, calc(100vw - 42px));
@@ -719,7 +1099,7 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
 .swatch.sp500 { background: var(--blue); }
 .swatch.dow { background: var(--rust); }
 .dot { width: 9px; height: 9px; border-radius: 50%; background: #111; display: inline-block; }
-.notes, .macro-section, .event-section, .source-strip, .sources-main, .event-main {
+.notes, .macro-section, .event-section, .source-strip, .sources-main, .event-main, .decision-main {
   padding: 34px 28px;
 }
 .note-grid {
@@ -774,7 +1154,7 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
 }
 .event-row {
   display: grid;
-  grid-template-columns: 86px minmax(0, 1fr) 132px;
+  grid-template-columns: 86px minmax(0, 1fr) 172px;
   gap: 16px;
   align-items: center;
   min-height: 78px;
@@ -814,6 +1194,15 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
 }
 .source-links a:hover, .source-links a:focus-visible { color: var(--ink); border-color: var(--focus); outline: none; }
 .event-main, .sources-main { width: min(1040px, 100%); }
+.decision-main { width: min(1400px, 100%); }
+.decision-main,
+.decision-hero,
+.decision-workspace,
+.factor-panel,
+.choice-panel {
+  min-width: 0;
+  max-width: 100%;
+}
 .raw-data-link {
   display: block;
   margin: 18px 0 22px;
@@ -848,12 +1237,161 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
   padding-top: 28px;
 }
 .event-article h1 { font-size: clamp(38px, 7vw, 86px); }
+.decision-hero h1 { font-size: clamp(36px, 6vw, 78px); }
 .event-impact {
+  width: 100%;
   max-width: 760px;
   color: var(--rust);
   font-size: 21px;
   font-weight: 850;
   line-height: 1.45;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.event-impact span { display: inline; }
+.decision-workspace {
+  display: grid;
+  grid-template-columns: minmax(280px, .92fr) minmax(0, 1.35fr);
+  gap: 18px;
+  align-items: start;
+  margin-top: 22px;
+}
+.factor-panel,
+.choice-panel {
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+}
+.factor-panel {
+  position: sticky;
+  top: 86px;
+}
+.factor-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+.factor-list div {
+  padding: 14px;
+  border: 1px solid rgba(28,26,21,.14);
+  border-radius: 8px;
+  background: rgba(255,255,255,.64);
+}
+.factor-list span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--rust);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.factor-list p,
+.choice-prompt,
+.choice-status {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.decision-sources { margin-top: 14px; }
+.choice-panel h2 { font-size: clamp(24px, 3vw, 42px); }
+.choice-prompt { margin-top: 10px; max-width: 780px; }
+.choice-status {
+  margin-top: 12px;
+  color: var(--ink);
+  font-weight: 800;
+}
+.choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+.choice-card {
+  display: block;
+  width: 100%;
+  min-height: 210px;
+  padding: 15px;
+  text-align: left;
+  border: 1px solid rgba(28,26,21,.18);
+  border-radius: 8px;
+  background: var(--panel);
+}
+.choice-card:hover,
+.choice-card:focus-visible {
+  border-color: var(--focus);
+  outline: none;
+}
+.choice-card.selected {
+  border-color: var(--ink);
+  box-shadow: inset 0 0 0 1px var(--ink);
+}
+.choice-card[data-actual="true"].selected,
+body.choice-revealed .choice-card[data-actual="true"] {
+  border-color: var(--green);
+}
+.choice-label,
+.choice-badge,
+.choice-result em {
+  display: block;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.choice-label { color: var(--rust); margin-bottom: 8px; }
+.choice-card strong {
+  display: block;
+  font-size: 18px;
+  line-height: 1.32;
+}
+.choice-card p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+.choice-badge {
+  display: none;
+  margin-top: 12px;
+  color: var(--green);
+}
+.choice-badge.muted { color: var(--muted); }
+.choice-result {
+  display: none;
+  margin-top: 12px;
+  color: var(--ink);
+  line-height: 1.55;
+}
+.choice-result em {
+  margin: 10px 0 4px;
+  color: var(--rust);
+  font-style: normal;
+}
+body.choice-revealed .choice-badge,
+body.choice-revealed .choice-result {
+  display: block;
+}
+.reveal-panel {
+  margin-top: 18px;
+  padding: 18px;
+  border: 1px solid rgba(20,122,99,.34);
+  border-top: 4px solid var(--green);
+  border-radius: 8px;
+  background: rgba(255,255,255,.72);
+}
+.reveal-panel strong {
+  display: block;
+  margin-top: 8px;
+  font-size: clamp(20px, 2.4vw, 32px);
+  line-height: 1.2;
+}
+.reveal-panel h3 {
+  margin: 18px 0 6px;
+  font-size: 16px;
+}
+.reveal-panel p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.65;
 }
 .event-stats {
   display: grid;
@@ -951,7 +1489,7 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
 @media (max-width: 860px) {
   .topbar { align-items: flex-start; gap: 10px; flex-direction: column; padding: 12px 18px; }
   .nav { justify-content: flex-start; }
-  .workbench, .notes, .macro-section, .event-section, .source-strip, .sources-main, .event-main { padding-left: 18px; padding-right: 18px; }
+  .workbench, .notes, .macro-section, .event-section, .source-strip, .sources-main, .event-main, .decision-main { padding-left: 18px; padding-right: 18px; }
   .chart-head { grid-template-columns: 1fr; }
   .proof-grid { grid-template-columns: 1fr; }
   .macro-grid { grid-template-columns: 1fr; }
@@ -965,9 +1503,13 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
   .event-row { grid-template-columns: 72px minmax(0, 1fr); }
   .event-category { grid-column: 2; justify-self: start; }
   .event-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .decision-workspace, .choice-grid { grid-template-columns: 1fr; }
+  .factor-panel { position: static; }
 }
 @media (max-width: 520px) {
   h1 { font-size: 38px; }
+  .event-impact { max-width: 100%; font-size: 18px; word-break: break-all; }
+  .event-impact span { display: block; }
   .metrics, .event-stats { grid-template-columns: 1fr; }
   .metric { border-right: 0; border-bottom: 1px solid var(--line); }
   .metric:last-child { border-bottom: 0; }
@@ -977,6 +1519,30 @@ button:hover, button:focus-visible { border-color: var(--focus); outline: none; 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+"""
+
+
+def decision_js() -> str:
+    return r"""
+    const cards = Array.from(document.querySelectorAll('.choice-card'));
+    const reveal = document.getElementById('actualReveal');
+    const status = document.getElementById('choiceStatus');
+
+    for (const card of cards) {
+      card.addEventListener('click', () => {
+        document.body.classList.add('choice-revealed');
+        for (const item of cards) {
+          item.classList.toggle('selected', item === card);
+          item.setAttribute('aria-pressed', item === card ? 'true' : 'false');
+        }
+        const selected = card.querySelector('strong')?.textContent || '这个方案';
+        const actual = card.dataset.actual === 'true';
+        status.textContent = actual
+          ? `你选中了 Buffett 当时走的路：${selected}。`
+          : `你选择的是另一条可能路径：${selected}。现在对照 Buffett 的实际选择。`;
+        reveal.hidden = false;
+      });
+    }
 """
 
 
@@ -995,7 +1561,6 @@ def chart_js() -> str:
     };
     const ns = 'http://www.w3.org/2000/svg';
     const rowByYear = new Map(DATA.map(d => [d.year, d]));
-    const eventByYear = new Map(EVENTS.map(d => [d.year, d]));
 
     function clearSvg() {
       while (svg.firstChild) svg.removeChild(svg.firstChild);
@@ -1125,7 +1690,7 @@ def chart_js() -> str:
         if (!row || event.year < state.xDomain[0] || event.year > state.xDomain[1]) continue;
         const x = xScale(event.year, d);
         const y = yScale(row.buffett, d);
-        const circle = make('circle', { class: 'event-dot', cx: x, cy: y, r: 6, tabindex: 0, role: 'link', 'data-url': event.url, 'aria-label': `${event.year} ${event.title}` });
+        const circle = make('circle', { class: event.key ? 'event-dot key' : 'event-dot', cx: x, cy: y, r: event.key ? 6 : 4, tabindex: 0, role: 'link', 'data-url': event.url, 'aria-label': `${event.year} ${event.title}` });
         circle.addEventListener('mouseenter', () => showTooltip(event, row, x, y, d));
         circle.addEventListener('mouseleave', hideTooltip);
         circle.addEventListener('focus', () => showTooltip(event, row, x, y, d));
@@ -1273,19 +1838,26 @@ def write_files() -> None:
     rows = read_csv(PROCESSED / "returns.csv")
     events = read_csv(PROCESSED / "events.csv")
     manifest = json.loads((RAW / "source_manifest.json").read_text(encoding="utf-8"))
+    decisions = build_annual_decisions(rows, events)
+    rows_by_year = {int(row["year"]): row for row in rows}
 
     if SITE.exists():
         shutil.rmtree(SITE)
     (SITE / "events").mkdir(parents=True, exist_ok=True)
+    (SITE / "decisions").mkdir(parents=True, exist_ok=True)
     (SITE / "data").mkdir(parents=True, exist_ok=True)
 
     (SITE / "index.html").write_text(build_index(rows, events, manifest), encoding="utf-8")
     for event in events:
         (SITE / "events" / f"{event['slug']}.html").write_text(build_event_page(event, rows, manifest), encoding="utf-8")
+    for decision in decisions:
+        row = rows_by_year[decision["year"]]
+        (SITE / "decisions" / f"{decision['year']}.html").write_text(build_decision_page(decision, row, manifest), encoding="utf-8")
     (SITE / "sources.html").write_text(build_sources_page(manifest), encoding="utf-8")
 
     shutil.copy2(PROCESSED / "returns.csv", SITE / "data" / "returns.csv")
     shutil.copy2(PROCESSED / "events.csv", SITE / "data" / "events.csv")
+    (SITE / "data" / "decisions.json").write_text(json.dumps(decisions, ensure_ascii=False, indent=2), encoding="utf-8")
     shutil.copy2(RAW / "source_manifest.json", SITE / "data" / "source_manifest.json")
 
     OUT.mkdir(exist_ok=True)
